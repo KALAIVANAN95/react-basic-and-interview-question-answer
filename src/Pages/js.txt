@@ -1,0 +1,92 @@
+1.What is JavaScript.?
+i)High level, interpreted language
+ii)Creating dynamic in interaction with web pages
+
+2.What is Data Types in JavaScript.?
+i)Primitive Types
+string,number,boolen,null and undefined
+
+ii)Refrence types
+object,functions,arrays
+
+3.Difference between null and undefined.?
+i)Null - Intentional null(empty)value of variable
+ii)Undefined - Declared variable without any value.
+
+4.How to declare variable in JS.?
+Can declare variable using
+i)var = function - scoped
+ii)let = block - scoped
+iii)const = block - scoped - cont modify etc
+
+5.What is closure in JS.?
+A function had inner function
+
+inner function has access to outer & global function.
+
+or
+
+JavaScript closure gives you access to an outer function's scope from 
+an inner function
+
+6.Difference between == and ===?
+i)==loose equality - type coerion type not checkced
+ii)===Strict equality - without type coericon value and type checked
+
+7.What is hoisting.?
+i)var and function declarations moved to the top
+
+8.Ways to loop through an array?
+using various methods such as
+i)for 
+ii)forEach
+iii)for of
+
+9.What is Promise in JS.?
+i)Js object and used to contorl asynchronous operation
+ii)methods like .then() and .catch
+It will be in one the 3 possible states
+i)Fullfilled
+ii)Rejected
+iii)Pending.
+
+10.Ways to define function.?
+i)function declaration
+ii)function expression
+iii)self invoking function
+iv)object method
+v)arrow function
+
+11.Carrying?
+Currying is a technique of evaluation function with multiple arguments,
+in to sequence of function with single argument
+
+12.What is this keyword.?
+This keyword is a reference variable that refers to the current object.
+
+13.Diff btwn forEach and map method?
+The map() method returns a new array, whereas the forEach() method does not return a new array
+
+14. apply bind call
+Call invokes the function and allows you to pass in arguments one by one.
+Apply invokes the function and allows you to pass in arguments as an array.
+Bind returns a new function, allowing you to pass in a this array and any number of arguments.
+
+
+15. "async and await make promises easier to write"
+
+async makes a function return a Promise
+
+await makes a function wait for a Promise
+
+16. "use strict"; Defines that JavaScript code should be executed in "strict mode".
+The "use strict" directive was new in ECMAScript version 5.
+
+17.Map
+Map method used to when we want transforamtion of whole array.
+
+18.Filter
+Filter is used to when we want too filter the array to obtain required value
+
+19.Reduce.?
+Reduce is used to when we want to reduce the array to single value.

@@ -1,0 +1,200 @@
+
+========================================================================
+1.What is React JS?
+i)It is a JavaScript library created by Facebook in 2011 by jordan Walke.
+ii)It is used for building user interfaces and also used to build single page applications.
+
+2.JSX?
+i)JSX is a shorthand for JavaScript XML
+ii)This makes the HTML file really easy to understand
+
+3.What is the meaning of Virtual DOM.?
+i)A virtual DOM is a simple JavaScript object that is the exact copy of the corresponding real DOM.
+or
+A virtual DOM is a light weight js object.
+
+4.Why use React?
+i)Easy creation of dynamic web apps
+ii)Reusable Components
+iii)Easy Debugging 
+iv)Enhanced Performance
+v)Unidirectional data flow
+
+5.Can browsers read a JSX file.?
+i)No, browsers cannot read JSX files directly.
+ii)It can only read the objects provided by JavaScript.
+or
+No,Browsers can only read JavaScript objects but JSX in not a regular JavaScript object
+
+6.What are States in React.?
+i)States are used to easily create dynamic and interactive components
+or
+The state is a build-in React object that is used to contain data or information about the component
+or
+State of component is an object that holds some data
+This data influences the output of a component
+
+7.What is a higher-order component in React.?
+i)A higher-order component is a function that takes in a component and returns a new component.
+Using code,const newComponent = higherFunction(WrappedComponent);
+
+8.What are the three phases of a component life cycle in React.?
+Mounting (adding nodes to the DOM)
+Updating (altering existing nodes in the DOM)
+Unmounting (removing nodes from the DOM)
+
+9.What are events in React.?
+i)An envent is an action that can be triggered by a user or any system event like pressing a key, a mouse click,etc
+
+10.What is arrow function?
+Arrow function is a short way of writing a function in React
+
+11.What are components in React?
+Components are independent and reusable bits of code.
+A single app usally consists of multiple components.
+
+
+12.What is the use of render() in React?
+The purpose of the function is to display the specified HTML code inside the specified HTML element.
+It is compulsory for each component to have a render() function
+
+13.What are refs in React?
+Refs are a function provided by React to access the DOM element and
+the React element that you might have created on your own
+Main uses:
+i)To initiate imperative animations
+ii)To join third party DOM libraries
+iii)To manage focus and apply media playback
+
+14.What are the components of Redux in React?
+Redux consists of 4 main components as shown below:
+i)Action: An object that describes the call
+ii)Reducer:The state change storage unit
+iii)Store:The state and object tree storage
+iv)View:Displays data provided by the store
+
+15.What are pure components in React?
+The components that do not re-render when the value of props and 
+state has been updated with the same values.
+
+16.What are higher-order components used for?
+i)Manipulation of props
+ii)State manipulation and abstraction
+iii)Render high jacking 
+iv)Code reusing
+v)Bootstrap abstraction
+
+17.What are keys in React?
+i)Keys are used to directly check if an item has been
+added or removed from list
+
+18.Props?
+Props stands for propertues
+It gives a way to pass data from one component to other component.
+
+19.Callback function? JS
+A Callback function is a function passed into another function as an argument.
+
+20.What is props and state in React?
+Props allow you to pass data from one component to other components as an argument. 
+State holds information about the components
+
+21.What are the three types of components?
+Types of React Components Discussed
+Functional Components.
+Class Components.
+Pure Components.
+Higher-Order Components.
+
+22.What is the difference between Real DOM and Virtual DOM?
+Real DOM:
+The real DOM updates slower.
+The real DOM can directly update HTML.
+There is a lot of memory wastage in The real DOM.
+
+Virtual DOM:
+The virtual DOM updates faster
+The virtual DOM cannot directly update HTML.
+There is no memory wastage in the virtual DOM.
+
+23.what is the difference between controlled and uncontrolled components?
+Controlled:
+It does not maintain its internal state.
+data is controlled by the parent component.
+It accepts its current value as a prop.
+It allows validation control.
+Uncontrolled:
+It maintains its internal states.
+data is controlled by the DOM itself
+It uses a ref for their current values.
+It does not allow validation control.
+
+24.What are the feature of React.?
+JSX,Component,one-way data binding,virtual dom,simplicity & performance.
+
+25.What is the biggest limitaition of React?
+React is just library, it is not a complete framework.
+
+26.Flux.?
+Flux is an application architecture that Facebook uses intrnally for the 
+building the client side web app.
+
+27.Redux.?
+Redux is an open-source JS library used to manage application state.
+React uses redux for building the user interface.
+
+28.Differentiate between States and Props.
+Props:
+Props are read-only
+Props are immutable.
+Props allow you to pass data from one component to other components as an argument.
+
+State:
+State changes can be asynchronous.
+State is mutable.
+State holds information about the components.
+
+29.Differentiate between stateless and stateful components.
+stateless:
+It is simple and easy to understand.
+It is also known as a functional component.
+
+stateful:
+It is complex as compared to the stateless component.
+It is also known as a class component.
+
+30.Hooks?
+React Hooks are simple JavaScript functions that we can use to isolate the reusable part from a functional component.
+Hooks can be stateful and can manage side-effects.
+useState:
+To manage states. Returns a stateful value and an updater function to update it.
+useEffect: 
+To manage side-effects like API calls, subscriptions, timers, mutations, and more.
+componentDidmount and componentdidupdate - it will be done this work
+useContext: 
+To return the current value for a context.
+useReducer:
+A useState alternative to help with complex state management.
+useCallback: 
+It returns a memorized version of a callback to help a child component not re-render unnecessarily.
+useMemo:
+It returns a memoized value that helps in performance optimizations.
+The useMemo Hook only runs when one of its dependencies update.
+useRef:
+It returns a ref object with a .current property. The ref object is mutable. It is mainly used to access a child component imperatively.
+useLayoutEffect: 
+It fires at the end of all DOM mutations. It's best to use useEffect as much as possible over this one as the useLayoutEffect fires synchronously.
+useDebugValue:
+Helps to display a label in React DevTools for custom hooks.
+
+31.What is the diff btwn Clone and Create element in React?
+i)cloneElement is primarily used to clone an element
+& pass it to new props directly
+ii)Whereas, createElemnt is the entity that JSX get complied into.This is also used to create elements in React	
+
+const getChange = (event)=>{
+let {name,value}=event.target;
+let data = {[name]:value}
+setobjec(...obje,...data)
+
+}

@@ -1,0 +1,83 @@
+1.What is the purpose of CSS.?
+i)It was created to style the HTML page.
+ii)HTML defines the page structure
+iii)CSS define look and feel of the web page.
+
+2.Explain the different types of CSS Selector.?
+i)Simple selector
+h1,.content,#title
+
+ii)Combinator selector
+decentdent selector - Space
+child selector - >
+adjacemt sibiling selector - +
+general sibiling selector - ~
+
+iii)pseude selector
+a:link
+a:visited
+a:hover
+a:active
+
+iv)pseudeo element selector
+p::first-letter
+p::first-line
+p::before
+
+v)Attribute selector
+a[target]
+
+3.Differenciate ID & Class Selectors?
+i)ID is unique in a HTML page, A separate style for particular element.
+ii)Class can be part of multiple elements, Single style can be used for many elements.
+iii)ID has higher priority over the class
+
+4.What is Box model in CSS.?
+i)Every HTML elements are reactangle box to determine the width and hight
+ii)Initially the size defined based on content of the element
+iii)Box model covers Content,Padding,Border & Margin.
+
+5.What is CSS Pre-Processor?
+i)Used to genereate CSS using the Pre-Processor.
+ii)We can write CSS in programmatic way.
+iii)It's feature rich CSS development, we can store
+values in variable and creation re-usable functions.
+
+6.Explain the use of Float.?
+i)It's used to align the element to left or right
+ii)Floated element has to be cleared using clear property
+iii)Uncleared float elements will affect the following elements flow.
+
+7.What is Absolute & Relative units?
+i)Units are used to define CSS values in some measurement.
+ii)Absolute:It's exact value and won't change on any situation. Eg., 300px, 10cm
+iii)Relative: It will change based on parent or relative element. Eg. 10%,5rem
+
+8.Explain display inline,block, inline-block.?
+i)Inline: Only occupies content space. Can't set width, height and top/bottom of padding/margin.
+ii)Block:Occupies entire width of parent/window, adds new line.
+iii)Inline-Block: combination of both, won't add new line, can
+set width/height and padding/margin
+
+9.Explain Position Property.?
+Position has 4 types of values.
+1)Static
+2)Relative
+3)Absolute
+4)Fixed
+5)sticky	
+i)Static & Relative: 
+By default all the elements are static,Relative only accepts top/left values.
+ii)Absolute:
+It's out of flow and can be positioned based on relative.
+iii)Fixed:
+It's out of flow. It's relative to the window...
+iv)The element is positioned based on the user's scroll position
+
+10.What is Cascading in CSS.?
+i)CSS checks style definition and elements to apply the style
+ii)If two styles are defined for the same elements,
+the latest one will be applied.
+iii)If we need to change the priority,
+can add !important to the style value.
+

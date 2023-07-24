@@ -1,0 +1,97 @@
+1.What is HTML.?
+Hyper text markup language.
+text based language
+used to develop & structure website
+
+2.What is doctype html.?
+Browser to understatnd the version of html
+<!DOCTYPE html>
+
+3.Difference btw element and tag.?
+Everthing is an element in html
+we create elements using tags
+<p>Hello</p>
+
+4.What are Attributes.?
+Each element have an attributes
+changes element behaviour
+Generic attributes:class,id and style 
+Specifi attributes:src and href
+
+5.How to creaate link.?
+We create link using <a> tag
+i)<Internal Link <a href="#id">
+ii)<External Link <a href="url">
+
+6.How do you write style in html?
+i)Inline <div style="color:red;">hai</div>
+ii)Internal <style> selector {} </style>
+iii)External <link href="style.css"/>
+
+7.What is semantic elements.?
+To use meaningfull elements in html..
+<nav>,<header>,<main> and <footer>
+
+8.What is forms.?
+To get different input values from user <input type="text"/>
+
+9.What is inline and block elements?
+Inline elements:span and input elements
+Block elements:div and paragraph
+It will take entier with and start on a new line
+
+10.Describe h1 tag.?
+A web page should contain only one <h1> tag/
+Search engine easily identify a page using this tag.
+
+11.How do you create a table.?
+Using <table> element and it's dependent tags <tr><th> and <td>
+For header and content <thead> and <tbody> can be used.
+
+12.What is iframe.?
+<iframe> is used to include other website within a web page
+
+13.What are the html entities.?
+A replecement for reserved character &#lt,&#copy;
+Can be used for special character which is not availble in keyboard
+
+14.What is alternative text in Image.?
+The alt attribute is used show text when image is not loaded.
+Additionally, it helps screen readers to identify the image.
+
+15.What is the use of meta tag?
+<meta> tag is used to describe about the page
+Search engine identify the page using meta information
+
+16.What are empty elements.?
+Empty elements doesn't contain any content
+<br> and <hr> are empty elements,
+which is used to add break and line.
+
+17.Explain about Canvas?
+<canvas> is used to draw graphics using Javascript
+It's pixel based and can't be scaled for larger surface
+
+18.What is SVG?
+<svg> is vector based graphics which is  defined in XML
+It can be scaled for larger size, able to modify using css and script
+
+19.How to include audio and video?
+<audio> and <video> tags are used to include music and video on web
+By using <source> tag insde on video and audio,files can be included
+
+20. What are void elements in HTML?
+HTML elements which do not have closing tags or do not need to be closed are Void elements. For Example <br />, <img />, <hr />, etc.
+
+21. What are the New tags in Media Elements in HTML5?
+<audio> - Used for sounds, audio streams, or music, embed audio content without any additional plug-in.
+<video> - Used for video streams, embed video content etc.
+<source> - Used for multiple media resources in media elements, such as audio, video, etc.
+<embed> - Used for an external application or embedded content.
+<track> - Used for subtitles in the media elements such as video or audio.
+
+22.How to support SVG in old browsers?
+To support old browsers instead of defining the resource of svg in src attribute of <img> tag, it should be defined in srcset attribute and in src the fallback png file should be defined
+
+
+========================================================================

@@ -1,0 +1,139 @@
+// Javascript array interview question and answers
+//=============================================================
+
+//1.Create an Array object.?
+//Method 1
+let arrays=[1,2,3,5];
+
+//Method 2
+let array2=[];
+
+array2[0]="KALAI"
+
+console.log(array2);
+
+//Method 3
+var array3=[1,2,3,5];
+var array3=new Array(1,"VANAN")
+console.log(array3);
+
+//Method 4
+var array4 = Array.of(10,20)
+console.log(array4);
+
+//=============================================================
+
+//2.Take the below array and copy it using the slice method and for loop method.
+var array=[1,2,3,4,5,6]
+//var result = array.slice(2,3)
+//Slice method-1
+var result = array.slice()
+console.log("Slice method using",result)
+
+
+//for loop method
+var array2=[1,2,3,4,5,6]
+temparray=[];
+for(let i=0;i<array.length;i++){
+  temparray[i]=array2[i];
+}
+console.log("for loop used" +" " + temparray);
+
+//Speard operator method
+var array3=[1,2,3,4,5,6];
+var temp=[...array3];
+console.log("speard operator used" +" "+ temp);
+
+//=============================================================
+
+//3.Empty this array.?
+var array=[1,2,3,4,5,6];
+
+//method-1 empty array
+console.log("before empty array", array);
+var array=[];
+console.log("after empty array", array);
+
+
+//method-2 empty array
+var array2=[1,2,3,4,5,6];
+array2.length=0;
+console.log("Length mehthod using - empty array",array2)
+
+
+//method-3 empty array
+var array3=[1,2,3,4,5,6];
+while(array3.length){
+  array3.pop()
+}
+console.log("While loop using for empty array",array3)
+
+//method-4 empty array
+var array4=[12,13,11,45,48]
+
+array4.splice(0,array4.length)
+console.log("Splice method using this array",array4)
+//=============================================================
+//4.What type is an array set to.?
+var array=[12,13,14,15,16]
+console.log("Type array checked,"+ " "+typeof array)
+
+//=============================================================
+
+//5.How can you check it something is an Array?
+var array=[12,13,14,15,16]
+var obj = {1:"KALAI"}
+//var result = Array.isArray(array)
+var result = Array.isArray(obj)
+console.log("Type array checked,"+ " "+ result)
+
+//=============================================================
+
+//6.Add an item to end of an array.?
+var array = [1,2,3,4,5]
+
+array.push("Apple")
+
+console.log("Add an item to last using push", array)
+
+array[array.length]="Bus"
+
+console.log("Add an item to last using length", array)
+
+//=============================================================
+
+//7.Find the index position of d in this array.?
+var array = ["a","b","c","d","e"]
+
+var result = array.indexOf("d")
+
+console.log("The d index value is", result)
+
+//=============================================================
+
+//8.What will be returned if you look for the index of something that does not exist.?
+var array = ["a","b","c","d","e"]
+
+var result = array.indexOf("z")
+
+console.log("The d index value is", result)
+
+//=============================================================
+
+//9.Write a function to check if milk exists in your array.?
+var items = ["Milk","Bread","Sugar"]
+
+function checkForProduct (){
+  
+  if(items.indexOf("Milk")==-1){
+    console.log("Not Exits")
+  }
+  else{
+    console.log("Exits")
+  }
+}
+checkForProduct();
+
+//=============================================================
+
+//10.Now you've found milk exists add some code to find the index of milk and remove that item.
