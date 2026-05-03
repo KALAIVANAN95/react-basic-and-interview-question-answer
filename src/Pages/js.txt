@@ -41,8 +41,8 @@ counter(); // 2
 ---------------------------------------------
 
 6.Difference between == and ===?
-i)==loose equality - type coerion type not checkced
-ii)===Strict equality - without type coericon value and type checked
+i)== (loose equality): compares values after type coercion (type is not strictly checked)
+ii)=== (strict equality): compares both value and type (no type coercion)
 
 7.What is hoisting.?
 i)var and function declarations moved to the top
