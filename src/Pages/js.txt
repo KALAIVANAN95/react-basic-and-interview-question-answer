@@ -23,9 +23,22 @@ iii)const = block - scoped - cont modify etc
 A function had inner function
 inner function has access to outer & global function.
 or
-
 JavaScript closure gives you access to an outer function's scope from 
 an inner function
+function outer() {
+  let count = 0;
+
+  return function inner() {
+    count++;
+    console.log(count);
+  };
+}
+
+const counter = outer();
+counter(); // 1
+counter(); // 2
+
+---------------------------------------------
 
 6.Difference between == and ===?
 i)==loose equality - type coerion type not checkced
