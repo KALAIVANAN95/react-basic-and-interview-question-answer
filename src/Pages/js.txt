@@ -83,19 +83,31 @@ bind() – does not invoke immediately, returns a new function with this fixed, 
 
 
 15. "async and await make promises easier to write"
-
-async makes a function return a Promise
-
-await makes a function wait for a Promise
+async makes a function return a Promise.
+await pauses execution until the Promise resolves (or rejects).
 
 16. "use strict"; Defines that JavaScript code should be executed in "strict mode".
-The "use strict" directive was new in ECMAScript version 5.
+use strict" enables strict mode in JavaScript, which helps catch errors and enforces safer coding. It was introduced in ES5.
 
 17.Map
-Map method used to when we want transforamtion of whole array.
+map() is used to transform each element of an array and returns a new array.
 
 18.Filter
-Filter is used to when we want too filter the array to obtain required value
+filter() is used to select elements from an array based on a condition and returns a new array.
 
 19.Reduce.?
-Reduce is used to when we want to reduce the array to single value.
+reduce() is used to reduce an array to a single value (like sum, total, or object) by applying a function.
+
+const numbers = [1, 2, 3, 4, 5];
+
+// map → double each value
+const doubled = numbers.map(num => num * 2);
+// [2, 4, 6, 8, 10]
+
+// filter → get even numbers
+const evens = numbers.filter(num => num % 2 === 0);
+// [2, 4]
+
+// reduce → sum of all values
+const sum = numbers.reduce((total, num) => total + num, 0);
+// 15
