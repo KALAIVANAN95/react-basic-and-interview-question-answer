@@ -47,6 +47,14 @@ ii)===Strict equality - without type coericon value and type checked
 7.What is hoisting.?
 i)var and function declarations moved to the top
 
+console.log(a); // undefined
+var a = 10;
+sayHello(); // works
+function sayHello() {
+  console.log("Hello");
+}
+---
+
 8.Ways to loop through an array?
 using various methods such as
 i)for 
