@@ -4,7 +4,7 @@ ii)Creating dynamic in interaction with web pages
 
 2.What is Data Types in JavaScript.?
 i)Primitive Types
-string,number,boolen,null and undefined
+string, number, boolean, null, undefined (also symbol, bigint)
 
 ii)Refrence types
 object,functions,arrays
