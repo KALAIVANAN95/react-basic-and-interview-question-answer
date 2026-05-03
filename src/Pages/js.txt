@@ -21,9 +21,7 @@ iii)const = block - scoped - cont modify etc
 
 5.What is closure in JS.?
 A function had inner function
-
 inner function has access to outer & global function.
-
 or
 
 JavaScript closure gives you access to an outer function's scope from 
@@ -43,6 +41,10 @@ ii)forEach
 iii)for of
 
 9.What is Promise in JS.?
+A Promise in JavaScript is an object used to handle asynchronous operations.
+It has methods like .then() and .catch(), 
+and can be in three states: Pending, Fulfilled, or Rejected.
+
 i)Js object and used to contorl asynchronous operation
 ii)methods like .then() and .catch
 It will be in one the 3 possible states
