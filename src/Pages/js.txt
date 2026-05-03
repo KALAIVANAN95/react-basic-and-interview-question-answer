@@ -62,6 +62,13 @@ v)arrow function
 11.Carrying?
 Currying is a technique of evaluation function with multiple arguments,
 in to sequence of function with single argument
+function add(a) {
+  return function(b) {
+    return a + b;
+  };
+}
+
+add(2)(3); // 5
 
 12.What is this keyword.?
 This keyword is a reference variable that refers to the current object.
