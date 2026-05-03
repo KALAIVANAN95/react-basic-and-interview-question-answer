@@ -70,9 +70,9 @@ This keyword is a reference variable that refers to the current object.
 The map() method returns a new array, whereas the forEach() method does not return a new array
 
 14. apply bind call
-Call invokes the function and allows you to pass in arguments one by one.
-Apply invokes the function and allows you to pass in arguments as an array.
-Bind returns a new function, allowing you to pass in a this array and any number of arguments.
+call() – invokes the function immediately, arguments passed one by one
+apply() – invokes the function immediately, arguments passed as an array
+bind() – does not invoke immediately, returns a new function with this fixed, and you can pass arguments
 
 
 15. "async and await make promises easier to write"
