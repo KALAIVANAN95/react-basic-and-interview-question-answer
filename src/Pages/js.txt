@@ -119,6 +119,19 @@ filter() is used to select elements from an array based on a condition and retur
 19.Reduce.?
 reduce() is used to reduce an array to a single value (like sum, total, or object) by applying a function.
 
+20.setTimeout vs setInterval (simple interview answer)
+Both are used to run code after a delay, but behavior different 
+Runs once after a given delay.
+setTimeout(() => {
+  console.log("Hi");
+}, 300);
+
+setInterval
+Runs repeatedly at every interval.
+setInterval(() => {
+  console.log("Hi");
+}, 300);
+
 const numbers = [1, 2, 3, 4, 5];
 
 // map → double each value
