@@ -133,6 +133,12 @@ const evens = numbers.filter(num => num % 2 === 0);
 const sum = numbers.reduce((total, num) => total + num, 0);
 // 15
 ========================
+Event Loop:
+Event is a mechanism in JavaScript that handles asynchronous operations by continuously checking the call stack and callback queue, and moving tasks to the stack when it becomes empty.
+
+In short:
+
+
 
 const arr=[1,2,5]
 const res=arr.reverse()
