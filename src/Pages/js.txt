@@ -132,3 +132,31 @@ const evens = numbers.filter(num => num % 2 === 0);
 // reduce → sum of all values
 const sum = numbers.reduce((total, num) => total + num, 0);
 // 15
+========================
+
+const arr=[1,2,5]
+const res=arr.reverse()
+console.log(res)
+
+const maxn=Math.max(...res)
+console.log(maxn)
+========================
+const strings="Hello"
+const res1=strings.split("").reverse().join("")
+console.log(res1)
+========================
+const arr1=[1,2,3,44,3,2,1]
+const result2=[...new Set(arr1)]
+console.log(result2)
+========================
+function outerFunction() {
+    let count=0
+    return function innerFunction() {
+        count++;
+        console.log(count)
+    }
+}
+const fn=outerFunction()
+fn()
+fn()
+========================
