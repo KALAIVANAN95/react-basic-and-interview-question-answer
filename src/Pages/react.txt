@@ -198,3 +198,78 @@ let data = {[name]:value}
 setobjec(...obje,...data)
 
 }
+
+32.What is useEffect?
+useEffect is used to handle side effects in React applications.
+I mainly use it for:
+- API calls
+- data fetching
+- event listeners
+- component lifecycle handling
+- dependency-based updates
+
+33.Why dependency array important?
+Dependency array controls when the effect should execute.
+[] -> runs once
+[value] -> runs when value changes
+No dependency -> runs on every render
+
+34.How do you handle API integration?
+I usually use Axios for API integration.
+I create reusable API instances and handle:
+- loading states
+- error handling
+- token management
+- dynamic payloads
+- response mapping
+I also use async/await with try/catch for better readability.
+
+35.How authentication works in your project JWT auth?
+After successful login backend generates JWT token.
+Frontend stores token in localStorage.
+For protected APIs I send the token in Authorization header.
+Backend middleware validates token and allows access based on user role.
+
+36.How do you optimize React performance?
+I use:
+- React.memo
+- useMemo
+- useCallback
+- lazy loading
+- pagination
+- conditional rendering
+- avoiding unnecessary re-renders
+I also split reusable components properly for maintainability.
+
+37.Controlled vs uncontrolled components?
+Controlled components are managed using React state.
+Uncontrolled components use refs.
+In most enterprise applications I use controlled components because validation and form handling become easier.
+
+38.What is lifting state up?
+When multiple child components need shared data, state is moved to the common parent component and passed using props.
+
+39.Functional component lifecycle equivalent?
+useEffect is used to handle lifecycle behavior.
+ComponentDidMount -> useEffect(() => {}, [])
+ComponentDidUpdate -> dependency-based useEffect
+ComponentWillUnmount -> cleanup function
+
+40.One difficult bug you faced?
+I faced an issue where APIs were triggering multiple times because of incorrect useEffect dependencies.
+I analyzed the dependency flow, optimized state updates, and prevented unnecessary renders.
+
+41.How do you handle large forms?
+I split forms into reusable components and maintain state efficiently.
+I also use validation, dynamic rendering, and reusable handlers to reduce duplicate code.
+
+42.How do you handle reusable components?
+I create configurable reusable components using props.
+Examples:
+- tables
+- modals
+- filters
+- dropdowns
+- buttons
+- form components
+This improves maintainability and reduces duplicate code.
