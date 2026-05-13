@@ -43,6 +43,10 @@ counter(); // 2
 6.Difference between == and ===?
 i)== (loose equality): compares values after type coercion (type is not strictly checked)
 ii)=== (strict equality): compares both value and type (no type coercion)
+== checks value only.
+=== checks both value and datatype.
+I prefer === to avoid unexpected type coercion.
+
 
 7.What is hoisting.?
 i)var and function declarations moved to the top
@@ -179,3 +183,31 @@ const fn=outerFunction()
 fn()
 fn()
 ========================
+
+21. var vs let vs const?
+var is function scoped.
+let and const are block scoped.
+const cannot be reassigned.
+I mostly use const by default and let when values need updates.
+
+22.map vs filter?
+map transforms data.
+filter returns matching data based on condition.
+
+--------------------------------------------------------------------------------------------
+I am a Frontend Developer with around 4 years of experience in React.js development.
+I have worked on enterprise applications involving dashboard development, API integration, reusable components, dynamic forms, authentication, and responsive UI development.
+
+I also have exposure to Node.js and MongoDB for full-stack development.
+Currently I am looking for an opportunity where I can contribute technically and grow further as a frontend/full-stack developer.
+
+
+Q: Why should we hire you?
+I have strong hands-on experience in React.js and real-time project development.
+I can independently handle frontend modules, API integration, reusable component development, debugging, and production issues.
+I also adapt quickly and work well in team environments.
+
+
+
+You do not know the ans
+I haven’t worked deeply on that yet, but I understand the basics and I’m currently learning it.
