@@ -1,26 +1,4 @@
 
-JavaScript Interview Answers 🔥
-
-1. JavaScript
-   JavaScript is a scripting language used to create dynamic and interactive web applications.
-
-2. Variables
-   JavaScript provides var, let and const for variable declaration. Mostly let and const are used in modern JavaScript.
-
-3. Data Types
-   JavaScript supports data types like string, number, boolean, undefined, null, object and array.
-
-4. Functions
-   Functions are reusable blocks of code used to perform specific tasks.
-
-5. Arrow Function
-   Arrow functions provide shorter syntax and lexical this behavior.
-
-6. Conditions
-   Conditional statements are used for decision making in JavaScript.
-
-7. Loops
-   Loops are used to execute code repeatedly based on conditions.
 
 8. map()
    map() is used to iterate arrays and return a new transformed array.
@@ -45,9 +23,6 @@ JavaScript Interview Answers 🔥
 
 15. async/await
     async/await provides cleaner syntax for handling promises.
-
-16. Closure
-    A closure allows inner functions to access outer function variables even after execution.
 
 17. Hoisting
     Hoisting moves variable and function declarations to the top during execution.
@@ -105,8 +80,7 @@ ii)let = block - scoped
 iii)const = block - scoped - cont modify etc
 
 5.What is closure in JS.?
-A function had inner function
-inner function has access to outer & global function.
+ A closure allows inner functions to access outer function variables even after execution.
 or
 JavaScript closure gives you access to an outer function's scope from 
 an inner function
@@ -235,6 +209,27 @@ const evens = numbers.filter(num => num % 2 === 0);
 const sum = numbers.reduce((total, num) => total + num, 0);
 // 15
 ========================
+21. Functions
+   Functions are reusable blocks of code used to perform specific tasks.
+22. Conditions
+   Conditional statements are used for decision making in JavaScript.
+23. Loops
+   Loops are used to execute code repeatedly based on conditions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Event Loop:
 Event is a mechanism in JavaScript that handles asynchronous operations by continuously checking the call stack and callback queue, and moving tasks to the stack when it becomes empty.
 
