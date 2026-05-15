@@ -1,3 +1,109 @@
+React Interview Answers 🔥
+
+1. React JS
+   React is a component-based JavaScript library used for building dynamic user interfaces.
+
+2. JSX
+   JSX allows writing HTML-like syntax inside JavaScript.
+
+3. Components
+   Components are reusable UI blocks in React.
+
+4. Props
+   Props are used to pass data from parent to child components.
+
+5. State
+   State is used to manage dynamic data inside components.
+
+6. useState
+   useState hook is used to create and update state in functional components.
+
+7. Event Handling
+   React handles events using camelCase event handlers like onClick and onChange.
+
+8. Conditional Rendering
+   Conditional rendering displays UI based on conditions.
+
+9. List Rendering
+   List rendering is commonly done using map() with unique key props.
+
+10. useEffect
+    useEffect is used to handle side effects like API calls and timers.
+
+11. Controlled Components
+    Controlled components are form elements managed using React state.
+
+12. Lifting State Up
+    Lifting state up means moving shared state to the nearest common parent.
+
+13. useRef
+    useRef is used to access DOM elements and persist mutable values.
+
+14. useMemo
+    useMemo memoizes expensive calculations to improve performance.
+
+15. useCallback
+    useCallback memoizes functions to prevent unnecessary recreations.
+
+16. React.memo
+    React.memo prevents unnecessary component re-renders.
+
+17. Custom Hooks
+    Custom hooks allow reusing React hook logic across components.
+
+18. Context API
+    Context API provides global data sharing without props drilling.
+
+19. React Router DOM
+    React Router DOM enables client-side routing in React applications.
+
+20. API Calls
+    API calls are usually handled using useEffect with fetch or axios.
+
+21. useReducer
+    useReducer manages complex state logic using reducers and dispatched actions.
+
+22. Lifecycle
+    In functional components, lifecycle behavior is handled using useEffect.
+
+23. Lazy Loading
+    Lazy loading improves performance by loading components dynamically.
+
+24. Fragments
+    Fragments group multiple elements without adding extra DOM nodes.
+
+25. Portals
+    Portals render components outside the normal DOM hierarchy.
+
+26. Error Boundaries
+    Error boundaries catch React component errors and show fallback UI.
+
+27. HOC
+    HOCs are functions that enhance components with additional functionality.
+
+28. Redux
+    Redux is a state management library used for global application state.
+
+29. Redux Toolkit
+    Redux Toolkit simplifies Redux development with less boilerplate code.
+
+30. RTK Query
+    RTK Query handles API fetching and caching efficiently.
+
+31. React Query
+    React Query manages server state, caching and API synchronization.
+
+32. Protected Routes
+    Protected routes restrict unauthorized users from accessing secured pages.
+
+33. Authentication Flow
+    Authentication flow validates users using login credentials and tokens.
+
+34. CRUD
+    CRUD operations include Create, Read, Update and Delete functionalities.
+
+35. Project Architecture
+    Project architecture improves code scalability, maintainability and organization.
 
 ========================================================================
 1.What is React JS?
