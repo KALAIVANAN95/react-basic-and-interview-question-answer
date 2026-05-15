@@ -1,110 +1,3 @@
-React Interview Answers 🔥
-
-1. React JS
-   React is a component-based JavaScript library used for building dynamic user interfaces.
-
-2. JSX
-   JSX allows writing HTML-like syntax inside JavaScript.
-
-3. Components
-   Components are reusable UI blocks in React.
-
-4. Props
-   Props are used to pass data from parent to child components.
-
-5. State
-   State is used to manage dynamic data inside components.
-
-6. useState
-   useState hook is used to create and update state in functional components.
-
-7. Event Handling
-   React handles events using camelCase event handlers like onClick and onChange.
-
-8. Conditional Rendering
-   Conditional rendering displays UI based on conditions.
-
-9. List Rendering
-   List rendering is commonly done using map() with unique key props.
-
-10. useEffect
-    useEffect is used to handle side effects like API calls and timers.
-
-11. Controlled Components
-    Controlled components are form elements managed using React state.
-
-12. Lifting State Up
-    Lifting state up means moving shared state to the nearest common parent.
-
-13. useRef
-    useRef is used to access DOM elements and persist mutable values.
-
-14. useMemo
-    useMemo memoizes expensive calculations to improve performance.
-
-15. useCallback
-    useCallback memoizes functions to prevent unnecessary recreations.
-
-16. React.memo
-    React.memo prevents unnecessary component re-renders.
-
-17. Custom Hooks
-    Custom hooks allow reusing React hook logic across components.
-
-18. Context API
-    Context API provides global data sharing without props drilling.
-
-19. React Router DOM
-    React Router DOM enables client-side routing in React applications.
-
-20. API Calls
-    API calls are usually handled using useEffect with fetch or axios.
-
-21. useReducer
-    useReducer manages complex state logic using reducers and dispatched actions.
-
-22. Lifecycle
-    In functional components, lifecycle behavior is handled using useEffect.
-
-23. Lazy Loading
-    Lazy loading improves performance by loading components dynamically.
-
-24. Fragments
-    Fragments group multiple elements without adding extra DOM nodes.
-
-25. Portals
-    Portals render components outside the normal DOM hierarchy.
-
-26. Error Boundaries
-    Error boundaries catch React component errors and show fallback UI.
-
-27. HOC
-    HOCs are functions that enhance components with additional functionality.
-
-28. Redux
-    Redux is a state management library used for global application state.
-
-29. Redux Toolkit
-    Redux Toolkit simplifies Redux development with less boilerplate code.
-
-30. RTK Query
-    RTK Query handles API fetching and caching efficiently.
-
-31. React Query
-    React Query manages server state, caching and API synchronization.
-
-32. Protected Routes
-    Protected routes restrict unauthorized users from accessing secured pages.
-
-33. Authentication Flow
-    Authentication flow validates users using login credentials and tokens.
-
-34. CRUD
-    CRUD operations include Create, Read, Update and Delete functionalities.
-
-35. Project Architecture
-    Project architecture improves code scalability, maintainability and organization.
-
 ========================================================================
 1.What is React JS?
 i)It is a JavaScript library created by Facebook in 2011 by jordan Walke.
@@ -156,7 +49,7 @@ i)An envent is an action that can be triggered by a user or any system event lik
 Arrow function is a short way of writing a function in React
 
 11.What are components in React?
-Components are independent and reusable bits of code.
+Components are independent and reusable bits of code. or Components are reusable UI blocks in React
 A single app usally consists of multiple components.
 
 
@@ -195,8 +88,8 @@ i)Keys are used to directly check if an item has been
 added or removed from list
 
 18.Props?
-Props stands for propertues
-It gives a way to pass data from one component to other component.
+Props stands for propertues 
+It gives a way to pass data from one component to other component. or Props are used to pass data from parent to child components
 
 19.Callback function? JS
 A Callback function is a function passed into another function as an argument.
@@ -223,17 +116,10 @@ The virtual DOM updates faster
 The virtual DOM cannot directly update HTML.
 There is no memory wastage in the virtual DOM.
 
-23.what is the difference between controlled and uncontrolled components?
-Controlled:
-It does not maintain its internal state.
-data is controlled by the parent component.
-It accepts its current value as a prop.
-It allows validation control.
-Uncontrolled:
-It maintains its internal states.
-data is controlled by the DOM itself
-It uses a ref for their current values.
-It does not allow validation control.
+23.Controlled vs uncontrolled components?
+Controlled components are managed using React state.
+Uncontrolled components use refs.
+In most enterprise applications I use controlled components because validation and form handling become easier.
 
 24.What are the feature of React.?
 JSX,Component,one-way data binding,virtual dom,simplicity & performance.
@@ -246,6 +132,7 @@ Flux is an application architecture that Facebook uses intrnally for the
 building the client side web app.
 
 27.Redux.?
+Redux is a state management library used for global application state. OR
 Redux is an open-source JS library used to manage application state.
 React uses redux for building the user interface.
 
@@ -256,7 +143,7 @@ Props are immutable.
 Props allow you to pass data from one component to other components as an argument.
 
 State:
-State changes can be asynchronous.
+State changes can be asynchronous. or State is used to manage dynamic data inside components
 State is mutable.
 State holds information about the components.
 
@@ -273,20 +160,24 @@ It is also known as a class component.
 React Hooks are simple JavaScript functions that we can use to isolate the reusable part from a functional component.
 Hooks can be stateful and can manage side-effects.
 useState:
-To manage states. Returns a stateful value and an updater function to update it.
+useState hook is used to create and update state in functional components.
 useEffect: 
 To manage side-effects like API calls, subscriptions, timers, mutations, and more.
 componentDidmount and componentdidupdate - it will be done this work
 useContext: 
 To return the current value for a context.
 useReducer:
+useReducer manages complex state logic using reducers and dispatched actions. OR
 A useState alternative to help with complex state management.
 useCallback: 
-It returns a memorized version of a callback to help a child component not re-render unnecessarily.
+i)useCallback memoizes functions to prevent unnecessary recreations. OR
+i)It returns a memorized version of a callback to help a child component not re-render unnecessarily.
 useMemo:
-It returns a memoized value that helps in performance optimizations.
-The useMemo Hook only runs when one of its dependencies update.
+i)useMemo memoizes expensive calculations to improve performance. OR
+i)It returns a memoized value that helps in performance optimizations.
+ii)The useMemo Hook only runs when one of its dependencies update.
 useRef:
+useRef is used to access DOM elements and persist mutable values. OR
 It returns a ref object with a .current property. The ref object is mutable. It is mainly used to access a child component imperatively.
 useLayoutEffect: 
 It fires at the end of all DOM mutations. It's best to use useEffect as much as possible over this one as the useLayoutEffect fires synchronously.
@@ -346,13 +237,12 @@ I use:
 - conditional rendering
 - avoiding unnecessary re-renders
 I also split reusable components properly for maintainability.
-
-37.Controlled vs uncontrolled components?
-Controlled components are managed using React state.
-Uncontrolled components use refs.
-In most enterprise applications I use controlled components because validation and form handling become easier.
+  
+37.React.memo
+   React.memo prevents unnecessary component re-renders.
 
 38.What is lifting state up?
+Lifting state up means moving shared state to the nearest common parent. OR
 When multiple child components need shared data, state is moved to the common parent component and passed using props.
 
 39.Functional component lifecycle equivalent?
@@ -379,3 +269,46 @@ Examples:
 - buttons
 - form components
 This improves maintainability and reduces duplicate code.
+
+43.Event Handling
+   React handles events using camelCase event handlers like onClick and onChange.
+
+44.Conditional Rendering
+   Conditional rendering displays UI based on conditions.
+
+45. Custom Hooks
+    Custom hooks allow reusing React hook logic across components.
+46. Context API
+    Context API provides global data sharing without props drilling.
+47. React Router DOM
+    React Router DOM enables client-side routing in React applications.
+48. API Calls
+    API calls are usually handled using useEffect with fetch or axios.
+49. Lifecycle
+    In functional components, lifecycle behavior is handled using useEffect.
+50. Lazy Loading
+    Lazy loading improves performance by loading components dynamically.
+51. Fragments
+    Fragments group multiple elements without adding extra DOM nodes.
+52. Portals
+    Portals render components outside the normal DOM hierarchy.
+53. Error Boundaries
+    Error boundaries catch React component errors and show fallback UI.
+54.List Rendering
+   List rendering is commonly done using map() with unique key props.
+55. Redux Toolkit
+    Redux Toolkit simplifies Redux development with less boilerplate code.
+56. RTK Query
+    RTK Query handles API fetching and caching efficiently.
+57. React Query
+    React Query manages server state, caching and API synchronization.
+58. Protected Routes
+    Protected routes restrict unauthorized users from accessing secured pages.
+59. Authentication Flow
+    Authentication flow validates users using login credentials and tokens.
+60. CRUD
+    CRUD operations include Create, Read, Update and Delete functionalities.
+61. Project Architecture
+    Project architecture improves code scalability, maintainability and organization.
+
+
