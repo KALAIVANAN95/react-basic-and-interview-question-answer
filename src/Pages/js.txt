@@ -1,3 +1,88 @@
+
+JavaScript Interview Answers 🔥
+
+1. JavaScript
+   JavaScript is a scripting language used to create dynamic and interactive web applications.
+
+2. Variables
+   JavaScript provides var, let and const for variable declaration. Mostly let and const are used in modern JavaScript.
+
+3. Data Types
+   JavaScript supports data types like string, number, boolean, undefined, null, object and array.
+
+4. Functions
+   Functions are reusable blocks of code used to perform specific tasks.
+
+5. Arrow Function
+   Arrow functions provide shorter syntax and lexical this behavior.
+
+6. Conditions
+   Conditional statements are used for decision making in JavaScript.
+
+7. Loops
+   Loops are used to execute code repeatedly based on conditions.
+
+8. map()
+   map() is used to iterate arrays and return a new transformed array.
+
+9. filter()
+   filter() returns array elements that satisfy a condition.
+
+10. reduce()
+    reduce() is used to reduce array values into a single value.
+
+11. DOM Manipulation
+    DOM manipulation allows JavaScript to dynamically update HTML and CSS.
+
+12. Callback Function
+    A callback function is passed as an argument to another function and executed later.
+
+13. Event Loop
+    JavaScript uses the event loop to handle asynchronous operations.
+
+14. Promise
+    Promises are used to handle asynchronous operations with success and failure states.
+
+15. async/await
+    async/await provides cleaner syntax for handling promises.
+
+16. Closure
+    A closure allows inner functions to access outer function variables even after execution.
+
+17. Hoisting
+    Hoisting moves variable and function declarations to the top during execution.
+
+18. Scope
+    Scope determines where variables can be accessed in JavaScript.
+
+19. Prototype
+    Prototype enables inheritance in JavaScript objects.
+
+20. Debounce
+    Debouncing delays execution until user stops triggering events.
+
+21. Throttle
+    Throttling limits function execution at fixed intervals.
+
+22. Local Storage
+    localStorage stores data permanently in the browser.
+
+23. Session Storage
+    sessionStorage stores data only for the browser session.
+
+24. Cookies
+    Cookies store small pieces of browser data mainly for authentication and sessions.
+
+25. call/apply/bind
+    call, apply and bind are used to control the this context of functions.
+
+26. ES Modules
+    ES Modules allow splitting and reusing JavaScript code using import and export.
+
+27. Shallow vs Deep Copy
+    Shallow copy shares references, whereas deep copy creates independent copies.
+
+===================================================================================================================================================================
 1.What is JavaScript.?
 i)High level, interpreted language
 ii)Creating dynamic in interaction with web pages
