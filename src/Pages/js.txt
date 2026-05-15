@@ -1,62 +1,3 @@
-
-
-8. map()
-   map() is used to iterate arrays and return a new transformed array.
-
-9. filter()
-   filter() returns array elements that satisfy a condition.
-
-10. reduce()
-    reduce() is used to reduce array values into a single value.
-
-11. DOM Manipulation
-    DOM manipulation allows JavaScript to dynamically update HTML and CSS.
-
-12. Callback Function
-    A callback function is passed as an argument to another function and executed later.
-
-13. Event Loop
-    JavaScript uses the event loop to handle asynchronous operations.
-
-14. Promise
-    Promises are used to handle asynchronous operations with success and failure states.
-
-15. async/await
-    async/await provides cleaner syntax for handling promises.
-
-17. Hoisting
-    Hoisting moves variable and function declarations to the top during execution.
-
-18. Scope
-    Scope determines where variables can be accessed in JavaScript.
-
-19. Prototype
-    Prototype enables inheritance in JavaScript objects.
-
-20. Debounce
-    Debouncing delays execution until user stops triggering events.
-
-21. Throttle
-    Throttling limits function execution at fixed intervals.
-
-22. Local Storage
-    localStorage stores data permanently in the browser.
-
-23. Session Storage
-    sessionStorage stores data only for the browser session.
-
-24. Cookies
-    Cookies store small pieces of browser data mainly for authentication and sessions.
-
-25. call/apply/bind
-    call, apply and bind are used to control the this context of functions.
-
-26. ES Modules
-    ES Modules allow splitting and reusing JavaScript code using import and export.
-
-27. Shallow vs Deep Copy
-    Shallow copy shares references, whereas deep copy creates independent copies.
-
 ===================================================================================================================================================================
 1.What is JavaScript.?
 i)High level, interpreted language
@@ -108,7 +49,8 @@ I prefer === to avoid unexpected type coercion.
 
 
 7.What is hoisting.?
-i)var and function declarations moved to the top
+i)var and function declarations moved to the top  OR variable and function declarations moved to the top during execution.
+
 
 console.log(a); // undefined
 var a = 10;
@@ -125,6 +67,7 @@ ii)forEach
 iii)for of
 
 9.What is Promise in JS.?
+  Promises are used to handle asynchronous operations with success and failure states. or
 A Promise in JavaScript is an object used to handle asynchronous operations.
 It has methods like .then() and .catch(), 
 and can be in three states: Pending, Fulfilled, or Rejected.
@@ -159,6 +102,8 @@ This keyword is a reference variable that refers to the current object.
 
 13.Diff btwn forEach and map method?
 The map() method returns a new array, whereas the forEach() method does not return a new array
+or map() is used to iterate arrays and return a new transformed array.
+
 
 14. apply bind call
 call() – invokes the function immediately, arguments passed one by one
@@ -168,16 +113,17 @@ bind() – does not invoke immediately, returns a new function with this fixed, 
 
 15. "async and await make promises easier to write"
 async makes a function return a Promise.
-await pauses execution until the Promise resolves (or rejects).
+await pauses execution until the Promise resolves (or rejects) OR async/await provides cleaner syntax for handling promises.
+
 
 16. "use strict"; Defines that JavaScript code should be executed in "strict mode".
 use strict" enables strict mode in JavaScript, which helps catch errors and enforces safer coding. It was introduced in ES5.
 
 17.Map
-map() is used to transform each element of an array and returns a new array.
+map() is used to iterate arrays and return a new transformed array.
 
 18.Filter
-filter() is used to select elements from an array based on a condition and returns a new array.
+   filter() returns array elements that satisfy a condition.
 
 19.Reduce.?
 reduce() is used to reduce an array to a single value (like sum, total, or object) by applying a function.
@@ -215,26 +161,44 @@ const sum = numbers.reduce((total, num) => total + num, 0);
    Conditional statements are used for decision making in JavaScript.
 23. Loops
    Loops are used to execute code repeatedly based on conditions.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Event Loop:
+24.DOM Manipulation
+    DOM manipulation allows JavaScript to dynamically update HTML and CSS.
+25. Callback Function
+    A callback function is passed as an argument to another function and executed later.
+25.Event Loop:
+ JavaScript uses the event loop to handle asynchronous operations.
+or
 Event is a mechanism in JavaScript that handles asynchronous operations by continuously checking the call stack and callback queue, and moving tasks to the stack when it becomes empty.
 
-In short:
+26. Scope
+    Scope determines where variables can be accessed in JavaScript.
 
+27. Prototype
+    Prototype enables inheritance in JavaScript objects.
+
+28. Debounce
+    Debouncing delays execution until user stops triggering events.
+
+29. Throttle
+    Throttling limits function execution at fixed intervals.
+
+30. Local Storage
+    localStorage stores data permanently in the browser.
+
+31. Session Storage
+    sessionStorage stores data only for the browser session.
+
+32. Cookies
+    Cookies store small pieces of browser data mainly for authentication and sessions.
+
+25. call/apply/bind
+    call, apply and bind are used to control the this context of functions.
+
+26. ES Modules
+    ES Modules allow splitting and reusing JavaScript code using import and export.
+
+27. Shallow vs Deep Copy
+    Shallow copy shares references, whereas deep copy creates independent copies.
 
 
 const arr=[1,2,5]
@@ -271,8 +235,9 @@ const cannot be reassigned.
 I mostly use const by default and let when values need updates.
 
 22.map vs filter?
-map transforms data.
-filter returns matching data based on condition.
+map transforms data or map() is used to iterate arrays and return a new transformed array.
+filter returns matching data based on condition or    filter() returns array elements that satisfy a condition.
+
 
 --------------------------------------------------------------------------------------------
 I am a Frontend Developer with around 4 years of experience in React.js development.
