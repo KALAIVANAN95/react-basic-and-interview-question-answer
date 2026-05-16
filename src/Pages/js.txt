@@ -210,6 +210,8 @@ Destructuring is used to extract values from arrays or objects easily.
 31.What is spread operator?
 Spread operator is used to copy, merge, or expand arrays and objects.
 
+32.Ternary - Short if else
+
 const arr=[1,2,5]
 const res=arr.reverse()
 console.log(res)
