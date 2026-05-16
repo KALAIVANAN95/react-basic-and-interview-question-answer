@@ -199,7 +199,13 @@ Event is a mechanism in JavaScript that handles asynchronous operations by conti
 
 27. Shallow vs Deep Copy
     Shallow copy shares references, whereas deep copy creates independent copies.
+28.Why use objects?
+Objects are used to store related data in key-value pairs.
+29.Array of Objects?
+Multiple objects inside array.
 
+30.Destructuring?
+Destructuring is used to extract values from arrays or objects easily.
 
 const arr=[1,2,5]
 const res=arr.reverse()
