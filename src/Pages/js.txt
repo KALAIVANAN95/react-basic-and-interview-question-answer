@@ -207,6 +207,9 @@ Multiple objects inside array.
 30.Destructuring?
 Destructuring is used to extract values from arrays or objects easily.
 
+31.What is spread operator?
+Spread operator is used to copy or expand arrays and objects.
+
 const arr=[1,2,5]
 const res=arr.reverse()
 console.log(res)
