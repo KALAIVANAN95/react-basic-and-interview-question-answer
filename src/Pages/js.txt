@@ -212,6 +212,7 @@ Spread operator is used to copy, merge, or expand arrays and objects.
 
 32.Ternary - Short if else
 Ternary operator is a short form of if else condition.
+33.Rest operator is used to collect multiple values into a single array.
 
 const arr=[1,2,5]
 const res=arr.reverse()
