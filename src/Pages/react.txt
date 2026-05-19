@@ -132,7 +132,6 @@ Flux is an application architecture that Facebook uses intrnally for the
 building the client side web app.
 
 27.Redux.?
-Redux is a state management library used for global application state. OR
 Redux is an open-source JS library used to manage application state.
 React uses redux for building the user interface.
 
@@ -157,7 +156,12 @@ It is complex as compared to the stateless component.
 It is also known as a class component.
 
 30.Hooks?
-React Hooks are simple JavaScript functions that we can use to isolate the reusable part from a functional component.
+Hooks = Special React functions.
+Functional component la:
+i)State use panna
+iiLifecycle handle panna
+iii0DOM access panna
+
 Hooks can be stateful and can manage side-effects.
 useState:
 useState hook is used to create and update state in functional components.
