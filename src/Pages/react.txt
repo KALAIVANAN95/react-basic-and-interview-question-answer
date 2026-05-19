@@ -125,7 +125,7 @@ In most enterprise applications I use controlled components because validation a
 JSX,Component,one-way data binding,virtual dom,simplicity & performance.
 
 25.What is the biggest limitaition of React?
-React is just library, it is not a complete framework.
+React is just a library, not a complete framework. It mainly focuses on the view (UI layer), so it does not provide built-in solutions for things like routing, state management, or API handling.
 
 26.Flux.?
 Flux is an application architecture that Facebook uses intrnally for the 
