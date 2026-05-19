@@ -155,13 +155,14 @@ It is complex as compared to the stateless component.
 It is also known as a class component.
 
 30.Hooks?
-Hooks = Special React functions.
-Functional component la:
-i)State use panna
-iiLifecycle handle panna
-iii0DOM access panna
-
+Hooks are special functions in React that allow functional components to use React features.
+In functional components, Hooks are used to:
+i) manage state
+ii) handle lifecycle-like behavior
+iii) access the DOM
 Hooks can be stateful and can manage side-effects.
+
+
 useState:
 useState hook is used to create and update state in functional components.
 useEffect: 
