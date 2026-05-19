@@ -133,7 +133,6 @@ building the client side web app.
 
 27.Redux.?
 Redux is an open-source JS library used to manage application state.
-React uses redux for building the user interface.
 
 28.Differentiate between States and Props.
 Props:
