@@ -164,11 +164,13 @@ Hooks can also manage stateful logic and side effects.
 
 useState:
 useState hook is used to create and update state in functional components.
+
 useEffect: 
 To manage side-effects like API calls, subscriptions, timers, mutations, and more.
 componentDidmount and componentdidupdate - it will be done this work
 useContext: 
-To return the current value for a context.
+Used to access global data without prop drilling.
+
 useReducer:
 useReducer manages complex state logic using reducers and dispatched actions. OR
 A useState alternative to help with complex state management.
@@ -176,7 +178,7 @@ useCallback:
 i)useCallback memoizes functions to prevent unnecessary recreations. OR
 i)It returns a memorized version of a callback to help a child component not re-render unnecessarily.
 useMemo:
-i)useMemo memoizes expensive calculations to improve performance. OR
+i)Used to optimize performance by memoizing expensive calculations. OR
 i)It returns a memoized value that helps in performance optimizations.
 ii)The useMemo Hook only runs when one of its dependencies update.
 useRef:
@@ -313,5 +315,12 @@ This improves maintainability and reduces duplicate code.
     CRUD operations include Create, Read, Update and Delete functionalities.
 61. Project Architecture
     Project architecture improves code scalability, maintainability and organization.
+
+Less Common / Advanced Hooks
+useLayoutEffect → runs before browser paint (DOM measurement)
+useImperativeHandle → customize ref behavior
+useId → generate unique IDs (React 18+)
+useTransition → handle UI transitions smoothly
+useDeferredValue → defer updating non-urgent UI updates
 
 
