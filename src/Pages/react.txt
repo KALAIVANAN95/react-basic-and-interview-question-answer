@@ -166,8 +166,12 @@ useState:
 useState hook is used to create and update state in functional components.
 
 useEffect: 
-To manage side-effects like API calls, subscriptions, timers, mutations, and more.
-componentDidmount and componentdidupdate - it will be done this work
+useEffect is a React Hook used to manage side effects in functional components, such as API calls, subscriptions, timers, and DOM updates.
+It works like:
+componentDidMount (runs after first render)
+componentDidUpdate (runs after updates)
+and can also act like componentWillUnmount (cleanup)
+
 useContext: 
 Used to access global data without prop drilling.
 
