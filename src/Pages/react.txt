@@ -190,8 +190,9 @@ useRef is used to access DOM elements and persist mutable values. OR
 It returns a ref object with a .current property. The ref object is mutable. It is mainly used to access a child component imperatively.
 useLayoutEffect: 
 It fires at the end of all DOM mutations. It's best to use useEffect as much as possible over this one as the useLayoutEffect fires synchronously.
+
 useDebugValue:
-Helps to display a label in React DevTools for custom hooks.
+useDebugValue is used inside custom hooks to display a label in React DevTools, making it easier to debug and inspect hook values
 
 31.What is the diff btwn Clone and Create element in React?
 i)cloneElement is primarily used to clone an element
