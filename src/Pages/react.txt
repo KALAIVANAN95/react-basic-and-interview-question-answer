@@ -254,6 +254,10 @@ I also split reusable components properly for maintainability.
 38.What is lifting state up?
 Lifting state up means moving shared state to the nearest common parent. OR
 When multiple child components need shared data, state is moved to the common parent component and passed using props.
+Example Scenario
+Search input component
+Search results component
+Both need the same search text, so the state is maintained in the parent component and shared via props.
 
 39.Functional component lifecycle equivalent?
 useEffect is used to handle lifecycle behavior.
