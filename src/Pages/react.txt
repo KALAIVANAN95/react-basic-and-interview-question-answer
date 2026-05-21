@@ -249,7 +249,7 @@ I use:
 I also split reusable components properly for maintainability.
   
 37.React.memo
-   React.memo prevents unnecessary component re-renders.
+   React.memo is used for performance optimization. It prevents functional components from re-rendering when props have not changed.
 
 38.What is lifting state up?
 Lifting state up means moving shared state to the nearest common parent. OR
