@@ -165,6 +165,14 @@ const sum = numbers.reduce((total, num) => total + num, 0);
     DOM manipulation allows JavaScript to dynamically update HTML and CSS.
 25. Callback Function
     A callback function is passed as an argument to another function and executed later.
+2 types callback iruku:
+1. Synchronous Callback
+Immediate execute. arr.map(item=>item*2)
+2.Asynchronous Callback
+setTimeout(()=>{
+ console.log("Done")
+},2000)
+
 25.Event Loop:
  JavaScript uses the event loop to handle asynchronous operations.
 or
