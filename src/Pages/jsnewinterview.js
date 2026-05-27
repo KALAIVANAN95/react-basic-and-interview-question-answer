@@ -46,7 +46,18 @@ const res=[...new Set(arr)]
     }
     return result
 }
+============================================================================================================
+function reverseArray(arr){
+let result=[]
+for(let i=arr.length-1;i>=0;i--){
+result.push(arr[i])
+}
+return result
+}
 
+console.log(
+reverseArray([1,2,3,4,5])
+)
 console.log(removeDupilcate([1,2,2,3,4,5,5]))
 console.log(res)
 
