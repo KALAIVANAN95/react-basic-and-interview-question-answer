@@ -224,6 +224,27 @@ Ternary operator is a short form of if else condition.
 
 const arr=[1,2,5]
 const res=arr.reverse()
+
+
+
+function reverseStr(str){
+    return str.split("").reverse().join("")
+}
+console.log(reverseStr("Hello"))
+
+function poliendrome(str1){
+    return str1===str1.split("").reverse().join("")
+    
+}
+const res=poliendrome("madam")
+console.log(res)
+
+const array=[100,1,2,3,2,3,4,4,5]
+const res1=[...new Set(array)]
+const res2=Math.max(...array)
+console.log(res1)
+console.log(res2)
+
 console.log(res)
 
 const maxn=Math.max(...res)
