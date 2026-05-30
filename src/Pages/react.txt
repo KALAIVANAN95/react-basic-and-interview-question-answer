@@ -33,8 +33,11 @@ or
 State of component is an object that holds some data
 This data influences the output of a component
 
-7.What is a higher-order component in React.?
-i)A higher-order component is a function that takes in a component and returns a new component.
+7.What is a higher-order component in React.? -- VERY IMP
+i)A higher-order component is a function that takes in a component and returns a new component with additional functionality.
+It is used to reuse component logic.
+Example:
+withAuth(Component)
 Using code,const newComponent = higherFunction(WrappedComponent);
 
 8.What are the three phases of a component life cycle in React.?
@@ -76,7 +79,7 @@ iv)View:Displays data provided by the store
 The components that do not re-render when the value of props and 
 state has been updated with the same values.
 
-16.What are higher-order components used for?
+16.What are higher-order components used for? VERY - IMP
 i)Manipulation of props
 ii)State manipulation and abstraction
 iii)Render high jacking 
