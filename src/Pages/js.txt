@@ -1,3 +1,50 @@
+What is DNS?
+i)DNS stands for Domain Name System.
+ii)It converts a domain name like google.com into an IP address so that the browser can connect to the server.
+
+What is CDN?
+i)CDN stands for Content Delivery Network.
+ii)It delivers static files like images, CSS, and JavaScript from the nearest server location to improve website performance.
+
+Difference between HTTP and HTTPS?
+i)HTTP transfers data in plain text. => HTTP  -> Not Secure
+ii)HTTPS transfers data in encrypted format using SSL/TLS, making it more secure. => HTTPS -> Secure 
+
+Common Status Codes?
+200 - Success
+201 - Created
+400 - Bad Request
+401 - Unauthorized
+403 - Forbidden
+404 - Not Found
+500 - Internal Server Error
+
+SSR vs CSR?
+CSR (React)
+Client Side Rendering means the browser renders the page using JavaScript.
+
+SSR (Next.js)
+Server Side Rendering means the server renders the page and sends ready-made HTML to the browser.
+
+Why SSR?
+i)Better SEO
+ii)Faster initial page load
+
+DNS -> Domain to IP conversion
+CDN -> Serve files from nearest server
+
+HTTP -> Not secure
+HTTPS -> Secure
+
+200 -> Success
+404 -> Not Found
+500 -> Server Error
+
+CSR -> Browser renders page
+SSR -> Server renders page
+
+React -> Reusable UI components
+Next.js -> React + SSR + SEO + Routing
 ===================================================================================================================================================================
 1.What is JavaScript.?
 i)High level, interpreted language
