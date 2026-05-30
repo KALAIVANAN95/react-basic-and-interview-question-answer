@@ -176,6 +176,10 @@ Hooks can also manage stateful logic and side effects.
 useState:
 useState hook is used to create and update state in functional components.
 
+Diff useState and useRef
+useState changes cause re-renders.
+useRef changes do not cause re-renders.
+
 useEffect: 
 useEffect is a React Hook used to manage side effects in functional components, such as API calls, subscriptions, timers, and DOM updates.
 It works like:
