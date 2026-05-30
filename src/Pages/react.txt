@@ -12,6 +12,9 @@ i)A virtual DOM is a simple JavaScript object that is the exact copy of the corr
 or
 A virtual DOM is a light weight js object.
 
+Reconciliation is the process React uses to compare the old Virtual DOM with the new Virtual DOM.
+After comparison, React identifies the changed elements and updates only those specific parts in the Real DOM instead of updating the entire DOM.
+
 4.Why use React?
 i)Easy creation of dynamic web apps
 ii)Reusable Components
