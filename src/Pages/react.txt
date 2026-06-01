@@ -342,6 +342,9 @@ This improves maintainability and reduces duplicate code.
     CRUD operations include Create, Read, Update and Delete functionalities.
 61. Project Architecture
     Project architecture improves code scalability, maintainability and organization.
+62.Redux Toolkit-la createAsyncThunk --- IMP
+createAsyncThunk is used to handle asynchronous operations such as API calls in Redux Toolkit.
+It automatically generates action types and helps manage API request states.
 
 Less Common / Advanced Hooks
 useLayoutEffect → runs before browser paint (DOM measurement)
