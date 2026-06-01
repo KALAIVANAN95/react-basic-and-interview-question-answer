@@ -26,6 +26,19 @@ or
 Reconciliation is the process where React compares the previous Virtual DOM with the new Virtual DOM.
 After finding the differences (Diffing), React updates only the changed parts in the Real DOM.
 
+State change or props change
+↓
+New Virtual DOM created
+↓
+Old Virtual DOM vs New Virtual DOM
+↓
+Diffing
+↓
+Reconciliation
+↓
+Update only changed nodes in Real DOM
+
+
 4.Why use React?
 i)Easy creation of dynamic web apps
 ii)Reusable Components
