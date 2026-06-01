@@ -369,6 +369,9 @@ This improves maintainability and reduces duplicate code.
 62.Redux Toolkit-la createAsyncThunk --- IMP
 createAsyncThunk is used to handle asynchronous operations such as API calls in Redux Toolkit.
 It automatically generates action types and helps manage API request states.
+Pending   -> Loading
+Fulfilled -> Success
+Rejected  -> Error
 
 Less Common / Advanced Hooks
 useLayoutEffect → runs before browser paint (DOM measurement)
