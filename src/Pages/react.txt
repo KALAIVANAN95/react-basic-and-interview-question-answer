@@ -356,8 +356,23 @@ This improves maintainability and reduces duplicate code.
     Redux Toolkit simplifies Redux development with less boilerplate code.
 56. RTK Query
     RTK Query handles API fetching and caching efficiently.
+Features:
+✅ API Fetching
+✅ Caching
+✅ Loading State
+✅ Error Handling
+✅ Auto Refetching
+✅ Redux Store integration
+
 57. React Query
     React Query manages server state, caching and API synchronization.
+✅ API Fetching
+✅ Caching
+✅ Background Refetching
+✅ Pagination
+✅ Optimistic Updates
+✅ Server State Management
+
 58. Protected Routes
     Protected routes restrict unauthorized users from accessing secured pages.
 59. Authentication Flow
