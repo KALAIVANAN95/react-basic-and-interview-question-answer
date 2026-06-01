@@ -22,6 +22,9 @@ Virtual DOM is a virtual representation of the Real DOM. React uses it to identi
 
 Reconciliation is the process React uses to compare the old Virtual DOM with the new Virtual DOM.
 After comparison, React identifies the changed elements and updates only those specific parts in the Real DOM instead of updating the entire DOM.
+or
+Reconciliation is the process where React compares the previous Virtual DOM with the new Virtual DOM.
+After finding the differences (Diffing), React updates only the changed parts in the Real DOM.
 
 4.Why use React?
 i)Easy creation of dynamic web apps
