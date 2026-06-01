@@ -12,6 +12,11 @@ i)A virtual DOM is a simple JavaScript object that is the exact copy of the corr
 or
 A virtual DOM is a light weight js object.
 
+Virtual DOM is a lightweight copy of the Real DOM.
+When state or props change, React first updates the Virtual DOM.
+Then React compares the new Virtual DOM with the previous Virtual DOM using a process called Diffing.
+Finally, React updates only the changed parts in the Real DOM instead of re-rendering the entire DOM.
+
 Reconciliation is the process React uses to compare the old Virtual DOM with the new Virtual DOM.
 After comparison, React identifies the changed elements and updates only those specific parts in the Real DOM instead of updating the entire DOM.
 
