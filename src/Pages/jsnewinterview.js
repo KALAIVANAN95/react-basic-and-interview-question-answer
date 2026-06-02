@@ -142,4 +142,14 @@ for(let i = strs.length - 1; i >= 0; i--){
 console.log(ress);
 
 console.log(strs === ress);
+
 ============================================================================================================
+    const arr=[1,2,2,3,4,4,5,88,99,99,88]
+const result = [...new Set(arr)]
+console.log(result)
+
+const results=arr.filter((value,index)=>{
+    return arr.indexOf(value)===index
+})
+console.log(results)
+
