@@ -220,6 +220,13 @@ useContext is used to access global/shared state in React components without pro
 useReducer:
 useReducer is an alternative to useState for handling complex state management using reducers and actions.
 
+useMemo
+→ Returns Memoized Value
+useCallback
+→ Returns Memoized Function
+React.memo
+→ Memoizes Component
+
 useCallback: 
 i)useCallback memoizes functions to prevent unnecessary recreations. OR
 i)It returns a memorized version of a callback to help a child component not re-render unnecessarily.
