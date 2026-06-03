@@ -228,8 +228,10 @@ React.memo
 → Memoizes Component
 
 useCallback: 
-i)useCallback memoizes functions to prevent unnecessary recreations. OR
-i)It returns a memorized version of a callback to help a child component not re-render unnecessarily.
+useCallback is a React Hook that returns a memoized function.
+It is used to prevent unnecessary recreation of functions on every render.
+It returns a memorized version of a callback to help a child component not re-render unnecessarily.
+
 useMemo:
 useMemo is a React Hook that returns a memoized value.
 It is used for performance optimization by avoiding expensive recalculations on every render.
