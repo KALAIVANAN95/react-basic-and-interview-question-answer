@@ -218,8 +218,14 @@ useContext:
 useContext is used to access global/shared state in React components without prop drilling.
 
 useReducer:
-useReducer is an alternative to useState for handling complex state management using reducers and actions.
+useReducer is a React Hook used for managing complex state logic.
+It is an alternative to useState and is useful when state transitions depend on multiple actions or when the state contains multiple related values.
 
+It works using:
+1. State
+2. Action
+3. Reducer Function
+4. Dispatch
 useMemo
 → Returns Memoized Value
 useCallback
