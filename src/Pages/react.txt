@@ -226,7 +226,7 @@ i)It returns a memorized version of a callback to help a child component not re-
 useMemo:
 useMemo is a React Hook that returns a memoized value.
 It is used for performance optimization by avoiding expensive recalculations on every render.
-The memoized value is recomputed only when one of its dependencies changes.
+ii)The useMemo Hook only runs when one of its dependencies update.
 
 useRef:
 useRef is used to access DOM elements and persist mutable values. OR
