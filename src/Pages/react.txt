@@ -32,6 +32,8 @@ Update only changed nodes in Real DOM
 
 
 4.Why use React?
+React is used because it provides reusable components, better performance through Virtual DOM, one-way data flow, and makes it easier to build scalable and maintainable web applications.
+
 i)Easy creation of dynamic web apps
 ii)Reusable Components
 iii)Easy Debugging 
