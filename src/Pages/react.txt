@@ -44,12 +44,8 @@ v)Unidirectional data flow
 No. Browsers cannot read JSX directly. Babel converts JSX into regular JavaScript.
 
 6.What are States in React.?
-i)States are used to easily create dynamic and interactive components
-or
-The state is a build-in React object that is used to contain data or information about the component
-or
-State of component is an object that holds some data
-This data influences the output of a component
+i)The state is a built-in React object that is used to contain data or information about the component.
+ii)When the state changes, React automatically re-renders the component and updates the UI.
 
 7.What is a higher-order component in React.? -- VERY IMP
 i)A higher-order component is a function that takes in a component and returns a new component with additional functionality.
