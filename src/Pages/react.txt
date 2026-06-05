@@ -64,7 +64,7 @@ The React component lifecycle consists of three main phases:
    - The component is removed from the DOM.
 
 9.What are events in React.?
-i)An envent is an action that can be triggered by a user or any system event like pressing a key, a mouse click,etc
+i)AAn event is an action triggered by the user or browser, such as a mouse click, key press, form submission, or page load.
 
 10.What is arrow function?
 Arrow function is a short way of writing a function in React
