@@ -64,10 +64,10 @@ The React component lifecycle consists of three main phases:
    - The component is removed from the DOM.
 
 9.What are events in React.?
-i)AAn event is an action triggered by the user or browser, such as a mouse click, key press, form submission, or page load.
+i)An event is an action triggered by the user or browser, such as a mouse click, key press, form submission, or page load.
 
 10.What is arrow function?
-Arrow function is a short way of writing a function in React
+An Arrow Function is a shorter way of writing functions in JavaScript and it inherits 'this' from its surrounding scope.
 
 11.What are components in React?
 Components are independent and reusable bits of code. or Components are reusable UI blocks in React
