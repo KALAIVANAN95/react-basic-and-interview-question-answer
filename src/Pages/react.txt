@@ -41,10 +41,7 @@ iv)Enhanced Performance
 v)Unidirectional data flow
 
 5.Can browsers read a JSX file.?
-i)No, browsers cannot read JSX files directly.
-ii)It can only read the objects provided by JavaScript.
-or
-No,Browsers can only read JavaScript objects but JSX in not a regular JavaScript object
+No. Browsers cannot read JSX directly. Babel converts JSX into regular JavaScript.
 
 6.What are States in React.?
 i)States are used to easily create dynamic and interactive components
