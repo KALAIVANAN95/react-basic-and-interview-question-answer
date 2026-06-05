@@ -55,9 +55,13 @@ withAuth(Component)
 Using code,const newComponent = higherFunction(WrappedComponent);
 
 8.What are the three phases of a component life cycle in React.?
-Mounting (adding nodes to the DOM)
-Updating (altering existing nodes in the DOM)
-Unmounting (removing nodes from the DOM)
+The React component lifecycle consists of three main phases:
+1. Mounting
+   - The component is created and inserted into the DOM.
+2. Updating
+   - The component is re-rendered when props or state change.
+3. Unmounting
+   - The component is removed from the DOM.
 
 9.What are events in React.?
 i)An envent is an action that can be triggered by a user or any system event like pressing a key, a mouse click,etc
