@@ -54,14 +54,6 @@ Example:
 withAuth(Component)
 Using code,const newComponent = higherFunction(WrappedComponent);
 
-DNS stands for Domain Name System- VERY IMP
-It converts a domain name like google.com
-into an IP address so the browser can connect to the server.
-
-CDN stands for Content Delivery Network.
-It serves static files like CSS, JS, and images
-from the nearest server location to improve performance.
-
 8.What are the three phases of a component life cycle in React.?
 Mounting (adding nodes to the DOM)
 Updating (altering existing nodes in the DOM)
