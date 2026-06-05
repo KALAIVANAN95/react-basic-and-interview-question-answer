@@ -6,22 +6,14 @@ ii)It is used for building user interfaces and also used to build single page ap
 2.JSX?
 i)JSX is a shorthand for JavaScript XML
 ii)This makes the HTML file really easy to understand
+JSX stands for JavaScript XML.
+It allows us to write HTML-like syntax inside JavaScript, making React code easier to read and maintain.
 
 3.What is the meaning of Virtual DOM.?
-i)A virtual DOM is a simple JavaScript object that is the exact copy of the corresponding real DOM.
-or
-A virtual DOM is a light weight js object.
-
 Virtual DOM is a lightweight copy of the Real DOM.
-When state or props change, React first updates the Virtual DOM.
-Then React compares the new Virtual DOM with the previous Virtual DOM using a process called Diffing.
-Finally, React updates only the changed parts in the Real DOM instead of re-rendering the entire DOM.
+When state or props change, React creates a new Virtual DOM, compares it with the previous Virtual DOM, and updates only the changed parts in the Real DOM.
+This improves performance and makes React applications faster.
 
-or
-Virtual DOM is a virtual representation of the Real DOM. React uses it to identify the minimum changes required and update only those changes in the Real DOM, improving performance.
-
-Reconciliation is the process React uses to compare the old Virtual DOM with the new Virtual DOM.
-After comparison, React identifies the changed elements and updates only those specific parts in the Real DOM instead of updating the entire DOM.
 or
 Reconciliation is the process where React compares the previous Virtual DOM with the new Virtual DOM.
 After finding the differences (Diffing), React updates only the changed parts in the Real DOM.
