@@ -70,9 +70,7 @@ i)An event is an action triggered by the user or browser, such as a mouse click,
 An Arrow Function is a shorter way of writing functions in JavaScript and it inherits 'this' from its surrounding scope.
 
 11.What are components in React?
-Components are independent and reusable bits of code. or Components are reusable UI blocks in React
-A single app usally consists of multiple components.
-
+Components are independent and reusable UI building blocks in React. A single app usally consists of multiple components.
 
 12.What is the use of render() in React?
 The purpose of the function is to display the specified HTML code inside the specified HTML element.
