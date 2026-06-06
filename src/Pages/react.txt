@@ -72,9 +72,9 @@ An Arrow Function is a shorter way of writing functions in JavaScript and it inh
 11.What are components in React?
 Components are independent and reusable UI building blocks in React. A single app usally consists of multiple components.
 
-12.What is the use of render() in React?
-The purpose of the function is to display the specified HTML code inside the specified HTML element.
-It is compulsory for each component to have a render() function
+12.What is the use of render() in React? and Do functional components have render()?
+The render() method is used in React class components to return the UI (JSX) that should be displayed on the screen.
+No. Functional components do not use the render() method. They directly return JSX.
 
 13.What are refs in React?
 Refs are a function provided by React to access the DOM element and
