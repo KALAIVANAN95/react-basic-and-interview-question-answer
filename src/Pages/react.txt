@@ -98,11 +98,16 @@ The components that do not re-render when the value of props and
 state has been updated with the same values.
 
 16.What are higher-order components used for? VERY - IMP
-i)Manipulation of props
-ii)State manipulation and abstraction
-iii)Render high jacking 
-iv)Code reusing
-v)Bootstrap abstraction
+Higher-Order Components (HOCs) are mainly used for:
+1. Code Reusability
+2. Authentication
+3. Authorization
+4. Logging
+5. Data Fetching
+6. Performance Optimization
+7. Sharing Common Component Logic
+HOCs are used for code reusability, authentication, authorization, logging, data fetching, and performance optimization.
+
 
 17.What are keys in React?
 i)Keys are used to directly check if an item has been
