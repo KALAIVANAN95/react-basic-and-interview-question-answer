@@ -110,8 +110,8 @@ HOCs are used for code reusability, authentication, authorization, logging, data
 
 
 17.What are keys in React?
-i)Keys are used to directly check if an item has been
-added or removed from list
+i)Keys are used to directly check if an item has been added or removed from list
+Keys are unique identifiers that help React identify which items have changed, been added, or removed from a list.
 
 18.Props?
 Props stands for propertues 
