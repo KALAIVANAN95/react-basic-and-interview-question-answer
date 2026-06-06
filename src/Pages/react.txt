@@ -16,7 +16,7 @@ This improves performance and makes React applications faster.
 
 or
 Reconciliation is the process where React compares the previous Virtual DOM with the new Virtual DOM.
-After finding the differences (Diffing), React updates only the changed parts in the Real DOM.
+After finding the differences (Diffing), React updates only the changed parts in the Real .
 
 State change or props change
 ↓
@@ -137,12 +137,13 @@ In modern React, Functional Components are preferred because they support Hooks 
 Real DOM:
 The real DOM updates slower.
 The real DOM can directly update HTML.
-There is a lot of memory wastage in The real DOM.
+Every update may cause re-rendering of DOM elements.
 
 Virtual DOM:
 The virtual DOM updates faster
 The virtual DOM cannot directly update HTML.
-There is no memory wastage in the virtual DOM.
+React compares the old and new Virtual DOM using a diffing algorithm.
+Only the changed elements are updated in the Real DOM.
 
 23.Controlled vs uncontrolled components?
 Controlled components are managed using React state.
