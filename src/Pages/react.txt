@@ -129,7 +129,9 @@ Types of React Components Discussed
 Functional Components.
 Class Components.
 Pure Components.
-Higher-Order Components.
+
+Higher-Order Components. not needed
+In modern React, Functional Components are preferred because they support Hooks and require less boilerplate code.
 
 22.What is the difference between Real DOM and Virtual DOM?
 Real DOM:
