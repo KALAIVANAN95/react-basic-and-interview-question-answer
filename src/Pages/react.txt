@@ -91,6 +91,7 @@ i)Action: An object that describes the call
 ii)Reducer:The state change storage unit
 iii)Store:The state and object tree storage
 iv)View:Displays data provided by the store
+Redux consists of Actions, Reducers, Store, and Dispatch, which work together to manage application state.
 
 15.What are pure components in React?
 The components that do not re-render when the value of props and 
