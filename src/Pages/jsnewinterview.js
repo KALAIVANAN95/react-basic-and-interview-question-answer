@@ -153,3 +153,23 @@ const results=arr.filter((value,index)=>{
 })
 console.log(results)
 
+===============================================================================================================
+    function checkPolindrome(str){
+    let reverse= str.split("").reverse().join("")
+    if(str===reverse){
+        console.log("Polindrome", reverse)
+    }else{
+        console.log("Not Polindrome", reverse)
+    }
+}
+checkPolindrome("madam")
+
+function checkPo(str){
+    let reverses=""
+    for(let i=str.length-1;i>=0;i--){
+        reverses+=str[i]
+    }
+    return str === reverses;
+
+}
+console.log(checkPo("madam"))
