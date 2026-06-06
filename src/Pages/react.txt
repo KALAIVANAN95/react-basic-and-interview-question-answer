@@ -79,6 +79,7 @@ No. Functional components do not use the render() method. They directly return J
 13.What are refs in React?
 Refs are a function provided by React to access the DOM element and
 the React element that you might have created on your own
+Refs are used to access DOM elements directly and store mutable values without causing component re-renders.
 Main uses:
 i)To initiate imperative animations
 ii)To join third party DOM libraries
