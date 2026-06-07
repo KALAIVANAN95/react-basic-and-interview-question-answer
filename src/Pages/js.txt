@@ -232,7 +232,7 @@ Event is a mechanism in JavaScript that handles asynchronous operations by conti
     Prototype enables inheritance in JavaScript objects.
 
 28. Debounce
-    Debouncing delays execution until user stops triggering events.
+Debouncing delays function execution until the user stops triggering the event
 
 29. Throttle
 Throttling means a function can run only once in a specific time period, even if it is triggered many times.
