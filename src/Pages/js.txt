@@ -226,7 +226,11 @@ or
 Event is a mechanism in JavaScript that handles asynchronous operations by continuously checking the call stack and callback queue, and moving tasks to the stack when it becomes empty.
 
 26. Scope
-    Scope determines where variables can be accessed in JavaScript.
+ Scope determines where variables can be accessed in JavaScript.
+Types of Scope
+Global Scope → Accessible anywhere.
+Function Scope → Accessible only inside the function.
+Block Scope → Accessible only inside {} (with let and const).
 
 27. Prototype
     Prototype enables inheritance in JavaScript objects.
