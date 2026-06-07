@@ -26,7 +26,7 @@ ii)<External Link <a href="url">
 6.How do you write style in html?
 i)Inline <div style="color:red;">hai</div>
 ii)Internal <style> selector {} </style>
-iii)External <link href="style.css"/>
+iii)External <link rel="stylesheet" href="style.css"/>
 
 7.What is semantic elements.?
 To use meaningfull elements in html..
