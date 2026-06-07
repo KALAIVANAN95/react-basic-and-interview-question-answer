@@ -235,7 +235,7 @@ Event is a mechanism in JavaScript that handles asynchronous operations by conti
     Debouncing delays execution until user stops triggering events.
 
 29. Throttle
-    Throttling limits function execution at fixed intervals.
+Throttling means a function can run only once in a specific time period, even if it is triggered many times.
 
 30. Local Storage
     localStorage stores data permanently in the browser.
