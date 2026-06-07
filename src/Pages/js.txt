@@ -209,7 +209,7 @@ const sum = numbers.reduce((total, num) => total + num, 0);
 23. Loops
    Loops are used to execute code repeatedly based on conditions.
 24.DOM Manipulation
-    DOM manipulation allows JavaScript to dynamically update HTML and CSS.
+   DOM Manipulation allows JavaScript to dynamically update HTML, CSS, and page content
 25. Callback Function
     A callback function is passed as an argument to another function and executed later.
 2 types callback iruku:
