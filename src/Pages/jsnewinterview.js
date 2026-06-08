@@ -1,4 +1,30 @@
+function reverseString(str){
+    let res=""
+    for(let i=str.length-1;i>=0;i--){
+        res=res+str[i]
+    }
+    console.log(res)
+    return res
+}
+reverseString("ialak")
+============================================================
+function polinderomes(str){
+    let poli=""
+    for(let i=str.length-1;i>=0;i--){
+        poli=poli+str[i]
+    }
+    console.log(poli)
+    if(poli===str){
+        console.log("Poli")
+    }else{
+        console.log("Not poli")
+    }
+    return poli
+}
+polinderomes("madam")
 
+Easy method
+==================================
 function addTwoSum(arr,target){
     for(let i=0;i<arr.length;i++){
         for(let j=i+1;j<arr.length;j++){
