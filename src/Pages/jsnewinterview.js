@@ -6,25 +6,39 @@ function reverseString(str){
     console.log(res)
     return res
 }
-reverseString("ialak")
-============================================================
-function polinderomes(str){
-    let poli=""
-    for(let i=str.length-1;i>=0;i--){
-        poli=poli+str[i]
-    }
-    console.log(poli)
-    if(poli===str){
-        console.log("Poli")
-    }else{
-        console.log("Not poli")
-    }
-    return poli
-}
-polinderomes("madam")
+reverseString("KALAI")
 
-Easy method
-==================================
+function polindrome(str){
+    let rev=""
+    for(let i=str.length-1;i>=0;i--){
+        rev=rev+str[i]
+    }
+    if(rev===str){
+        console.log(rev, "This is polindrome")
+    }else{
+        console.log(rev,"This is not polindrome")
+    }
+}
+polindrome("kalai")
+
+function vowels(str){
+    let count=""
+    for(let i=0;i<str.length;i++){
+        if(str[i]==="a"|| str[i]==="i"|| str[i]==="o"){
+            count++
+        }
+    }
+    console.log(count)
+    return count
+}
+
+
+function counterLength(str){
+    console.log(str)
+    return str.length
+}
+console.log(counterLength("kalai"))
+    ==================================
 function addTwoSum(arr,target){
     for(let i=0;i<arr.length;i++){
         for(let j=i+1;j<arr.length;j++){
