@@ -204,6 +204,13 @@ It works like:
 componentDidMount (runs after first render)
 componentDidUpdate (runs after updates)
 and can also act like componentWillUnmount (cleanup)
+Render
+   ↓
+Update DOM
+   ↓
+Paint Screen
+   ↓
+useEffect
 
 useContext: 
 useContext is used to access global/shared state in React components without prop drilling.
