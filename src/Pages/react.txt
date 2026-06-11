@@ -402,6 +402,8 @@ Pending   -> Loading
 Fulfilled -> Success
 Rejected  -> Error
 
+Prop drilling happens when props are passed through multiple levels of components unnecessarily.
+
 Less Common / Advanced Hooks
 useLayoutEffect → runs before browser paint (DOM measurement)
 useImperativeHandle → customize ref behavior
