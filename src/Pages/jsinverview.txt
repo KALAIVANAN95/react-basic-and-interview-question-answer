@@ -1,3 +1,7 @@
+1.DNS STANDS FOR DOMIN NAME SYSTEM - When a user enters amazon.com, the browser first checks cache, performs DNS lookup if needed, gets the server IP address, sends an HTTP/HTTPS request to the server, receives HTML/CSS/JavaScript, and renders the page.
+
+
+
 // Javascript array interview question and answers
 =============================================================
 
