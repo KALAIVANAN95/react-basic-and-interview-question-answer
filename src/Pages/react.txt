@@ -413,4 +413,9 @@ useId → generate unique IDs (React 18+)
 useTransition → handle UI transitions smoothly
 useDeferredValue → defer updating non-urgent UI updates
 
+I worked on a CRM and workforce management application used for managing employees, projects, goals, and customer-related activities.
+The application included modules such as Timesheet, Goals (OKR), Project Management, Customer Management, Time Off, Nudges, Reports, Dashboards, and Calendar.
+My role was as a Frontend Developer, where I developed reusable React components, integrated REST APIs, managed application state using Redux Toolkit, and implemented responsive user interfaces. I also worked closely with backend developers to integrate APIs and deliver new features.
+The application was built using React.js, JavaScript, Redux Toolkit, HTML, CSS, and REST APIs.
+
 
