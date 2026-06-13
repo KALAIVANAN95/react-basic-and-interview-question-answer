@@ -214,6 +214,8 @@ useEffect
 
 useContext: 
 useContext is used to access global/shared state in React components without prop drilling.
+Where did you use Context API?
+For user information, theme settings, language settings, and authentication data shared across multiple components.
 
 useReducer:
 useReducer is a React Hook used for managing complex state logic.
