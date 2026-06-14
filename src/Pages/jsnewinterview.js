@@ -1,37 +1,70 @@
-function reverseString(str){
-    let res=""
+function reverseStr(str){
+    let revRes=""
+    
     for(let i=str.length-1;i>=0;i--){
-        res=res+str[i]
+        revRes=revRes+str[i]
     }
-    console.log(res)
-    return res
+    console.log(revRes)
+    return revRes
 }
-reverseString("KALAI")
+reverseStr("Kalai")
 
 function polindrome(str){
-    let rev=""
-    for(let i=str.length-1;i>=0;i--){
-        rev=rev+str[i]
+    let poliRes=""
+    for(let j=str.length-1;j>=0;j--){
+        poliRes=poliRes+str[j]
     }
-    if(rev===str){
-        console.log(rev, "This is polindrome")
+    if(poliRes===str){
+        console.log("This is polindrome", str)
     }else{
-        console.log(rev,"This is not polindrome")
+        console.log("This is not polindrome",str)
     }
+    return poliRes
 }
 polindrome("kalai")
 
-function vowels(str){
-    let count=""
+function vowlesCount(str){
+    let count=0
     for(let i=0;i<str.length;i++){
-        if(str[i]==="a"|| str[i]==="i"|| str[i]==="o"){
+        if(str[i]==="a" || str[i]==="i"){
             count++
         }
     }
     console.log(count)
     return count
 }
+vowlesCount("kalaivanan")
 
+function largestNumber(arr){
+    let bigNo=arr[0]
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]>bigNo){
+            bigNo=arr[i]
+        }
+    }
+    console.log(bigNo)
+    return bigNo
+}
+largestNumber([20,30,40,60])
+
+function duplicateRemove(str){
+    let newValue=[...new Set(str)]
+    console.log(newValue)
+    return newValue
+}
+duplicateRemove([1,2,3,4,5,4,2,4,5,6])
+
+function countValue(str,target){
+    let counts=0
+    for(let i=0;i<str.length;i++){
+        if(str[i]===target){
+            counts++
+        }
+    }
+    console.log(counts)
+    return counts
+}
+countValue("kalai","a")
 
 function counterLength(str){
     console.log(str)
