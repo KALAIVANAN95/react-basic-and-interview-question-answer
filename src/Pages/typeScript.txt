@@ -1,1 +1,1 @@
-
+Since TypeScript is a superset of JavaScript, I am comfortable understanding the syntax and can work with existing TypeScript codebases.
