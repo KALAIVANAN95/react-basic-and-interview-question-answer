@@ -405,6 +405,17 @@ Fulfilled -> Success
 Rejected  -> Error
 
 Prop drilling happens when props are passed through multiple levels of components unnecessarily.
+What is Redux Store?
+Redux Store is a centralized place that stores application state.
+
+What is useSelector?
+useSelector is used to read data from the Redux store.
+
+What is dispatch?
+dispatch is used to send actions for fetching or updating data.
+
+What is Reducer?
+Reducer is a function that updates the store based on the action received.
 
 Less Common / Advanced Hooks
 useLayoutEffect → runs before browser paint (DOM measurement)
