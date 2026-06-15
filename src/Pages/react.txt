@@ -440,6 +440,12 @@ My strength is building reusable components, solving frontend issues, and adapti
 Biggest Challenge
 One challenge was handling large data tables and dynamic filters. I improved performance using pagination, optimized state management, and reusable components.
 
+Do you have TypeScript experience?
+I have primarily worked with JavaScript in my projects. I have basic understanding of TypeScript concepts and I am currently learning it, but my production experience has been mainly with JavaScript and React.js.
+
+
+
+
 Less Common / Advanced Hooks
 useLayoutEffect → runs before browser paint (DOM measurement)
 useImperativeHandle → customize ref behavior
