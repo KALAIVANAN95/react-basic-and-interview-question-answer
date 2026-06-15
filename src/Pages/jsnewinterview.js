@@ -47,6 +47,21 @@ function largestNumber(arr){
 }
 largestNumber([20,30,40,60])
 
+function secondLarget(arr){
+    let first=arr[0]
+    let secon=arr[0]
+    for(let i=1;i<arr.length;i++){
+        if(arr[i]>first){
+            secon=first
+            first=arr[i]
+        }else if(arr[i]>secon&&arr[i] !==first){
+            secon=arr[i]
+        }
+    }
+    return secon
+}
+console.log(secondLarget([1,2,2,3,34,34,24,]))
+
 function duplicateRemove(str){
     let newValue=[...new Set(str)]
     console.log(newValue)
