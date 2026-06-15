@@ -426,6 +426,20 @@ Redux provides centralized state management and helps avoid prop drilling in lar
 How did you manage filters?
 Filters were managed using controlled components, local/Redux state, and dynamic API payloads based on user selections
 
+
+
+Why are you looking for a change?
+I am looking for new challenges, career growth, and an opportunity to contribute my technical skills in a larger environment.
+
+Why should we hire you?
+I have 4 years of hands-on React.js experience, real-world SaaS product experience, and I can contribute quickly with minimal ramp-up time.
+
+Biggest Strength
+My strength is building reusable components, solving frontend issues, and adapting quickly to new requirements.
+
+Biggest Challenge
+One challenge was handling large data tables and dynamic filters. I improved performance using pagination, optimized state management, and reusable components.
+
 Less Common / Advanced Hooks
 useLayoutEffect → runs before browser paint (DOM measurement)
 useImperativeHandle → customize ref behavior
