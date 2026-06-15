@@ -1,1 +1,17 @@
 Since TypeScript is a superset of JavaScript, I am comfortable understanding the syntax and can work with existing TypeScript codebases.
+
+1.What is TypeScript?
+TypeScript is a superset of JavaScript that adds static typing to JavaScript.
+
+2.Why use TypeScript?
+TypeScript helps catch errors during development and improves code maintainability.
+
+3.Interface
+Interface is used to define the structure of an object.
+
+4.Type 
+Type is used to define custom data types and object structures.
+
+5.Difference between Type and Interface?
+Both are used to define object structures. Interface is mainly used for object definitions, 
+while Type can define objects, unions, and other custom types.
