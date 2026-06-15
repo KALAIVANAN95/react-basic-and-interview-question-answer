@@ -15,3 +15,6 @@ Type is used to define custom data types and object structures.
 5.Difference between Type and Interface?
 Both are used to define object structures. Interface is mainly used for object definitions, 
 while Type can define objects, unions, and other custom types.
+
+6.Union Type.
+Union Type allows a variable to have multiple types.
