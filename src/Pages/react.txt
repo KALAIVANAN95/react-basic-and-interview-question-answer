@@ -417,6 +417,15 @@ dispatch is used to send actions for fetching or updating data.
 What is Reducer?
 Reducer is a function that updates the store based on the action received.
 
+createSlice
+createSlice creates and manages a specific part of the Redux store.
+
+Why use Redux?
+Redux provides centralized state management and helps avoid prop drilling in large applications
+
+How did you manage filters?
+Filters were managed using controlled components, local/Redux state, and dynamic API payloads based on user selections
+
 Less Common / Advanced Hooks
 useLayoutEffect → runs before browser paint (DOM measurement)
 useImperativeHandle → customize ref behavior
