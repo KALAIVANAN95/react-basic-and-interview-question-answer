@@ -10,7 +10,7 @@ TypeScript helps catch errors during development and improves code maintainabili
 Interface is used to define the structure of an object.
 
 4.Type 
-Type is used to define custom data types and object structures.
+Type is used to define custom data types and object structures. and Interface is used to define and reuse the structure of an object.
 
 5.Difference between Type and Interface?
 Both are used to define object structures. Interface is mainly used for object definitions, 
