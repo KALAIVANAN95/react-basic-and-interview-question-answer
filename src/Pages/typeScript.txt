@@ -22,8 +22,5 @@ Union Type allows a variable to have multiple types.
 7.Optional Property?
 The ? symbol indicates an optional property.
 
-8.Union Type?
-Union type allows a variable to have multiple types.
-
-9.Any?
+8.Any?
 Any type can store any value and disables type checking.
