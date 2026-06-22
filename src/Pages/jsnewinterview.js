@@ -1,39 +1,36 @@
-function reverseStr(str){
-    let revRes=""
-    
+function reverseString(str){
+    let rev="";
     for(let i=str.length-1;i>=0;i--){
-        revRes=revRes+str[i]
+        rev=rev+str[i]
     }
-    console.log(revRes)
-    return revRes
+    return rev
 }
-reverseStr("Kalai")
+console.log(reverseString("KALAI"))
 
-function polindrome(str){
-    let poliRes=""
-    for(let j=str.length-1;j>=0;j--){
-        poliRes=poliRes+str[j]
+function palindrome(str){
+    let pali="";
+    for(let i=str.length-1;i>=0;i--){
+        pali=pali+str[i]
     }
-    if(poliRes===str){
-        console.log("This is polindrome", str)
+    if(pali===str){
+        console.log("This is palindrome", pali)
     }else{
-        console.log("This is not polindrome",str)
+        console.log("This is not palindrome", pali)
     }
-    return poliRes
+    return pali
 }
-polindrome("kalai")
+palindrome("racecars")
 
-function vowlesCount(str){
-    let count=0
+function vowelsCheck(str){
+    let count=0;
     for(let i=0;i<str.length;i++){
-        if(str[i]==="a" || str[i]==="i"){
+        if(str[i]==="i" || str[i]==="a"){
             count++
         }
     }
-    console.log(count)
     return count
 }
-vowlesCount("kalaivanan")
+console.log(vowelsCheck("kalai"))
 
 function largestNumber(arr){
     let bigNo=arr[0]
@@ -42,10 +39,72 @@ function largestNumber(arr){
             bigNo=arr[i]
         }
     }
-    console.log(bigNo)
     return bigNo
 }
-largestNumber([20,30,40,60])
+console.log(largestNumber([10,30,0,203]))
+
+function smallestNumber(arr){
+    let smallNo=arr[0]
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]<smallNo){
+            smallNo=arr[i];
+        }
+    }
+    return smallNo
+}
+console.log(smallestNumber([1,2,3,4,5,6,9,0]))
+
+function sumArray(arr){
+    let sum=0;
+    for(let i=0;i<arr.length;i++){
+        sum=sum+arr[i]
+    }
+    return sum
+}
+console.log(sumArray([1,2,4,5,1]))
+
+function countEven(arr){
+    let count=0;
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]%2===0){
+            count++
+        }
+    }
+    return count
+}
+console.log(countEven([1,2,3,4,5,6]))
+
+function duplicateChar(str){
+    for(let i=0;i<str.length;i++){
+        for(let j=i+1;j<str.length;j++){
+            if(str[i] === str[j]){
+                console.log(str[i]);
+            }
+        }
+    }
+}
+
+duplicateChar("kalai");
+
+function countWords(str){
+    let words = str.split(" ");
+    return words.length;
+}
+
+console.log(countWords("I am Kalai"));
+
+
+function maxChar(str){
+    let count = {};
+
+    for(let char of str){
+        count[char] = (count[char] || 0) + 1;
+    }
+
+    console.log(count);
+}
+
+maxChar("kalai");
 
 function secondLarget(arr){
     let first=arr[0]
