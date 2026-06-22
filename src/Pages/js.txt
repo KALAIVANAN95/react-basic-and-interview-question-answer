@@ -273,6 +273,8 @@ Spread operator is used to copy, merge, or expand arrays and objects.
 Ternary operator is a short form of if else condition.
 33.Rest operator is used to collect multiple values into a single array.
 
+34.Event Delegation is attaching a single event listener to a parent element to handle events from multiple child elements using event bubbling.
+
 const arr=[1,2,5]
 const res=arr.reverse()
 
