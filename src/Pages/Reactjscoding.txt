@@ -1,1 +1,19 @@
+import React,{useState} from "react"
+function App(){
+const [active,setActive]=useState("home")
+return(
+<>
+<button onClick={()=>setActive("home")}>Home</button>
+<button onClick={()=>setActive("profile")}>Profile</button>
+<button onClick={()=>setActive("setting")}>Setting</button>
 
+<hr/>
+{active==="home" &&<h3>This is home</h3>}
+{active==="profile" &&<h3>This is profile</h3>}
+{active==="setting" &&<h3>This is setting</h3>}
+</>
+
+)
+}
+
+export default App;
