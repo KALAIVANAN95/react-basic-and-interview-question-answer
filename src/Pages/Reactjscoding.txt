@@ -1,3 +1,53 @@
+import React, { useState } from "react";
+
+const user = [
+  {
+    id: 1,
+    name: "Vel",
+    message: [{ id: 1, messages: "Hai" }]
+  },
+  {
+    id: 2,
+    name: "Raj",
+    message: [
+      { id: 1, messages: "Hello" },
+      { id: 2, messages: "Raj message" }
+    ]
+  }
+];
+
+function App() {
+  const [list, setList] = useState();
+
+  return (
+    <>
+      <h3>Sample list</h3>
+      <div>
+        {user.map((value) => (
+          <h2 key={value.id} onClick={() => setList(value)}>
+            {value.name}
+          </h2>
+        ))}
+      </div>
+
+      {list && (
+        <div>
+          <h3>Name: {list.name}</h3>
+          <h3>Id: {list.id}</h3>
+          {list.message?.map((msg) => (
+            <div key={msg.id}>message: {msg.messages}</div>
+          ))}
+        </div>
+      )}
+    </>
+  );
+}
+
+export default App;
+
+==========================================================================================================================================
+
+
 import React,{useState} from "react"
 function App(){
 const [active,setActive]=useState("home")
@@ -17,4 +67,4 @@ return(
 }
 
 export default App;
-============================================================================================================================================
+==========================================================================================================================================
