@@ -68,3 +68,25 @@ return(
 
 export default App;
 ==========================================================================================================================================
+
+import React,{useState} from "react"
+
+function App(){
+  const [opens,setOpens]=useState(false)
+  return(
+    <div>
+      <button onClick={()=>setOpens(true)}> Modal Open</button>
+      {
+        opens&&(
+          <div style={{boxShadow:"2px 3px 5px #999", padding:"10px", margin:"10px"}}>
+              <h3>This is modal</h3>
+
+              <button onClick={()=>setOpens(false)}>Close</button>
+          </div>
+        )
+      }
+    </div>
+  )
+}
+
+export default App
