@@ -90,3 +90,34 @@ function App(){
 }
 
 export default App
+==========================================================================================================================================
+import React,{useState} from "react"
+
+const data=[
+  {id:1,title:"This is first title", content:"This is para 1"},
+  {id:2,title:"This is second title", content:"This is para 2"},
+]
+function App(){
+
+  const [openId,setOpenId]=useState(null)
+
+  return(
+    <>
+      <div>
+        {
+          data.map((value)=>{
+            return(
+              <div key={value.id} style={{backgroundColor:"red"}}>
+                <h3 onClick={()=>setOpenId(value.id)} style={{color:"white"}}>{value.title} </h3>
+                {openId===value.id && <h3>{value.content}</h3>}
+              </div>
+            )
+          })
+        }
+      </div>
+
+    </>
+  )
+}
+
+export default App;
