@@ -1,5 +1,5 @@
+1.Message Display
 import React, { useState } from "react";
-
 const user = [
   {
     id: 1,
@@ -46,8 +46,7 @@ function App() {
 export default App;
 
 ==========================================================================================================================================
-
-
+2.Tabs
 import React,{useState} from "react"
 function App(){
 const [active,setActive]=useState("home")
@@ -68,7 +67,7 @@ return(
 
 export default App;
 ==========================================================================================================================================
-
+3.Modal Open
 import React,{useState} from "react"
 
 function App(){
@@ -91,11 +90,13 @@ function App(){
 
 export default App
 ==========================================================================================================================================
+4.accordion
+
 import React,{useState} from "react"
 
 const data=[
-  {id:1,title:"This is first title", content:"This is para 1"},
-  {id:2,title:"This is second title", content:"This is para 2"},
+  {id:1,title:"Js", content:"This is para 1"},
+  {id:2,title:"React ", content:"This is para 2"},
 ]
 function App(){
 
