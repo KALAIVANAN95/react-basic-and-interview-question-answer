@@ -54,6 +54,21 @@ function smallestNumber(arr){
 }
 console.log(smallestNumber([1,2,3,4,5,6,9,0]))
 
+function secondBigNo(arr){
+    let first=arr[0]
+    let sec=arr[0]
+    for(let i=1;i<arr.length;i++){
+        if(arr[i]>first){
+            sec=first;
+            first=arr[i]
+        }else if(arr[i]>sec&& arr[i] !==first){
+            sec=arr[i]
+        }
+    }
+    return sec
+}
+console.log(secondBigNo([100,300,2000,500,260]))
+
 function sumArray(arr){
     let sum=0;
     for(let i=0;i<arr.length;i++){
