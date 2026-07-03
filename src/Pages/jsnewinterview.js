@@ -84,6 +84,17 @@ function sumArray(arr){
 }
 console.log(sumArray([1,2,4,5,1]))
 
+function evenNo(arr){
+    let count=[];
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]%2===0){
+            count.push(arr[i])
+        }
+    }
+    return count
+}
+console.log(evenNo([2,4,5,6,7]))
+
 function countEven(arr){
     let count=0;
     for(let i=0;i<arr.length;i++){
