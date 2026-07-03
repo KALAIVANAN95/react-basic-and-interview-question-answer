@@ -1,38 +1,32 @@
-import React,{useState,useEffect} from "react";
-
+import React,{useState,useEffect} from "react"
 const API_URL = "https://jsonplaceholder.typicode.com/posts"
 
-function useFetch(){
-  const [data,setData]=useState([])
+function useFetch(url){
+    const [data,setData]=useState([])
 
-  const getCall =async()=>{
-    try{
-      const result = await fetch(API_URL)
-      if(result.ok){
-        const updatedResult=await result.json()
-        setData(updatedResult)
+    const getCall=async()=>{
+      try{
+        const result = await fetch(url)
+        if(result.ok){
+          const updatedResult=await result.json()
+          setData(updatedResult)
+        }
+      }catch(error){
+        console.log(error)
       }
-    }catch(error){
-      console.log(error.message)
     }
-  }
-  return {data,getCall}
+    return{data,getCall}
 }
-
 function App(){
-  const {data,getCall}=useFetch()
-  
+  const {data,getCall}=useFetch(API_URL)
   useEffect(()=>{
     getCall()
   },[])
-
   return(
     <div>
     {
       data.map((value)=>{
-        return(
-          <p key={value.id}>{value.title}</p>
-        )
+        return <h1 key={value.id}>{value.title}</h1>
       })
     }
     </div>
@@ -40,7 +34,6 @@ function App(){
 }
 
 export default App
-
 ==========================================================================================================================================
 
 1.Message Display
