@@ -1,1 +1,120 @@
-
+1.
+function removeDuplicate(arr){
+    let result=[]
+    for(let i=0;i<arr.length;i++){
+        if(!result.includes(arr[i])){
+            result.push(arr[i])
+        }
+    }
+    return result
+}
+console.log(removeDuplicate([1,1,2,2,3,3]))
+==========================================================================================================================================
+2.
+function removeDuplicate(str){
+    let result=""
+    for(let i=0;i<str.length;i++){
+        if(!result.includes(str[i])){
+            result=result+str[i]
+        }
+    }
+    return result
+}
+console.log(removeDuplicate("kalai"))
+==========================================================================================================================================
+3.
+function reverseString(str){
+    let result=""
+    for(let i=str.length-1;i>=0;i--){
+        result=result+str[i]
+    }
+    return result
+}
+console.log(reverseString("kalai"))
+==========================================================================================================================================
+4.
+function palindrome(str){
+    let result=""
+    for(let i=str.length-1;i>=0;i--){
+        result=result+str[i]
+    }
+    if(result===str){
+        console.log("Palindrome", result)
+    }else{
+        console.log("Not palindrome" , result)
+    }
+    return result ===str
+}
+console.log(palindrome("madam"))
+==========================================================================================================================================
+5.
+function sortAnArray(arr){
+    let result = arr.sort((a,b)=>b-a)
+    return result
+}
+console.log(sortAnArray([1,2,3,4,5]))
+==========================================================================================================================================
+6.
+function vowels(str){
+    let count=0;
+    for(let i=0;i<str.length;i++){
+        if(str[i]==="a" || str[i]==="e" || str[i]==="i"){
+            count++
+        }
+    }
+    return count
+}
+console.log(vowels('kalai'))
+==========================================================================================================================================
+7.
+function bigNo(arr){
+    let res=[0]
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]>res){
+            res=arr[i]
+        }
+    }
+    return res
+}
+console.log(bigNo([100,202,200]))
+==========================================================================================================================================
+8.
+function secondBigNo(arr){
+    let first=[0]
+    let second=[0]
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]>first){
+            second=first
+            first=arr[i]
+        }else if(arr[i]>second && arr[i]!==first){
+            second=arr[i]
+        }
+    }
+    return second
+}
+console.log(secondBigNo([100,200,204,300]))
+==========================================================================================================================================
+9.
+function sumArr(arr){
+    let sum=0;
+    for(let i=0;i<arr.length;i++){
+        sum=sum+arr[i]
+    }
+    return sum
+}
+console.log(sumArr([1,2,3,4,5]))
+==========================================================================================================================================
+10.
+function evenNo(arr){
+    let res=[]
+    let count=0
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]%2===0){
+            res.push(arr[i])
+            count++
+        }
+    }
+    return { values: res, count: count }
+}
+console.log(evenNo([1,2,3,4,5,6,7,8]))
+==========================================================================================================================================
