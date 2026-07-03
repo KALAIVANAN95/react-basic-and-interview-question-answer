@@ -1,3 +1,9 @@
+function sortAnArray(arr){
+    let result = arr.sort((a,b)=>b-a)
+    return result
+}
+console.log(sortAnArray([1,2,3,4,6]))
+
 function reverseString(str){
     let rev="";
     for(let i=str.length-1;i>=0;i--){
