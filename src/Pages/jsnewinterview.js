@@ -4,6 +4,17 @@ function sortAnArray(arr){
 }
 console.log(sortAnArray([1,2,3,4,6]))
 
+function removeDuplicate(arr){
+    let result=[]
+    for(let i=0;i<arr.length;i++){
+        if(!result.includes(arr[i])){
+            result.push(arr[i])
+        }
+    }
+    return result
+}
+console.log(removeDuplicate([1,1,1,2,2,2,3,3,3,3,4,4,5]))
+
 function reverseString(str){
     let rev="";
     for(let i=str.length-1;i>=0;i--){
