@@ -223,6 +223,8 @@ setTimeout(()=>{
 25.Event Loop:
  JavaScript uses the event loop to handle asynchronous operations.
 or
+The event loop is a mechanism in Node.js/JavaScript that continuously checks the call stack and callback queue. When the call stack is empty, it moves pending callbacks to the call stack for execution.
+or 
 Event is a mechanism in JavaScript that handles asynchronous operations by continuously checking the call stack and callback queue, and moving tasks to the stack when it becomes empty.
 
 26. Scope
