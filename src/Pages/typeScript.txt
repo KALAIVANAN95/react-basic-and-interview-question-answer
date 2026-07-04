@@ -24,3 +24,13 @@ The ? symbol indicates an optional property.
 
 8.Any?
 Any type can store any value and disables type checking.
+
+
+If interviewer asks meaning:
+
+interface → defines an object structure
+type → defines object types, union types, and custom types
+generics → reusable code for different data types
+Partial → makes all properties optional
+Pick → selects only needed properties
+Omit → removes selected properties
