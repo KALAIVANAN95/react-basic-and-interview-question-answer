@@ -1,39 +1,49 @@
-import React,{useState,useEffect} from "react"
-const API_URL = "https://jsonplaceholder.typicode.com/posts"
+import React, { useState, useEffect, useCallback } from "react";
 
-function useFetch(url){
-    const [data,setData]=useState([])
+function useFetch(url) {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
-    const getCall=async()=>{
-      try{
-        const result = await fetch(url)
-        if(result.ok){
-          const updatedResult=await result.json()
-          setData(updatedResult)
-        }
-      }catch(error){
-        console.log(error)
-      }
+  const getCall = useCallback(async () => {
+    setLoading(true);
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error("Network response was not ok");
+      const result = await response.json();
+      setData(result);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
     }
-    return{data,getCall}
+  }, [url]);
+
+  return { data, loading, error, getCall };
 }
-function App(){
-  const {data,getCall}=useFetch(API_URL)
-  useEffect(()=>{
-    getCall()
-  },[])
-  return(
+
+const API_URL = `https://jsonplaceholder.typicode.com/posts`;
+
+function App() {
+  const { data, loading, error, getCall } = useFetch(API_URL);
+
+  useEffect(() => {
+    getCall();
+  }, [getCall]);
+
+  if (loading) return <h2>Loading...</h2>;
+  if (error) return <h2>Error: {error}</h2>;
+
+  return (
     <div>
-    {
-      data.map((value)=>{
-        return <h1 key={value.id}>{value.title}</h1>
-      })
-    }
+      {data?.map((value) => (
+        <h1 key={value.id}>{value.title}</h1>
+      ))}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
 ==========================================================================================================================================
 
 1.Message Display
@@ -157,6 +167,53 @@ function App(){
 
     </>
   )
+}
+
+export default App;
+==========================================================================================================================================
+Search functionality
+import React, { useState, useEffect } from "react";
+
+const API_URL = `https://jsonplaceholder.typicode.com/users`;
+
+function App() {
+  const [data, setData] = useState([]);
+  const [search, setSearch] = useState("");
+
+  const getCall = async () => {
+    try {
+      const result = await fetch(API_URL);
+      if (result.ok) {
+        const updatedResult = await result.json();
+        setData(updatedResult);
+      }
+    } catch (err) {
+      console.log(err.message);
+    }
+  };
+
+  useEffect(() => {
+    getCall();
+  }, []);
+
+  const filteredData = data.filter((value) =>
+    value.name.toLowerCase().includes(search.toLowerCase())
+  );
+
+  return (
+    <div>
+      <input
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        placeholder="Search users..."
+      />
+      {filteredData.map((value) => (
+        <div key={value.id}>
+          <p>{value.name}</p>
+        </div>
+      ))}
+    </div>
+  );
 }
 
 export default App;
