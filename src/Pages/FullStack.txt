@@ -1,1 +1,306 @@
+1.React Page with 3000 records is slow. Explain hou you would optimizze rendering and search.
+I would use pagination to avoid rendering all record at once.
+For Search I would use debounce and useMemo to reduce unnecessary filtering and re renders
+==========================================================================================================================================
+2.Design REST APIs for Employee CRUD with pagination.
+POST   /employee
+GET    /employee?page=1&limit=10
+GET    /employee/:id
+PUT    /employee/:id
+DELETE /employee/:id
 
+{
+data:[
+{id:1,name:"kalai"},
+{id:2,name:"Raj"}
+]
+page:1,
+limit:10,
+total:100,
+totalPages:10
+}
+const express = require("express");
+const app = express();
+
+app.use(express.json());
+
+const employees = [
+  { id: 1, name: "Kalai", role: "Admin" },
+  { id: 2, name: "Raj", role: "Manager" },
+  { id: 3, name: "Vel", role: "User" }
+];
+
+// CREATE
+app.post("/employees", (req, res) => {
+  const newEmployee = {
+    id: employees.length + 1,
+    ...req.body
+  };
+
+  employees.push(newEmployee);
+
+  res.status(201).json({
+    message: "Employee Created",
+    data: newEmployee
+  });
+});
+
+// GET ALL + PAGINATION
+app.get("/employees", (req, res) => {
+  const page = Number(req.query.page) || 1;
+  const limit = Number(req.query.limit) || 2;
+
+  const start = (page - 1) * limit;
+  const data = employees.slice(start, start + limit);
+
+  res.json({
+    data,
+    page,
+    limit,
+    total: employees.length,
+    totalPages: Math.ceil(employees.length / limit)
+  });
+});
+
+// GET BY ID
+app.get("/employees/:id", (req, res) => {
+  const id = Number(req.params.id);
+
+  const employee = employees.find(emp => emp.id === id);
+
+  if (!employee) {
+    return res.status(404).json({ message: "Employee Not Found" });
+  }
+
+  res.json(employee);
+});
+
+// UPDATE
+app.put("/employees/:id", (req, res) => {
+  const id = Number(req.params.id);
+
+  const index = employees.findIndex(emp => emp.id === id);
+
+  if (index === -1) {
+    return res.status(404).json({ message: "Employee Not Found" });
+  }
+
+  employees[index] = {
+    ...employees[index],
+    ...req.body
+  };
+
+  res.json({
+    message: "Employee Updated",
+    data: employees[index]
+  });
+});
+
+// DELETE
+app.delete("/employees/:id", (req, res) => {
+  const id = Number(req.params.id);
+
+  const index = employees.findIndex(emp => emp.id === id);
+
+  if (index === -1) {
+    return res.status(404).json({ message: "Employee Not Found" });
+  }
+
+  employees.splice(index, 1);
+
+  res.json({
+    message: "Employee Deleted"
+  });
+});
+
+app.listen(3000, () => {
+  console.log("Server running on port 3000");
+});
+==========================================================================================================================================
+
+3.Design a relational database for Students, Courses and Enrollments.
+students => id name email
+courses  => id title description
+enrollments => id student_id course_id enrollment_at
+
+CREATE TABLE students(
+id INT PRIMARY KEY,
+name VARCHAR(100),
+email VARCHAR(100) UNIQUE
+)
+CREATE TABLE courses(
+id INT PRIMARY KEY,
+title VARCHAR(100),
+description TEXT
+)
+CREATE TABLE enrollments(
+id INT PRIMARY KEY,
+student_id INT,
+course_id INT,
+FOREIGN KEY (student_id) REFERENCES students(id),
+FOREIGN KEY (course_id) REFERENCES courses(id)
+)
+I created three tables students,courses and enrollments, the enrollment table connects students and courses using Foreign key.
+This supports many-to-many relationship
+
+==========================================================================================================================================
+4.Explain Authentication and Authorization and JWT Authentication flow
+Authentication checks who the user is and Authorization checks what the user to allow the access.
+After successfull login Backend generate JWT token.
+Frontend store token in local storeage
+For Proted API i send the token in to Authorization header and BE middleware check the token and allow the access
+Login → JWT token → Authorization header → Middleware verify → Allow or deny
+==========================================================================================================================================
+5.Write SQL to find the second highest salary and department-wise employee count.
+SELECT MAX(salary) AS second_highest_salary
+FROM employee
+WHERE salary < (SELECT MAX(salary) FROM employee)
+For the second highest salary , first i find the first highest salary then i find maximum salary below that value.
+
+SELECT department_id, COUNT(*) AS employee_count
+FROM employee
+GROUP BY department_id
+For department-wise count I group employees by department and count the employees in each group
+==========================================================================================================================================
+6.Explain when MongoDB is preferred over PostgreSQL/MySQL.
+I would use MongoDB when data stucture is flexible and changes frequently such as JSON-like or nested data.
+I would use PostgreSQL/MySQL when data relation between tables, requires joins and stict data considancy.
+==========================================================================================================================================
+7.After deployment every API returns 401. Describe your troubleshooting process.
+I would check whether the token is being send correctly.
+Because 401 usally means the token is missing,expiry,invalid token and can not be verified.
+I will check the authorization header, JWT configuration, token expiry and middleware logs
+==========================================================================================================================================
+8.API response takes 8 seconds although SQL executes in 500 ms. List possible causes.
+I would check backend and nework tab, not only the SQL query.
+Because the sql query is already fast, so the delay may happen getting database data
+I would check the heavey backend data processing and middle wares and network dealy, large data processing
+==========================================================================================================================================
+9.A React component repeatedly calls an API. Explain likely reasons and fixes.
+I would check the useEffect dependency array.
+Because if API updates a state and that same state is in dependencies, it creates a re-render loop.
+I would use the correct dependencies. If the API should run only once on page load, I would use an empty dependency array.
+const [users, setUsers] = useState([]);
+
+useEffect(() => {
+  getUsers();
+}, []);
+
+const getUsers = async () => {
+  const response = await fetch("/api/users");
+  const data = await response.json();
+  setUsers(data);
+};
+==========================================================================================================================================
+10.Email search on an 8-million-row Users table is slow. Recommend optimizations.
+I would add an index on the email column.
+Because an index helps the database find matching emails quickly instead of checking every row.
+==========================================================================================================================================
+11.Prioritize fixing duplicated code, hardcoded URLs, missing error handling and console logs.
+First, I would fix missing error handling.
+Because if an error happens, users may not get proper feedback and developers cannot easily find the issue.
+Then I would remove hardcoded URLs, reduce duplicate code, and remove unnecessary console logs before production.
+==========================================================================================================================================
+11.Write a function to return the first non-repeating character in a string.
+First i count the each character using an object
+then i loop the string again and return the first character whose count is one
+if no unique character exits, i return null
+function firstNonRepeatingChar(str) {
+  let count = {};
+
+  for (let i = 0; i < str.length; i++) {
+    if (count[str[i]]) {
+      count[str[i]] = count[str[i]] + 1;
+    } else {
+      count[str[i]] = 1;
+    }
+  }
+
+  for (let i = 0; i < str.length; i++) {
+    if (count[str[i]] === 1) {
+      return str[i];
+    }
+  }
+
+  return null;
+}
+
+console.log(firstNonRepeatingChar("aabbcdde"));
+==========================================================================================================================================
+13.Create a React search filter using useState.
+import { useState } from "react";
+
+function UserSearch() {
+  const [search, setSearch] = useState("");
+
+  const users = ["Kalai", "Arun", "Bala", "Kumar"];
+
+  const filteredUsers = users.filter((user) =>
+    user.toLowerCase().includes(search.toLowerCase())
+  );
+
+  return (
+    <div>
+      <input
+        type="text"
+        placeholder="Search user"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
+
+      {filteredUsers.map((user) => (
+        <p key={user}>{user}</p>
+      ))}
+    </div>
+  );
+}
+export default UserSearch;
+I would use useState to store what the user types in the search input.
+Because when the user types, the component should update and show only matching users.
+I would use filter() and includes() to find matching names.
+
+I will use useState to store the search input, then filter the users array using includes() and display matching users.
+
+==========================================================================================================================================
+14.Write Express middleware to validate the Authorization header.
+function validateAuthorization(req, res, next) {
+  const authHeader = req.headers.authorization;
+
+  if (!authHeader) {
+    return res.status(401).json({
+      message: "Authorization header is required",
+    });
+  }
+
+  if (!authHeader.startsWith("Bearer ")) {
+    return res.status(401).json({
+      message: "Invalid authorization format",
+    });
+  }
+
+  next();
+}
+
+module.exports = validateAuthorization;
+This middleware checks whether the Authorization header exists and starts with Bearer . If it is invalid, it returns a 401 response. Otherwise, it calls next() to continue to the next middleware or route handler
+
+==========================================================================================================================================
+15.Count occurrences of each status from an array of objects.
+const tasks = [
+  { id: 1, status: "open" },
+  { id: 2, status: "closed" },
+  { id: 3, status: "open" },
+  { id: 4, status: "pending" },
+];
+
+const statusCount = tasks.reduce((acc, item) => {
+  acc[item.status] = (acc[item.status] || 0) + 1;
+  return acc;
+}, {});
+
+console.log(statusCount);
+// { open: 2, closed: 1, pending: 1 } yen style lamath mutiyuma>?
+
+==========================================================================================================================================
+==========================================================================================================================================
+==========================================================================================================================================
