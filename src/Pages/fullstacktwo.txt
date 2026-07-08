@@ -1,1 +1,290 @@
 
+Full Stack Developer Technical Assessment (Product Development)
+Candidate Reference: Ajay Jonna
+Duration: 90–120 Minutes
+Answer all questions in the space provided.
+Candidate Details
+Name: __________________________
+Interviewer: _____________________
+Date: ___________________________
+Q1. React Architecture
+Explain the component architecture of a large-scale React application that you have built. How did you manage state, routing, and reusability?
+Answer:
+In a large React application, I organize the project by features or modules, such as authentication, dashboard, projects, and users. Each module contains its own components, 
+pages, services, and Redux files. I use reusable common components such as buttons, tables, modals, and form fields. 
+I manage global state using Redux Toolkit and local UI state using useState. For routing, I use React Router with protected routes based on authentication and user roles.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q2. Redux State Management
+Describe a complex Redux implementation you have worked on. When would you prefer Context API over Redux?
+Answer:
+I used Redux Toolkit to manage global data such as user details, authentication, projects, and API data.
+I used slices, reducers, and async thunks for API calls and loading or error states.
+ I use Context API for simple global data, such as theme or language. I prefer Redux when the application has complex shared state and many components need the same data.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q3. TypeScript
+How does TypeScript improve maintainability in large products? Explain interfaces, types, generics, and utility types with examples.
+Answer:
+TypeScript is a superset of JavaScript that adds static typing.
+It improves maintainability by catching type errors during development and making code easier to understand. I
+use interfaces and types to define the structure of objects, such as user data and API responses. Generics help create reusable functions or components that work with different data types. 
+Utility types like Partial, Pick, and Omit help reuse and modify existing types without repeating code.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q4. Node.js Event Loop
+Explain the Node.js event loop and how asynchronous programming works internally.
+Answer:
+The event loop is a mechanism in Node.js that continuously checks the call stack and callback queue. 
+When the call stack is empty, it moves pending callbacks to the call stack for execution.
+
+Event is a mechanism in JavaScript that handles asynchronous operations by continuously checking the call stack and callback queue, and moving tasks to the stack when it becomes empty.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q5. Express.js Design
+How would you design a scalable Express.js application for a SaaS product with multiple modules and APIs?
+Answer:
+I would organize the Express application by modules such as authentication, users, and projects. 
+Each module would have separate routes, controllers, services, and models. 
+I would use middleware for authentication, validation, and error handling to keep the application maintainable and scalable.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q6. REST vs GraphQL
+Compare REST APIs and GraphQL. In which scenarios would you recommend each approach?
+Answer:
+REST uses multiple endpoints for different resources, such as /users or /projects. 
+GraphQL uses a single endpoint and allows the frontend to request only the fields it needs. 
+I would use REST for simple APIs and GraphQL when the frontend needs flexible data from multiple resources.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q7. GraphQL Implementation
+Describe how you have implemented GraphQL APIs, resolvers, and schema design in your previous projects.
+Answer:I have not worked with GraphQL hands-on. My main experience is with REST APIs.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q8. Database Design
+Design a database schema for a CRM system supporting customers, leads, tasks, and user roles.
+Answer:I would create separate tables for customers, leads, tasks, users, and roles.
+I would use foreign keys to connect leads and tasks with customers and users.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q9. PostgreSQL Optimization
+What techniques do you use for PostgreSQL query optimization and performance tuning?
+Answer:I have used Neon PostgreSQL. I would add indexes to frequently searched columns, return only required data, use pagination, and check slow queries using EXPLAIN ANALYZE.
+
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q10. MongoDB vs PostgreSQL
+When would you choose MongoDB over PostgreSQL in a product environment?
+Answer:I would use MongoDB when the data structure is flexible and changes frequently. I would use PostgreSQL when the application has strong table relationships, joins, and transactions.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q11. RBAC Architecture
+Explain how you implemented Role-Based Access Control (RBAC) and how you would secure it.
+Answer:I would define roles such as Admin, Manager, and User.
+ After login, I would store the user role in the JWT token and use backend middleware to check permissions before allowing access to protected APIs.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q12. Authentication & Authorization
+Design JWT-based authentication and authorization for an enterprise application.
+Answer:Authentication verifies the user’s identity during login. Authorization checks what the user is allowed to access. I would use JWT tokens for protected APIs and verify the user role in backend middleware.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q13. System Design
+Design a scalable task-management platform supporting 1 million users. Explain frontend, backend, database, caching, and deployment architecture.
+Answer:I would use React for the frontend, Node.js and Express for APIs, and a database such as PostgreSQL or MongoDB. I would use pagination, caching, and load balancing to handle more users. 
+I would deploy the application using cloud services and monitor performance.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q14. Microservices
+What are the advantages and challenges of microservices compared to monolithic architecture?
+Answer:Microservices split an application into small independent services. 
+They help teams scale and deploy modules separately, but they are harder to manage because of communication, deployment, and monitoring complexity.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q15. API Security
+What are common API security vulnerabilities, and how would you mitigate them?
+Answer:I would use JWT authentication, validate user input, use HTTPS, and restrict access based on user roles. I would also avoid exposing sensitive data and use rate limiting to prevent abuse.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q16. Performance Optimization
+What methods do you use to optimize frontend and backend performance?
+Answer:For frontend performance, I use pagination, lazy loading, useMemo, and React.memo. For backend performance, I use database indexes, caching, pagination, and optimize slow API queries.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q17. Testing Strategy
+Explain your approach to unit testing, integration testing, and end-to-end testing.
+Answer:I would write unit tests for individual functions and components, integration tests for API and database flow, and end-to-end tests for complete user flows such as login and form submission.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q18. CI/CD
+Describe a CI/CD pipeline that you would implement for a product engineering organization.
+Answer:I would use a CI/CD pipeline to automatically run tests, build the application, and deploy it after code is merged. This helps reduce manual errors and makes releases faster and safer.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q19. Cloud Deployment
+How would you deploy and scale a full-stack application on AWS, Azure, or GCP?
+Answer:I would deploy the frontend and backend on cloud services, use environment variables for configuration, and use a managed database. I would enable scaling, logging, and monitoring to handle traffic and production issues.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q20. Blockchain Integration
+Explain your experience with Fireblocks, Ethers.js, and blockchain transaction management.
+Answer:I have not worked with Fireblocks, Ethers.js, or blockchain transaction management hands-on. My main experience is with React, Node.js, REST APIs, and database-based applications.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q21. TypeORM
+How does TypeORM work? Explain entities, migrations, repositories, and relationships.
+Answer:I have not worked with TypeORM hands-on. I understand that it is an ORM used to work with databases using entities, repositories, migrations, and relationships.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q22. Code Review Process
+What standards do you follow during code reviews in a product company?
+Answer:
+During code review, I check code readability, reusability, error handling, security, performance, and whether the changes follow project standards.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q23. Product Engineering Mindset
+How do you balance speed of delivery with code quality and technical debt?
+Answer:I balance speed and quality by delivering the important features first, while keeping the code clean and maintainable. I document technical debt and plan improvements in later sprints.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q24. Production Issue Scenario
+Users report slow performance in production after a new release. Explain your complete troubleshooting approach.
+Answer:
+I would first check logs and monitoring tools to identify the slow API or error. 
+Then I would compare the new release changes, check database queries and API response time, and roll back the release if the issue is critical.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+Q25. 90-Day Plan
+If selected, what would be your first 90-day execution plan as a Full Stack Product Developer?
+Answer:
+In the first 30 days, I would understand the product, codebase, and team process. 
+In the next 30 days, I would start delivering features and fixing issues.
+ In the final 30 days, I would take ownership of modules and improve performance or code quality.
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
