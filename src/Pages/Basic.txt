@@ -1,0 +1,13 @@
+Amly.ai is an enterprise SaaS application 
+used to manage employee workflows and business operations. 
+I worked as a React Frontend Developer in a team.
+My responsibilities included developing 
+reusable components, integrating REST APIs,
+implementing authentication, 
+managing state using Redux Toolkit, 
+fixing production bugs,
+and improving application performance.
+I also collaborated with backend developers 
+and QA to deliver features on time.
+
+=====≠====================================================
