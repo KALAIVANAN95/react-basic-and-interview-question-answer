@@ -1,4 +1,12 @@
-Hi, I'm Kalaivanan. I have around 4 years of experience as a React.js Developer. I have worked on enterprise SaaS applications where I developed reusable components, integrated REST APIs, built dynamic forms, and implemented UI components like modals, buttons, and dashboards. I have hands-on experience with React Hooks such as useState, useEffect, and useMemo, along with Redux Toolkit. I also have basic backend knowledge of Node.js, Express.js, MongoDB, and PostgreSQL. Currently, I'm looking for a challenging opportunity where I can contribute my skills and continue to grow as a Frontend Developer.
+Hi, I'm Kalaivanan. I have around 4 years of experience as a React.js Developer. 
+I have worked on enterprise SaaS applications where I developed reusable components,
+integrated REST APIs, built dynamic forms, and
+implemented UI components like modals,
+buttons, and dashboards. 
+I have hands-on experience with React Hooks such as
+useState, useEffect, and useMemo, along with Redux Toolkit.
+I also have basic backend knowledge of Node.js, Express.js, MongoDB, and PostgreSQL.
+Currently, I'm looking for a challenging opportunity where I can contribute my skills and continue to grow as a Frontend Developer.
 
 =====≠===============================================
 
