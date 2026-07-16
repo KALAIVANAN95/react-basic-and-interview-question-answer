@@ -923,7 +923,6 @@ const max = Math.max(...array);
 console.log(max);
 // 100
 ```
-
 ---
 
 ### 49. var vs let vs const?
@@ -939,6 +938,81 @@ I mostly use const by default and let when values need updates.
 Example:
 
 ```javascript
-var a =
+var a = 10;
+let b = 20;
+const c = 30;
+
+b = 40; // ✅ Allowed
+// c = 50; ❌ Error
+
+console.log(a);
+console.log(b);
+console.log(c);
 ```
+
+---
+
+### 50. map vs filter?
+
+map transforms data.
+
+or
+
+map() is used to iterate arrays and return a new transformed array.
+
+filter returns matching data based on condition.
+
+or
+
+filter() returns array elements that satisfy a condition.
+
+Example:
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+
+// map
+const doubled = numbers.map(num => num * 2);
+console.log(doubled);
+// [2, 4, 6, 8, 10]
+
+// filter
+const even = numbers.filter(num => num % 2 === 0);
+console.log(even);
+// [2, 4]
+```
+
+---
+
+## HR Interview Questions
+
+### Tell me about yourself.
+
+I am a Frontend Developer with around 4 years of experience in React.js development.
+
+I have worked on enterprise applications involving dashboard development, API integration, reusable components, dynamic forms, authentication, and responsive UI development.
+
+I also have exposure to Node.js and MongoDB for full-stack development.
+
+Currently I am looking for an opportunity where I can contribute technically and grow further as a frontend/full-stack developer.
+
+---
+
+### Why should we hire you?
+
+I have strong hands-on experience in React.js and real-time project development.
+
+I can independently handle frontend modules, API integration, reusable component development, debugging, and production issues.
+
+I also adapt quickly and work well in team environments.
+
+---
+
+### If you don't know the answer?
+
+I haven’t worked deeply on that yet, but I understand the basics and I’m currently learning it.
+
+---
+
+
 
