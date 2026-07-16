@@ -1,1 +1,188 @@
 
+
+### 1. What is JavaScript?
+
+i) High level, interpreted language.
+ii) Creating dynamic interaction with web pages.
+
+Example:
+document.getElementById("demo").innerHTML = "Hello World";
+
+---
+
+### 2. What is Data Types in JavaScript?
+
+i) Primitive Types
+string, number, boolean, null, undefined (also symbol, bigint)
+
+ii) Reference Types
+object, functions, arrays
+
+Example:
+let name = "Kala";      // String
+let age = 25;           // Number
+let isActive = true;    // Boolean
+let value = null;       // Null
+let data;               // Undefined
+
+const user = { name: "Kala" };
+const arr = [1, 2, 3];
+
+---
+
+### 3. Difference between null and undefined?
+
+i) Null - Intentional null (empty) value of variable.
+ii) Undefined - Declared variable without any value.
+
+Example:
+let a;
+console.log(a); // undefined
+
+let b = null;
+console.log(b); // null
+
+---
+
+### 4. How to declare variable in JS?
+
+Can declare variable using
+
+i) var = function scoped
+ii) let = block scoped
+iii) const = block scoped - cannot be reassigned
+
+Example:
+var a = 10;
+let b = 20;
+const c = 30;
+
+console.log(a, b, c);
+
+---
+
+### 5. What is Closure in JS?
+
+A closure allows inner functions to access outer function variables even after execution.
+
+Example:
+function outer() {
+let count = 0;
+
+return function inner() {
+count++;
+console.log(count);
+};
+}
+
+const counter = outer();
+
+counter(); // 1
+counter(); // 2
+
+---
+
+### 6. Difference between == and ===?
+
+i) == (loose equality): compares values after type coercion.
+ii) === (strict equality): compares both value and type.
+
+== checks value only.
+=== checks both value and datatype.
+
+I prefer === to avoid unexpected type coercion.
+
+Example:
+console.log(5 == "5");   // true
+console.log(5 === "5");  // false
+
+---
+
+### 7. What is Hoisting?
+
+i) Variable and function declarations moved to the top during execution.
+
+Example:
+console.log(a); // undefined
+
+var a = 10;
+
+sayHello();
+
+function sayHello() {
+console.log("Hello");
+}
+
+---
+
+### 8. Ways to loop through an array?
+
+using various methods such as
+
+i) for
+ii) forEach
+iii) for...of
+
+Example:
+const arr = [10, 20, 30];
+
+for (let i = 0; i < arr.length; i++) {
+console.log(arr[i]);
+}
+
+arr.forEach(item => console.log(item));
+
+for (const item of arr) {
+console.log(item);
+}
+
+---
+
+### 9. What is Promise in JS?
+
+Promises are used to handle asynchronous operations with success and failure states.
+
+It has methods like .then() and .catch().
+
+It will be in one of the 3 possible states
+
+i) Fulfilled
+ii) Rejected
+iii) Pending
+
+Example:
+const promise = new Promise((resolve, reject) => {
+resolve("Success");
+});
+
+promise
+.then(result => console.log(result))
+.catch(error => console.log(error));
+
+---
+
+### 10. Ways to define function?
+
+i) Function declaration
+ii) Function expression
+iii) Self invoking function
+iv) Object method
+v) Arrow function
+
+Example:
+function add(a, b) {
+return a + b;
+}
+
+const sub = function(a, b) {
+return a - b;
+};
+
+const mul = (a, b) => a * b;
+
+console.log(add(2, 3));
+console.log(sub(5, 2));
+console.log(mul(2, 4));
+
+---
+
