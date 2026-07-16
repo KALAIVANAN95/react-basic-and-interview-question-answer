@@ -185,4 +185,209 @@ console.log(sub(5, 2));
 console.log(mul(2, 4));
 
 ---
+Sure! Here's **Part 2 (Questions 11–20)** in the same copy-paste format.
+
+---
+
+### 11. Currying?
+
+Currying is a technique of evaluation function with multiple arguments into sequence of function with single argument.
+
+Example:
+
+```javascript
+function add(a) {
+  return function(b) {
+    return a + b;
+  };
+}
+
+console.log(add(2)(3)); // 5
+```
+
+---
+
+### 12. What is this keyword?
+
+This keyword is a reference variable that refers to the current object.
+
+Example:
+
+```javascript
+const user = {
+  name: "Kala",
+  showName() {
+    console.log(this.name);
+  }
+};
+
+user.showName(); // Kala
+```
+
+---
+
+### 13. Diff btwn forEach and map method?
+
+The map() method returns a new array, whereas the forEach() method does not return a new array.
+
+or
+
+map() is used to iterate arrays and return a new transformed array.
+
+Example:
+
+```javascript
+const numbers = [1, 2, 3];
+
+// map
+const doubled = numbers.map(num => num * 2);
+console.log(doubled); // [2, 4, 6]
+
+// forEach
+numbers.forEach(num => console.log(num));
+```
+
+---
+
+### 14. apply bind call
+
+call() – invokes the function immediately, arguments passed one by one.
+
+apply() – invokes the function immediately, arguments passed as an array.
+
+bind() – does not invoke immediately, returns a new function with this fixed, and you can pass arguments.
+
+Example:
+
+```javascript
+const person = {
+  name: "Kala"
+};
+
+function greet(city) {
+  console.log(this.name + " " + city);
+}
+
+greet.call(person, "Chennai");
+greet.apply(person, ["Chennai"]);
+
+const fn = greet.bind(person, "Chennai");
+fn();
+```
+
+---
+
+### 15. async and await
+
+"async and await make promises easier to write."
+
+async makes a function return a Promise.
+
+await pauses execution until the Promise resolves (or rejects).
+
+Example:
+
+```javascript
+async function getData() {
+  const data = await Promise.resolve("Hello");
+  console.log(data);
+}
+
+getData();
+```
+
+---
+
+### 16. "use strict"
+
+"use strict" enables strict mode in JavaScript, which helps catch errors and enforces safer coding.
+
+Example:
+
+```javascript
+"use strict";
+
+let a = 10;
+console.log(a);
+```
+
+---
+
+### 17. Map
+
+map() is used to iterate arrays and return a new transformed array.
+
+Example:
+
+```javascript
+const numbers = [1, 2, 3];
+
+const result = numbers.map(num => num * 2);
+
+console.log(result); // [2, 4, 6]
+```
+
+---
+
+### 18. Filter
+
+filter() returns array elements that satisfy a condition.
+
+Example:
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+
+const even = numbers.filter(num => num % 2 === 0);
+
+console.log(even); // [2, 4]
+```
+
+---
+
+### 19. Reduce?
+
+reduce() is used to reduce an array to a single value (like sum, total, or object) by applying a function.
+
+Example:
+
+```javascript
+const numbers = [1, 2, 3, 4];
+
+const sum = numbers.reduce((total, num) => total + num, 0);
+
+console.log(sum); // 10
+```
+
+---
+
+### 20. setTimeout vs setInterval
+
+Both are used to run code after a delay, but behavior is different.
+
+**setTimeout**
+Runs once after a given delay.
+
+Example:
+
+```javascript
+setTimeout(() => {
+  console.log("Hello");
+}, 2000);
+```
+
+**setInterval**
+Runs repeatedly at every interval.
+
+Example:
+
+```javascript
+setInterval(() => {
+  console.log("Hello");
+}, 2000);
+```
+
+---
+
+
 
