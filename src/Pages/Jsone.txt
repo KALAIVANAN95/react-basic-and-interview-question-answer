@@ -389,5 +389,262 @@ setInterval(() => {
 
 ---
 
+Sure! Here's **Part 3 (Questions 21–34)** in the same copy-paste format.
+
+---
+
+### 21. Functions
+
+Functions are reusable blocks of code used to perform specific tasks.
+
+Example:
+
+```javascript
+function greet() {
+  console.log("Hello");
+}
+
+greet(); // Hello
+```
+
+---
+
+### 22. Conditions
+
+Conditional statements are used for decision making in JavaScript.
+
+Example:
+
+```javascript
+const age = 20;
+
+if (age >= 18) {
+  console.log("Eligible to vote");
+} else {
+  console.log("Not eligible");
+}
+```
+
+---
+
+### 23. Loops
+
+Loops are used to execute code repeatedly based on conditions.
+
+Example:
+
+```javascript
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+```
+
+---
+
+### 24. DOM Manipulation
+
+DOM Manipulation allows JavaScript to dynamically update HTML, CSS, and page content.
+
+Example:
+
+```javascript
+document.getElementById("title").innerHTML = "Welcome";
+```
+
+---
+
+### 25. Callback Function
+
+A callback function is passed as an argument to another function and executed later.
+
+2 types callback iruku:
+
+1. Synchronous Callback
+   Immediate execute.
+
+Example:
+
+```javascript
+const arr = [1, 2, 3];
+
+arr.forEach(item => console.log(item));
+```
+
+2. Asynchronous Callback
+
+Example:
+
+```javascript
+setTimeout(() => {
+  console.log("Done");
+}, 2000);
+```
+
+---
+
+### 26. Event Loop
+
+JavaScript uses the event loop to handle asynchronous operations.
+
+Example:
+
+```javascript
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Inside Timeout");
+}, 1000);
+
+console.log("End");
+
+// Output:
+// Start
+// End
+// Inside Timeout
+```
+
+---
+
+### 27. Scope
+
+Scope determines where variables can be accessed in JavaScript.
+
+Types of Scope
+
+Global Scope → Accessible anywhere.
+
+Function Scope → Accessible only inside the function.
+
+Block Scope → Accessible only inside {} (with let and const).
+
+Example:
+
+```javascript
+let a = 10;
+
+function demo() {
+  let b = 20;
+  console.log(a);
+  console.log(b);
+}
+
+demo();
+```
+
+---
+
+### 28. Prototype
+
+Prototype enables inheritance in JavaScript objects.
+
+Example:
+
+```javascript
+const arr = [1, 2, 3];
+
+console.log(arr.length);
+
+// length comes from Array prototype
+```
+
+---
+
+### 29. Debounce
+
+Debouncing delays function execution until the user stops triggering the event.
+
+Example:
+
+```javascript
+Search Box
+
+User typing...
+After user stops typing for 500ms,
+Search API will be called once.
+```
+
+---
+
+### 30. Throttle
+
+Throttling means a function can run only once in a specific time period, even if it is triggered many times.
+
+Example:
+
+```javascript
+Scroll Event
+
+User continuously scrolls,
+Function executes only once every 1 second.
+```
+
+---
+
+### 31. Local Storage
+
+localStorage stores data permanently in the browser.
+
+Example:
+
+```javascript
+localStorage.setItem("name", "Kala");
+
+console.log(localStorage.getItem("name"));
+```
+
+---
+
+### 32. Session Storage
+
+sessionStorage stores data only for the browser session.
+
+Example:
+
+```javascript
+sessionStorage.setItem("user", "Kala");
+
+console.log(sessionStorage.getItem("user"));
+```
+
+---
+
+### 33. Cookies
+
+Cookies store small pieces of browser data mainly for authentication and sessions.
+
+Example:
+
+```javascript
+document.cookie = "username=Kala";
+```
+
+---
+
+### 34. call/apply/bind
+
+call, apply and bind are used to control the `this` context of functions.
+
+Example:
+
+```javascript
+const person = {
+  name: "Kala"
+};
+
+function greet(city) {
+  console.log(this.name + " " + city);
+}
+
+greet.call(person, "Chennai");
+
+greet.apply(person, ["Chennai"]);
+
+const fn = greet.bind(person, "Chennai");
+fn();
+```
+
+---
+
+**Next: Part 4 (ES Modules, Shallow vs Deep Copy, Objects, Array of Objects, Destructuring, Spread, Ternary, Rest Operator, Event Delegation, Coding Examples, var vs let vs const, map vs filter).**
 
 
