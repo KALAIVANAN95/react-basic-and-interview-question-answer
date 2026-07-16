@@ -645,6 +645,4 @@ fn();
 
 ---
 
-**Next: Part 4 (ES Modules, Shallow vs Deep Copy, Objects, Array of Objects, Destructuring, Spread, Ternary, Rest Operator, Event Delegation, Coding Examples, var vs let vs const, map vs filter).**
-
 
