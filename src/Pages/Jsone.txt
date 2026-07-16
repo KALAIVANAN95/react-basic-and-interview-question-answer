@@ -645,4 +645,300 @@ fn();
 
 ---
 
+Sure! Here's **Part 4** in the same copy-paste format.
+
+---
+
+### 35. ES Modules
+
+ES Modules allow splitting and reusing JavaScript code using import and export.
+
+Example:
+
+```javascript
+// math.js
+export const add = (a, b) => a + b;
+
+// app.js
+import { add } from "./math.js";
+
+console.log(add(2, 3)); // 5
+```
+
+---
+
+### 36. Shallow vs Deep Copy
+
+Shallow copy shares references, whereas deep copy creates independent copies.
+
+Example:
+
+```javascript
+const obj = {
+  name: "Kala",
+  address: {
+    city: "Chennai"
+  }
+};
+
+// Shallow Copy
+const copy1 = { ...obj };
+
+// Deep Copy
+const copy2 = structuredClone(obj);
+```
+
+---
+
+### 37. Why use objects?
+
+Objects are used to store related data in key-value pairs.
+
+Example:
+
+```javascript
+const user = {
+  name: "Kala",
+  age: 25
+};
+
+console.log(user.name); // Kala
+```
+
+---
+
+### 38. Array of Objects?
+
+Multiple objects inside array.
+
+Example:
+
+```javascript
+const users = [
+  { id: 1, name: "Kala" },
+  { id: 2, name: "Raj" }
+];
+
+console.log(users[0].name); // Kala
+```
+
+---
+
+### 39. Destructuring?
+
+Destructuring is used to extract values from arrays or objects easily.
+
+Example:
+
+```javascript
+const user = {
+  name: "Kala",
+  age: 25
+};
+
+const { name, age } = user;
+
+console.log(name); // Kala
+console.log(age);  // 25
+```
+
+Array Example:
+
+```javascript
+const numbers = [10, 20];
+
+const [a, b] = numbers;
+
+console.log(a); // 10
+console.log(b); // 20
+```
+
+---
+
+### 40. What is spread operator?
+
+Spread operator is used to copy, merge, or expand arrays and objects.
+
+Example:
+
+```javascript
+const arr1 = [1, 2, 3];
+
+const arr2 = [...arr1, 4, 5];
+
+console.log(arr2);
+// [1,2,3,4,5]
+```
+
+Object Example:
+
+```javascript
+const user = {
+  name: "Kala"
+};
+
+const details = {
+  ...user,
+  age: 25
+};
+
+console.log(details);
+```
+
+---
+
+### 41. Ternary - Short if else
+
+Ternary operator is a short form of if else condition.
+
+Example:
+
+```javascript
+const age = 20;
+
+const result = age >= 18 ? "Eligible" : "Not Eligible";
+
+console.log(result);
+```
+
+---
+
+### 42. Rest operator
+
+Rest operator is used to collect multiple values into a single array.
+
+Example:
+
+```javascript
+const values = [1, 2, 3, 4, 5];
+
+const [a, b, ...rest] = values;
+
+console.log(a);    // 1
+console.log(b);    // 2
+console.log(rest); // [3,4,5]
+```
+
+Function Example:
+
+```javascript
+function add(...numbers) {
+  console.log(numbers);
+}
+
+add(10, 20, 30);
+// [10,20,30]
+```
+
+---
+
+### 43. Event Delegation
+
+Event Delegation is attaching a single event listener to a parent element to handle events from multiple child elements using event bubbling.
+
+Example:
+
+```javascript
+<ul id="list">
+  <li>Apple</li>
+  <li>Mango</li>
+</ul>
+
+document.getElementById("list").addEventListener("click", function(event) {
+  console.log(event.target.innerText);
+});
+```
+
+---
+
+### 44. Reverse Array
+
+Example:
+
+```javascript
+const arr = [1, 2, 5];
+
+const res = arr.reverse();
+
+console.log(res);
+// [5,2,1]
+```
+
+---
+
+### 45. Reverse String
+
+Example:
+
+```javascript
+function reverseStr(str) {
+  return str.split("").reverse().join("");
+}
+
+console.log(reverseStr("Hello"));
+// olleH
+```
+
+---
+
+### 46. Palindrome
+
+Example:
+
+```javascript
+function palindrome(str) {
+  return str === str.split("").reverse().join("");
+}
+
+console.log(palindrome("madam"));
+// true
+```
+
+---
+
+### 47. Remove Duplicates
+
+Example:
+
+```javascript
+const array = [100, 1, 2, 3, 2, 3, 4, 4, 5];
+
+const unique = [...new Set(array)];
+
+console.log(unique);
+// [100,1,2,3,4,5]
+```
+
+---
+
+### 48. Find Maximum Number
+
+Example:
+
+```javascript
+const array = [100, 1, 2, 3, 2, 3, 4, 4, 5];
+
+const max = Math.max(...array);
+
+console.log(max);
+// 100
+```
+
+---
+
+### 49. var vs let vs const?
+
+var is function scoped.
+
+let and const are block scoped.
+
+const cannot be reassigned.
+
+I mostly use const by default and let when values need updates.
+
+Example:
+
+```javascript
+var a =
+```
 
