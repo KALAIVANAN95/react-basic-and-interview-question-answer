@@ -1,0 +1,223 @@
+
+### 1.What is React JS?
+i)It is a JavaScript library created by Facebook in 2011 by jordan Walke.
+ii)It is used for building user interfaces and also used to build single page applications.
+
+**Example:**
+```jsx
+function App() {
+  return <h1>Hello React</h1>;
+}
+```
+---
+
+### 2.JSX?
+i)JSX is a shorthand for JavaScript XML
+ii)This makes the HTML file really easy to understand
+JSX stands for JavaScript XML.
+It allows us to write HTML-like syntax inside JavaScript, making React code easier to read and maintain.
+
+**Example:**
+
+```jsx
+const element = <h1>Welcome</h1>;
+```
+---
+
+### 3.What is the meaning of Virtual DOM.?
+Virtual DOM is a lightweight copy of the Real DOM.
+When state or props change, React creates a new Virtual DOM, compares it with the previous Virtual DOM, and updates only the changed parts in the Real DOM.
+This improves performance and makes React applications faster.
+
+**Example:**
+```jsx
+const [count, setCount] = useState(0);
+<button onClick={() => setCount(count + 1)}>
+  Increment
+</button>
+```
+---
+
+### 4.Why use React?
+React is used because it provides reusable components, 
+better performance through Virtual DOM,
+one-way data flow, and 
+makes it easier to build scalable and
+maintainable web applications.
+i)Easy creation of dynamic web apps
+ii)Reusable Components
+iii)Easy Debugging
+iv)Enhanced Performance
+v)Unidirectional data flow
+
+**Example:**
+```jsx
+function Button() {
+  return <button>Save</button>;
+}
+
+function App() {
+  return <Button />;
+}
+```
+---
+
+### 5.Can browsers read a JSX file.?
+No. Browsers cannot read JSX directly. Babel converts JSX into regular JavaScript.
+**Example:**
+
+```jsx
+JSX:
+<h1>Hello</h1>
+
+After Babel:
+React.createElement("h1", null, "Hello");
+```
+
+---
+
+### 6.What are States in React.?
+i)The state is a built-in React object that is used to contain data or information about the component.
+ii)When the state changes, React automatically re-renders the component and updates the UI.
+**Example:**
+
+```jsx
+const [name, setName] = useState("Kala");
+
+<button onClick={() => setName("Raj")}>
+  Change Name
+</button>
+```
+
+---
+### 7.What is a higher-order component in React.?
+i)A higher-order component is a function that takes in a component and returns a new component with additional functionality.
+It is used to reuse component logic.
+Example:
+withAuth(Component)
+Using code,const newComponent = higherFunction(WrappedComponent);
+**Example:**
+
+```jsx
+const EnhancedComponent = withAuth(Profile);
+```
+---
+
+### 8.What are the three phases of a component life cycle in React.?
+The React component lifecycle consists of three main phases:
+
+1. Mounting
+* The component is created and inserted into the DOM.
+
+2. Updating
+* The component is re-rendered when props or state change.
+3. Unmounting
+* The component is removed from the DOM.
+
+**Example:**
+
+```jsx
+useEffect(() => {
+  console.log("Mounted");
+
+  return () => {
+    console.log("Unmounted");
+  };
+}, []);
+```
+
+---
+### 9.What are events in React.?
+i)An event is an action triggered by the user or browser, such as a mouse click, key press, form submission, or page load.
+**Example:**
+
+```jsx
+<button onClick={() => alert("Clicked")}>
+  Click Me
+</button>
+```
+---
+
+### 10.What is arrow function?
+An Arrow Function is a shorter way of writing functions in JavaScript and it inherits 'this' from its surrounding scope.
+**Example:**
+
+```jsx
+const add = (a, b) => a + b;
+
+console.log(add(2, 3));
+```
+---
+
+### 11.What are components in React?
+Components are independent and reusable UI building blocks in React. A single app usually consists of multiple components.
+**Example:**
+
+```jsx
+function Header() {
+  return <h1>Header</h1>;
+}
+
+function App() {
+  return <Header />;
+}
+```
+
+---
+
+### 12.What is the use of render() in React? and Do functional components have render()?
+The render() method is used in React class components to return the UI (JSX) that should be displayed on the screen.
+
+No. Functional components do not use the render() method. They directly return JSX.
+
+**Example:**
+
+```jsx
+function App() {
+  return <h1>Hello</h1>;
+}
+```
+
+---
+### 13.What are refs in React?
+Refs are a function provided by React to access the DOM element and the React element that you might have created on your own.
+
+Refs are used to access DOM elements directly and store mutable values without causing component re-renders.
+Main uses:
+i)To initiate imperative animations
+ii)To join third party DOM libraries
+iii)To manage focus and apply media playback
+
+**Example:**
+```jsx
+const inputRef = useRef();
+<input ref={inputRef} />
+<button onClick={() => inputRef.current.focus()}>
+  Focus
+</button>
+```
+
+---
+### 14.What are the components of Redux in React?
+Redux consists of 4 main components as shown below:
+i)Action: An object that describes the call
+ii)Reducer:The state change storage unit
+iii)Store:The state and object tree storage
+iv)View:Displays data provided by the store
+Redux consists of Actions, Reducers, Store, and Dispatch, which work together to manage application state.
+
+**Example:**
+```javascript
+dispatch(addUser(userData));
+```
+---
+### 15.What are pure components in React?
+The components that do not re-render when the value of props and state has been updated with the same values.
+**Example:**
+```jsx
+const User = React.memo(function User({ name }) {
+  return <h1>{name}</h1>;
+});
+```
+
+Next I'll give **Part 2 (Q16–30)** in the same format.
