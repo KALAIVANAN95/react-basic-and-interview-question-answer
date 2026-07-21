@@ -220,42 +220,6 @@ const User = React.memo(function User({ name }) {
 });
 ```
 
-Sure! Here's **React Part 2 (Q16–30)**. I have **not changed your questions or answers**—I've only added a simple example below each one. 
-
----
-
-### 16.What are higher-order components used for? VERY - IMP
-
-Higher-Order Components (HOCs) are mainly used for:
-
-1. Code Reusability
-2. Authentication
-3. Authorization
-4. Logging
-5. Data Fetching
-6. Performance Optimization
-7. Sharing Common Component Logic
-
-HOCs are used for code reusability, authentication, authorization, logging, data fetching, and performance optimization.
-
-**Example:**
-
-```jsx
-const ProtectedPage = withAuth(Dashboard);
-```
-
----
-
-### 17.What are keys in React?
-
-i)Keys are used to directly check if an item has been added or removed from list.
-
-Keys are unique identifiers that help React identify which items have changed, been added, or removed from a list.
-
-**Example:**
-
-```jsx
-const users = [
   { id: 1, name: "Kala" },
   { id: 2, name: "Raj" }
 ];
@@ -265,334 +229,7 @@ users.map(user => (
 ));
 ```
 
----
-
-### 18.Props?
-
-Props stands for properties.
-
-It gives a way to pass data from one component to other component.
-
-or
-
-Props are used to pass data from parent to child components.
-
-**Example:**
-
-```jsx
-function Child(props) {
-  return <h1>{props.name}</h1>;
-}
-
-<Child name="Kala" />
-```
-
----
-
-### 19.Callback function? JS
-
-A Callback function is a function passed into another function as an argument.
-
-**Example:**
-
-```javascript
-function greet(name) {
-  console.log("Hello " + name);
-}
-
-function display(callback) {
-  callback("Kala");
-}
-
-display(greet);
-```
-
----
-
-### 20.What is props and state in React?
-
-Props allow you to pass data from one component to other components as an argument.
-
-State holds information about the components.
-
-**Example:**
-
-```jsx
-function Child({ name }) {
-  return <h1>{name}</h1>;
-}
-
-function App() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <>
-      <Child name="Kala" />
-      <button onClick={() => setCount(count + 1)}>
-        {count}
-      </button>
-    </>
-  );
-}
-```
-
----
-
-### 21.What are the three types of components?
-
-Types of React Components Discussed
-
-Functional Components.
-
-Class Components.
-
-Pure Components.
-
-Higher-Order Components. not needed
-
-In modern React, Functional Components are preferred because they support Hooks and require less boilerplate code.
-
-**Example:**
-
-```jsx
-function Header() {
-  return <h1>Header</h1>;
-}
-```
-
----
-
-### 22.What is the difference between Real DOM and Virtual DOM?
-
-Real DOM:
-
-The real DOM updates slower.
-
-The real DOM can directly update HTML.
-
-Every update may cause re-rendering of DOM elements.
-
-Virtual DOM:
-
-The virtual DOM updates faster.
-
-The virtual DOM cannot directly update HTML.
-
-React compares the old and new Virtual DOM using a diffing algorithm.
-
-Only the changed elements are updated in the Real DOM.
-
-**Example:**
-
-```jsx
-const [count, setCount] = useState(0);
-
-<button onClick={() => setCount(count + 1)}>
-  {count}
-</button>
-```
-
----
-
-### 23.Controlled vs uncontrolled components?
-
-Controlled components are managed using React state.
-
-Uncontrolled components use refs.
-
-In most enterprise applications I use controlled components because validation and form handling become easier.
-
-**Example:**
-
-```jsx
-// Controlled
-const [name, setName] = useState("");
-
-<input
-  value={name}
-  onChange={(e) => setName(e.target.value)}
-/>
-
-// Uncontrolled
-const inputRef = useRef();
-
-<input ref={inputRef} />
-```
-
----
-
-### 24.What are the feature of React.?
-
-JSX, Component, one-way data binding, Virtual DOM, simplicity & performance.
-
-**Example:**
-
-```jsx
-function App() {
-  return <h1>Hello React</h1>;
-}
-```
-
----
-
-### 25.What is the biggest limitation of React?
-
-React is just a library, not a complete framework. It mainly focuses on the view (UI layer), so it does not provide built-in solutions for things like routing, state management, or API handling.
-
-**Example:**
-
-```jsx
-React Router → Routing
-
-Redux → State Management
-
-Axios → API Calls
-```
-
----
-
-### 26.Flux?
-
-Flux is an application architecture that Facebook uses internally for building the client side web app.
-
-**Example:**
-
-```text
-Action
-   ↓
-Dispatcher
-   ↓
-Store
-   ↓
-View
-```
-
----
-
-### 27.Redux?
-
-Redux is an open-source JS library used to manage application state.
-
-**Example:**
-
-```javascript
-dispatch(addUser(userData));
-```
-
----
-
-### 28.Differentiate between States and Props.
-
-Props:
-
-Props are read-only.
-
-Props are immutable.
-
-Props allow you to pass data from one component to other components as an argument.
-
-State:
-
-State changes can be asynchronous.
-
-or
-
-State is used to manage dynamic data inside components.
-
-State is mutable.
-
-State holds information about the components.
-
-**Example:**
-
-```jsx
-function Child({ name }) {
-  return <h1>{name}</h1>;
-}
-
-function App() {
-  const [count, setCount] = useState(0);
-
-  return <Child name="Kala" />;
-}
-```
-
----
-
-### 29.Differentiate between stateless and stateful components.
-
-Stateless:
-
-It is simple and easy to understand.
-
-It is also known as a functional component.
-
-Stateful:
-
-It is complex as compared to the stateless component.
-
-It is also known as a class component.
-
-**Example:**
-
-```jsx
-// Stateless
-function Header() {
-  return <h1>Header</h1>;
-}
-
-// Stateful
-function Counter() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <button onClick={() => setCount(count + 1)}>
-      {count}
-    </button>
-  );
-}
-```
-
----
-
-### 30.Hooks?
-
-Hooks are special functions in React that allow functional components to use React features.
-
-In functional components, Hooks are used to:
-
-i) manage state
-
-ii) handle lifecycle-like behavior
-
-iii) access the DOM
-
-Hooks can also manage stateful logic and side effects.
-
-**Example:**
-
-```jsx
-import { useState, useEffect } from "react";
-
-function App() {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    console.log("Component Loaded");
-  }, []);
-
-  return (
-    <button onClick={() => setCount(count + 1)}>
-      {count}
-    </button>
-  );
-}
-```
-
-Next I'll give **Part 3 (Q31–45)** in the same format with simple examples.
-Sure! Here's **React Part 2 (Q16–30)**. I have **not changed your questions or answers**—I've only added a simple example below each one. 
-
----
+--
 
 ### 16.What are higher-order components used for? VERY - IMP
 Higher-Order Components (HOCs) are mainly used for:
@@ -863,5 +500,235 @@ function App() {
   );
 }
 ```
+---
+### 31.What is the diff btwn Clone and Create element in React?
+i)cloneElement is primarily used to clone an element & pass it to new props directly.
+ii)Whereas, createElement is the entity that JSX gets compiled into. This is also used to create elements in React.
+**Example:**
+```jsx
+const button = <button>Save</button>;
+const newButton = React.cloneElement(button, {
+  disabled: true
+});
+```
+```jsx
+const element = React.createElement("h1", null, "Hello");
+```
+---
+
+### 32.What is useEffect?
+useEffect is used to handle side effects in React applications.
+I mainly use it for:
+* API calls
+* data fetching
+* event listeners
+* component lifecycle handling
+* dependency-based updates
+**Example:**
+
+```jsx
+useEffect(() => {
+  console.log("Component Loaded");
+}, []);
+```
+---
+### 33.Why dependency array important?
+Dependency array controls when the effect should execute.
+[] -> runs once
+[value] -> runs when value changes
+No dependency -> runs on every render
+**Example:**
+```jsx
+// Runs only once
+useEffect(() => {
+  console.log("Mounted");
+}, []);
+
+// Runs when count changes
+useEffect(() => {
+  console.log(count);
+}, [count]);
+```
+---
+
+### 34.How do you handle API integration?
+I usually use Axios for API integration.
+I create reusable API instances and handle:
+* loading states
+* error handling
+* token management
+* dynamic payloads
+* response mapping
+I also use async/await with try/catch for better readability.
+
+**Example:**
+```jsx
+const getUsers = async () => {
+  try {
+    const res = await axios.get("/users");
+    console.log(res.data);
+  } catch (err) {
+    console.log(err);
+  }
+};
+```
+---
+
+### 35.How authentication works in your project JWT auth?
+After successful login backend generates JWT token.
+Frontend stores token in localStorage.
+For protected APIs I send the token in Authorization header
+Backend middleware validates token and allows access based on user role.
+**Example:**
+```jsx
+localStorage.setItem("token", token);
+axios.get("/profile", {
+  headers: {
+    Authorization: `Bearer ${token}`
+  }
+});
+```
+---
+
+### 36.How do you optimize React performance?
+I use:
+* React.memo
+* useMemo
+* useCallback
+* lazy loading
+* pagination
+* conditional rendering
+* avoiding unnecessary re-renders
+I also split reusable components properly for maintainability.
+**Example:**
+```jsx
+const MemoUser = React.memo(User);
+const total = useMemo(() => calculateTotal(data), [data]);
+const handleClick = useCallback(() => {}, []);
+```
+---
+
+### 37.React.memo
+React.memo is used for performance optimization. It prevents functional components from re-rendering when props have not changed.
+**Example:**
+
+```jsx
+const User = React.memo(function User({ name }) {
+  return <h1>{name}</h1>;
+});
+```
+---
+
+### 38.What is lifting state up?
+Lifting state up means moving shared state to the nearest common parent.
+OR
+When multiple child components need shared data, state is moved to the common parent component and passed using props.
+Example Scenario
+Search input component
+Search results component
+Both need the same search text, so the state is maintained in the parent component and shared via props.
+**Example:**
+
+```jsx
+const [search, setSearch] = useState("");
+
+<SearchInput value={search} onChange={setSearch} />
+<SearchResult search={search} />
+```
+---
+
+### 39.Functional component lifecycle equivalent?
+useEffect is used to handle lifecycle behavior.
+ComponentDidMount -> useEffect(() => {}, [])
+ComponentDidUpdate -> dependency-based useEffect
+ComponentWillUnmount -> cleanup function
+**Example:**
+```jsx
+useEffect(() => {
+  console.log("Mounted");
+  return () => {
+    console.log("Unmounted");
+  };
+}, []);
+```
+---
+### 40.One difficult bug you faced?
+I faced an issue where APIs were triggering multiple times because of incorrect useEffect dependencies.
+I analyzed the dependency flow, optimized state updates, and prevented unnecessary renders.
+**Example:**
+```jsx
+// Wrong
+useEffect(() => {
+  fetchData();
+});
+
+// Correct
+useEffect(() => {
+  fetchData();
+}, []);
+```
+---
+
+### 41.How do you handle large forms?
+I split forms into reusable components and maintain state efficiently.
+I also use validation, dynamic rendering, and reusable handlers to reduce duplicate code.
+**Example:**
+```jsx
+<PersonalDetails />
+<Address />
+<ContactDetails />
+```
+---
+
+### 42.How do you handle reusable components?
+I create configurable reusable components using props.
+Examples:
+* tables
+* modals
+* filters
+* dropdowns
+* buttons
+* form components
+This improves maintainability and reduces duplicate code.
+**Example:**
+
+```jsx
+<Button
+  title="Save"
+  onClick={handleSave}
+/>
+```
+---
+### 43.Event Handling
+React handles events using camelCase event handlers like onClick and onChange.
+**Example:**
+```jsx
+<button onClick={() => alert("Saved")}>
+  Save
+</button>
+```
+---
+
+### 44.Conditional Rendering
+Conditional rendering displays UI based on conditions.
+**Example:**
+```jsx
+{isLogin ? <Dashboard /> : <Login />}
+```
+---
+### 45.Custom Hooks
+Custom hooks allow reusing React hook logic across components.
+**Example:**
+
+```jsx
+function useCounter() {
+  const [count, setCount] = useState(0);
+
+  return { count, setCount };
+}
+```
+---
+
+
 
 
