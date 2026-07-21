@@ -220,4 +220,3 @@ const User = React.memo(function User({ name }) {
 });
 ```
 
-Next I'll give **Part 2 (Q16–30)** in the same format.
