@@ -62,6 +62,18 @@ function App() {
 
 export default App
 ============================================================================
+What is an API?
+The API acts like a middleman between the frontend and the database.
+
+What is Fetch?
+JavaScript proivdes build-in method called Fetch. It is used to call an API
+
+Why don't we write fetch() directly inside the component?
+We don't write fetch directly inside the component because it will run on every render.
+
+Q3. Why do we use useEffect([]) for API calls?
+We use useEffect with an empty dependency array because it runs only once after the component is mounted. 
+This prevents unnecessary API calls on every re-render."
 
 import React,{useState,useEffect} from "react"
 
