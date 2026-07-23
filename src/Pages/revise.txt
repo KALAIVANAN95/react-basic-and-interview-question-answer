@@ -163,7 +163,12 @@ function App(){
 
 export default App
 
-============================================================================
+| useMemo                           | useEffect                                                  |
+| --------------------------------- | ---------------------------------------------------------- |
+| Returns a memoized value          | Doesn't return a value                                     |
+| Used for performance optimization | Used for side effects                                      |
+| Caches expensive calculations     | Used for API calls, timers, subscriptions, event listeners |
+
 useMemo
 Returns a value.
 Used for performance optimization.
@@ -181,4 +186,7 @@ useMemo only when:
 ✅ Large array filtering.
 ✅ Sorting large data.
 ✅ Complex computations.
+
+
+============================================================================
 
