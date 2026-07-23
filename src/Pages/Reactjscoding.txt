@@ -1,3 +1,78 @@
+import React,{useState,useEffect} from "react"
+
+function App(){
+
+  const [input,setInput]=useState("")
+  const [data,setData]=useState([])
+  const [editId,setEditId]=useState(null)
+  
+  useEffect(()=>{
+    try{
+      const res=JSON.parse(localStorage.getItem("todo"))||[]
+      setData(res)
+
+    }catch(err){
+      setData([])
+    }
+  },[])
+
+  const handleAdd=()=>{
+    if(!input){
+      return alert("Fill all")
+    }
+    if(editId){
+      const updated=data.map((value)=>value.id===editId ? {...value,input:input}:value)
+      setData(updated)
+      localStorage.setItem("todo",JSON.stringify(updated))
+      setEditId(null)
+      setInput("")
+      return
+    }
+    const newData={id:Date.now(),input:input}
+    const updated=[...data,newData]
+    setData(updated)
+    localStorage.setItem("todo",JSON.stringify(updated))
+    setInput("")
+  }
+  const editIdFun=(value)=>{
+    setEditId(value.id)
+    setInput(value.input)
+  }
+  const deleteFun=(va)=>{
+    const result=data?.filter((value)=>value.id !==va)
+    setData(result)
+    localStorage.setItem("todo",JSON.stringify(result))    
+  }
+  return(
+    <div>
+  
+      <input 
+      name={"input"}
+      value={input}
+      onChange={(e)=>setInput(e.target.value)}
+      type="text"
+      />
+      <button onClick={handleAdd}>{editId? "Update":"Add"}</button>
+
+      <div>
+        {
+          data.map((value)=>{
+            return(
+              <div key={value.id}>
+                {value.input} <span onClick={()=>editIdFun(value)}>edit </span> <span onClick={()=>deleteFun(value.id)}>delete </span>
+              </div>
+            )
+          })
+        }
+      </div>
+    </div>
+  )
+}
+
+export default App
+
+
+
 import React, { useState, useEffect, useCallback } from "react";
 
 function useFetch(url) {
