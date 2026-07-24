@@ -268,5 +268,43 @@ function App(){
 export default App
 
 ============================================================================
+Props Drilling is the process of passing data from a parent component through multiple 
+intermediate components to reach a deeply nested child component, 
+even when the intermediate components do not use that data.
+
+To avoid Props Drilling.
+Instead of passing data through every component,
+useContext allows any component to access shared data directly
+
+useContext is used to share common data across components and avoid props drilling
+import React,{useContext} from "react"
+import {UserContext} from "./index.jsx"
+
+function App(){
+  const user=useContext(UserContext)
+  return(
+    <div>
+      <h3>useContext</h3>
+      <p>useContext is used to share common data across components and avoid props drilling</p>
+      <b>This is come form useContext:{user.name}</b>
+    </div>
+  )
+}
+
+export default App
+
+
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import { createContext } from "react"
+export const UserContext = createContext()
+const user = { id: 1, name: "kalai" }
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <UserContext value={user}>
+    <App />
+  </UserContext>
+)
+==================================================================================================================================
 
 
