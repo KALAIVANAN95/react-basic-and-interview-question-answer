@@ -189,6 +189,11 @@ useMemo only when:
 
 ============================================================================
 
+useCallback keeps the same function reference.
+React.memo checks whether the props have changed.
+Since the onClick prop is the same function reference, React.memo skips the child re-render.
+
+
 import React, { useState, useCallback } from "react";
 
 const Child = React.memo(({ onClick }) => {
