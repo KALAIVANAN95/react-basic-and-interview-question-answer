@@ -232,6 +232,41 @@ export default App;
 | No optimization                    | Used for performance optimization                 |
 ============================================================================
 
+import React,{useRef} from "react"
+
+function App(){
+  const inputRef =useRef(null)
+  const handleFocus=()=>{
+    inputRef .current.focus()
+  }
+  return(
+    <div>
+      <input ref={inputRef}/>
+      <button onClick={handleFocus}>Add</button>
+    </div>
+  )
+}
+
+export default App
+===========================================================
+import React,{useRef} from "react"
+
+function App(){
+  const inputRef=useRef(0)
+  const handleClick=()=>{
+    inputRef.current++;
+    console.log(inputRef.current) // it will change like 1,2,3
+  }
+  return(
+    <div>
+      <button onClick={handleClick}>Add</button>
+      <h3>{inputRef.current}</h3> {/*but this will 0 not re-render*/}
+    </div>
+  )
+}
+
+export default App
+
 ============================================================================
 
 
