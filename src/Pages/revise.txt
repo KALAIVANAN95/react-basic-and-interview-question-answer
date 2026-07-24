@@ -224,6 +224,12 @@ function App() {
 }
 
 export default App;
+
+| Normal Function                    | useCallback                                       |
+| ---------------------------------- | ------------------------------------------------- |
+| Recreated on every render          | Memoized (cached)                                 |
+| New function reference each render | Same function reference until dependencies change |
+| No optimization                    | Used for performance optimization                 |
 ============================================================================
 
 ============================================================================
