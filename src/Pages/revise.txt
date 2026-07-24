@@ -187,6 +187,40 @@ useMemo only when:
 ✅ Sorting large data.
 ✅ Complex computations.
 
+============================================================================
+
+import React, { useState, useCallback } from "react";
+
+const Child = React.memo(({ onClick }) => {
+  console.log("Child Render");
+  return <button onClick={onClick}>Child</button>;
+});
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  const handleClick = useCallback(() => {
+    console.log("Clicked");
+  }, []);
+
+  return (
+    <div>
+      <h3>useCallback + React.memo</h3>
+
+      <p>{count}</p>
+
+      <button onClick={() => setCount(count + 1)}>
+        Parent
+      </button>
+
+      <Child onClick={handleClick} />
+    </div>
+  );
+}
+
+export default App;
+============================================================================
 
 ============================================================================
+
 
