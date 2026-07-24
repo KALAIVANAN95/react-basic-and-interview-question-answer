@@ -323,5 +323,66 @@ useContext()
     <Profile />
 </UserContext.Provider>
 ==================================================================================================================================
+React Router is a library used to navigate between different pages (components) in a React application without refreshing the browser.
+
+<Routes>
+<Route path="/" element={<home/>}/>
+</Routes>
+Easy Memory Trick
+<BrowserRouter> → Enables routing.
+<Routes> → Checks which route matches the URL.
+<Route> → Defines which component to display for a specific path
+
+const navigate=useNavigate()
+
+const handle=()=>{
+navigate("/profile")
+}
+Easy Memory Trick
+Link → User clicks a link.
+useNavigate → Your JavaScript code decides where to navigate.
+
+useParams
+<Route path="/employees/:id element={<Employees/>} />
+
+import {useParams} from "react"
+const Employess=()=>{
+const {id}=useParams()
+return(
+console.log(id)
+)
+}
+
+=----------------------------------------------------------------------=
+import {Navigate} from "react-router-dom"
+const ProtectedRoute=({children})=>{
+	const token=localStorage.getItem("token")
+	if(!token){
+return <Navigate to="/login"/>
+}
+return children
+}
+
+<Route path="/dashboard" element={<ProtectedRoute><Dashboard/></ProtectedRoute>}
+
+=----------------------------------------------------------------------=
+<Routes>
+<Route path="/" element={<Layout/>}>
+<Route path="employee" element={<Employee/>}/>
+<Route path="dashboard" element={<Dashboard/>}
+</Route>
+</Routes>
+
+const Layout=()=>{
+return(
+<>
+<Header/>
+<Sidebar/>
+<Outlet/>
+</>
+)
+}
+=----------------------------------------------------------------------=
+
 
 
