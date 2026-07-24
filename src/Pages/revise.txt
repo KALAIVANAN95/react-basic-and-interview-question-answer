@@ -314,6 +314,14 @@ Provider
 
 useContext()
 📦 Open the box and read the data.
+
+<UserContext.Provider value={user}>
+    <Navbar />
+</UserContext.Provider>
+
+<UserContext.Provider value={admin}>
+    <Profile />
+</UserContext.Provider>
 ==================================================================================================================================
 
 
