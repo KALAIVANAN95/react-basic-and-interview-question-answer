@@ -394,5 +394,22 @@ initialState:{},
 reducers:{}
 })
 
+What is createSlice()?
+createSlice() is a Redux Toolkit function used to create a slice. 
+It contains the state and reducers for a specific feature.
+
+const userSlice=createSlice({
+name:"user",
+initialState:{},
+reducers:{}
+})
+
+What is a Reducer? MERMORY TRICKY -> Reducer = setState() of Redux
+A reducer is a function that updates the state based on an action.
+
+setUser(state,action){
+state.name=action.payload.name;
+state.role=action.payload.role
+}
 
 
