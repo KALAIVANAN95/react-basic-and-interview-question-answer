@@ -384,5 +384,15 @@ return(
 }
 =----------------------------------------------------------------------=
 
+What is createSlice()?
+createSlice() is a Redux Toolkit function used to create a slice. 
+It contains the state and reducers for a specific feature.
+
+const userSlice=createSlice({
+name:"user",
+initialState:{},
+reducers:{}
+})
+
 
 
