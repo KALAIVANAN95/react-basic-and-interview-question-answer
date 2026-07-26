@@ -505,4 +505,65 @@ React
    ↓
 "UI updated"
 
+=-----------------------------------------------------------------------------------------------------=
+
+const user=useSelector((state)=>state.user)
+useSelector is a React Redux hook used to read or access data from the Redux Store. 
+Whenever the selected state changes, 
+the component automatically re-renders with the updated data.
+
+| Hook          | Purpose                          |
+| ------------- | -------------------------------- |
+| `useSelector` | Read data from the Store         |
+| `useDispatch` | Send actions to update the Store |
+
+useDispatch() is a React Redux hook that returns the dispatch function. 
+We use this function to send actions to the Redux Store.
+
+const dispatch=useDispatch()
+
+const handleLogin=()=>{
+dispatch(setUser(res.data))
+}
+| Concept       | Purpose                            |
+| ------------- | ---------------------------------- |
+| Redux Toolkit | State management library           |
+| Store         | Holds the entire application state |
+| Slice         | Manages one feature                |
+| initialState  | Default state                      |
+| Reducer       | Updates the state                  |
+| useDispatch   | Returns the dispatch function      |
+| dispatch      | Sends an action                    |
+| Action        | Describes what should happen       |
+| Payload       | Data sent with the action          |
+| useSelector   | Reads data from the Store          |
+
+What is Redux Toolkit?
+State management library.
+
+Why Redux?
+Centralized state management.
+
+How many Stores?
+One
+
+What is Slice?
+Feature-based state.
+
+Who updates Store?
+Reducer
+
+Who sends Action?
+dispatch
+
+Who returns dispatch?
+useDispatch
+
+Who reads Store?
+useSelector
+
+What is Payload?
+Data sent with Action.
+
+
 
