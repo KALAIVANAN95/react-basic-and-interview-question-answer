@@ -628,4 +628,10 @@ Node.js
 ⬇️
 Mock Interviews
 
+==============================================================================================================================
+What is Authentication?
+Authentication means verifying who you are.
 
+What is Authorization?
+Authorization determines what a user is allowed to access 
+after authentication.
