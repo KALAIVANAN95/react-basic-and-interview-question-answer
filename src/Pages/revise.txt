@@ -455,7 +455,54 @@ Each Slice has its own initialState.
 
 Q5. Who updates the Redux state?
 Reducers update the Redux state based on the dispatched action.
+=====================================================================================================================================
 
+What is dispatch?
+dispatch() is used to send an action to the Redux Store. 
+It tells Redux that the state needs to be updated.
+| Concept      | Purpose                            |
+| ------------ | ---------------------------------- |
+| Store        | Holds the entire application state |
+| Slice        | Manages one feature                |
+| initialState | Default state                      |
+| Reducer      | Updates the state                  |
+| dispatch     | Sends the action                   |
+| Action       | Describes what to update           |
+| Payload      | Data sent with the action          |
 
+dispatch = Sends the action to the reducer.
+
+setUser = Action. It describes what needs to be updated.
+
+userData = Payload. It is the data sent with the action.
+
+Reducer = Receives the action and payload, then updates the Redux state.
+
+Store = Stores the updated application state.
+
+=---------------------------------------------------------=
+dispatch
+   ↓
+"I have a request"
+
+setUser
+   ↓
+"What should I do?"
+
+userData
+   ↓
+"Here is the data"
+
+Reducer
+   ↓
+"Okay, I'll update the state"
+
+Store
+   ↓
+"State updated"
+
+React
+   ↓
+"UI updated"
 
 
