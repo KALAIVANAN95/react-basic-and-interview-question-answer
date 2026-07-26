@@ -565,5 +565,67 @@ useSelector
 What is Payload?
 Data sent with Action.
 
+=-----------------------------------------------------------------------------------------------------------------------------------------=
+
+export const getEmployees=createAsyncThunk("/employee/getEmployees",
+async()=>{
+const response=await emmployeeAPI()
+return response.data
+}
+
+// 1. API
+export const getEmployees = createAsyncThunk(
+  "employee/getEmployees",
+  async () => {
+    const response = await employeeAPI();
+    return response.data;
+  }
+);
+
+// 2. Slice
+const employeeSlice = createSlice({
+  name: "employee",
+
+  initialState: {
+    employees: [],
+    loading: false,
+    error: null,
+  },
+
+  reducers: {},
+
+  extraReducers: (builder) => {
+    builder
+      .addCase(getEmployees.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(getEmployees.fulfilled, (state, action) => {
+        state.loading = false;
+        state.employees = action.payload;
+      })
+      .addCase(getEmployees.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.error.message;
+      });
+  },
+});
+
+=--------------------------=
+Redux Mock (Final)
+
+⬇️
+JWT Authentication
+
+⬇️
+React Hook Form
+
+⬇️
+JavaScript Advanced
+
+⬇️
+Node.js
+
+⬇️
+Mock Interviews
 
 
