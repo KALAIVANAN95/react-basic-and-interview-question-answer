@@ -1,6 +1,6 @@
 1. What is Node.js?
-Node.js is a JavaScript runtime environment that allows JavaScript to run outside the browser.
-Node.js is not a programming language. It is a JavaScript runtime environment.
+Node.js is a JavaScript runtime environment that allows JavaScript to run outside the browser. 
+It is mainly used to build backend applications, APIs, and server-side logic.
 
 2.What can Node.js do?
 ✅ Connect with MongoDB
