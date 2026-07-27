@@ -10,3 +10,13 @@ It is mainly used to build backend applications, APIs, and server-side logic.
 ✅ Generate JWT tokens
 ✅ Upload images
 ✅ Send emails
+
+3.Is Node.js a programming language?
+4.No. It is a runtime environment.
+
+5.Is Node.js a framework?
+No. Node.js is a runtime environment. Express.js is a framework built on top of Node.js.
+
+6.Why can't React connect directly to MongoDB?
+React should not connect directly to MongoDB because database credentials would be exposed to users. 
+Instead, React sends requests to the backend (Node.js), and the backend securely communicates with the database.
