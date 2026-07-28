@@ -80,4 +80,23 @@ An API (Application Programming Interface) acts as a bridge between the client (
 React UI → React → Axios → Express Route → Controller → MongoDB → Controller → Express Response → React UI.
 
 =----------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
+18.What is Middleware?
+Middleware is a function that executes between the request and the response. It can inspect, modify,
+validate, or stop the request before it reaches the controller.
+
+Request => Middleware=>Controller=>Response
+
+19.What can Middleware do?
+Middleware can:
+✅ Check JWT
+✅ Authentication
+✅ Authorization
+✅ Logging
+✅ Validation
+✅ Error Handling
+
+20.What is next()?
+next() is a function used to pass control from the current middleware to the next middleware
+or route handler.
+Middleware=>next()=>controller
 
