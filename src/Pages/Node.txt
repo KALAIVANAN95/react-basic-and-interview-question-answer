@@ -119,3 +119,34 @@ The user is not authenticated.
 25.403 Forbidden
 The user is authenticated, but does not have permission.
 403 Forbidden means the user is authenticated, but does not have permission to perform the requested action.
+
+=-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
+What is a Database?
+A database is a place where applications store, organize, and manage data permanently.
+
+PostgreSQL?
+PostgreSQL is an open-source Relational Database Management System (RDBMS) used to store and manage structured data in tables.
+
+SQL Database
+Tables
+Rows & Columns
+Strong relationships.
+
+Table?
+The entire Employees table.
+
+What is a Row?
+A row represents one complete record in a table. For example, one employee's details.
+
+What is a Column?
+Columns are the fields (ID, Name, Email, Role).
+
+=-----------------------------------=
+SELECT * FROM employees;
+
+INSERT INTO employees (...);
+
+UPDATE employees
+SET name = 'ALAI';
+
+DELETE FROM employees;
