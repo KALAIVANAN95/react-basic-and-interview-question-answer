@@ -100,3 +100,15 @@ next() is a function used to pass control from the current middleware to the nex
 or route handler.
 Middleware=>next()=>controller
 
+21.What happens if we don't call next()?
+If we don't call next(), the request stops in the current middleware. 
+The controller will not execute, and the client may not receive a response.
+
+22.Authentication Middleware
+Authentication Middleware verifies the user's identity by checking whether a valid JWT token is present. 
+If the token is valid, it calls next() and allows the request to continue. Otherwise, it returns 401 Unauthorized.
+
+23.Authorization Middleware
+Authorization Middleware checks whether the authenticated user has permission to access a specific resource or
+perform a specific action based on their role (such as Admin or Employee). If the user does not have permission, it returns 403 Forbidden.
+
