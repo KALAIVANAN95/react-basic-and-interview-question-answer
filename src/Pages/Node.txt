@@ -36,3 +36,14 @@ Request handling
 Response handling
 
 A lot of code.
+
+9.Node.js vs Express.js – What's the Difference?**
+
+| **Node.js**                         | **Express.js**                        |
+| ----------------------------------- | ------------------------------------- |
+| Runtime Environment                 | Web Framework                         |
+| Runs JavaScript outside the browser | Simplifies backend development        |
+| Low-level (provides core modules)   | High-level (built on top of Node.js)  |
+| Used to create an HTTP server       | Makes building APIs faster and easier |
+
+
