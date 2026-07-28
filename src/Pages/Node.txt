@@ -20,3 +20,17 @@ No. Node.js is a runtime environment. Express.js is a framework built on top of 
 6.Why can't React connect directly to MongoDB?
 React should not connect directly to MongoDB because database credentials would be exposed to users. 
 Instead, React sends requests to the backend (Node.js), and the backend securely communicates with the database.
+
+7.What is Express.js?
+Express.js is a  lightweight web framework built on top of Node.js
+It simplifies backend development by providing features like routing,middleware and request handling.
+
+8.Why do we need Express?
+To create one API
+You need
+HTTP Server
+URL Parsing
+Request Handling
+Response Handling
+
+A lot of code.
