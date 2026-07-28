@@ -46,4 +46,9 @@ A lot of code.
 | Low-level (provides core modules)   | High-level (built on top of Node.js)  |
 | Used to create an HTTP server       | Makes building APIs faster and easier |
 
+React = Customer
+Express = Reception
+Controller = Manager
+MongoDB = Warehouse
+
 
