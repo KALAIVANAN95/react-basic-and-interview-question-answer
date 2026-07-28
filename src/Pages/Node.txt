@@ -51,4 +51,27 @@ Express = Reception
 Controller = Manager
 MongoDB = Warehouse
 
+=--------------------------------------------------------------------------------------------------------------------------=
+
+10.What is Routing?
+Routing maps a request (URL+HTTP method) to the correct controller/function
+
+11.HTTP Methods?
+There are 5 important methods
+GET, POST, PUT, PATCH, DELETE
+
+12.What is GET?
+Get is used to retrieve data from the server.
+
+13.What is POST?
+POST is used to create a new resources on the server
+
+14.What is PUT?
+PUT is used to completely update an existing resource.
+
+15.What is PATCH?
+PATCH is used to partially update an existing resource.
+
+16.What is DELETE?
+DELETE is used to remove a resource from the Server
 
