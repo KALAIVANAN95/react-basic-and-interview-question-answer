@@ -77,4 +77,5 @@ DELETE is used to remove a resource from the Server
 
 17.API
 An API (Application Programming Interface) acts as a bridge between the client (React) and the server (Node.js), allowing them to communicate.
+React UI → React → Axios → Express Route → Controller → MongoDB → Controller → Express Response → React UI.
 
