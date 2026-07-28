@@ -22,15 +22,17 @@ React should not connect directly to MongoDB because database credentials would 
 Instead, React sends requests to the backend (Node.js), and the backend securely communicates with the database.
 
 7.What is Express.js?
-Express.js is a  lightweight web framework built on top of Node.js
-It simplifies backend development by providing features like routing,middleware and request handling.
+Express.js is a lightweight web framework built on top of Node.js
+It simplify backend development by providing features like routing(GET,POST,PUT,DELETE),
+Middleware(JWT,Authentication,Logging) and Req,Res handling
 
-8.Why do we need Express?
-To create one API
-You need
+8.Why do we need Express.js?
+Without node.js 
+To create one api
+We need 
 HTTP Server
 URL Parsing
-Request Handling
-Response Handling
+Request handling
+Response handling
 
 A lot of code.
