@@ -150,3 +150,39 @@ UPDATE employees
 SET name = 'ALAI';
 
 DELETE FROM employees;
+=------------------------------------------------------------------------------------------------------------------------------------------=
+1.What is SQL?
+SQL (Structured Query Language) is a language used to communicate with relational databases like PostgreSQL.
+It is used to create, read, update, and delete data.
+
+2.SELECT (Read)
+SELECT * FROM employees; Give me all employees
+
+3.INSERT (Create)
+Add a new data.
+INSERT INTO employees(name,email)
+VALUES("kalai","kalai@gmail.com");
+
+4.UPDATE
+Update exiting data
+UPDATE employees
+SET role="Admin"
+WHERE id=1;
+
+5.DELETE
+Remove data
+DELETE FROM employees
+WHERE id=1;
+
+
+What is SELECT?
+SELECT is used to retrieve data from the database.
+
+What is INSERT?
+INSERT is used to add a new records into a table
+
+What is UPDATE?
+UPDATE is used to modify exiting records in a table
+
+What is DELETE?
+DELETE is used to remove reocrds from a table
