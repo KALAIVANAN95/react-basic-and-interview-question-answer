@@ -186,3 +186,36 @@ UPDATE is used to modify exiting records in a table
 
 What is DELETE?
 DELETE is used to remove reocrds from a table
+
+=---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
+What is WHERE?
+The WHERE clause is used to filter records based on a specified condition.
+
+SELECT * FROM employees
+WHERE id=2;
+
+SELECT * FROM employees
+WHERE role="Admin";
+
+UPDATE employees
+SET role="Manager"
+WHERE id=2;
+
+DELETE FROM employees
+WHERE id=2;
+
+Why do we use the WHERE clause?
+We use the WHERE clause to retrieve, update, or delete 
+only the records that match a specific condition.
+
+What is the difference?
+SELECT * FROM employees;
+VS
+SELECT * FROM employees
+WHERE id = 2;
+
+SELECT * FROM employees; retrieves all employee details.
+SELECT * FROM employees WHERE id = 2; retrieves only employee ID 2.
+
+What happens if we run DELETE FROM employees;
+Without the WHERE clause it will delete all employee data.
