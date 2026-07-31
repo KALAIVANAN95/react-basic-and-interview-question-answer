@@ -219,3 +219,31 @@ SELECT * FROM employees WHERE id = 2; retrieves only employee ID 2.
 
 What happens if we run DELETE FROM employees;
 Without the WHERE clause it will delete all employee data.
+=---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
+What is ORDER BY?
+ORDER BY is used to sort records in ascending (ASC) or descending (DESC) order.
+
+SELECT * FROM employees
+ORDER BY salary DESC;
+
+SELECT * FROM employees
+ORDER BY salary ASC;
+
+SELECT * FROM employees
+ORDER BY name ASC;
+
+SELECT * FROM employees
+ORDER BY joining_date DESC;
+
+What is ASC?
+Text → A → Z
+Numbers → Small → Large (1 → 100)
+
+
+What is DESC?
+Text → Z → A
+Numbers → Large → Small (100 → 1)
+
+
+What is the difference between ASC and DESC?
+1 to 100 ASC and 100 to 1 DESC.
