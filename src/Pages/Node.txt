@@ -247,3 +247,19 @@ Numbers → Large → Small (100 → 1)
 
 What is the difference between ASC and DESC?
 1 to 100 ASC and 100 to 1 DESC.
+=---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
+1.What is LIMIT?
+LIMIT is used to restrict the number of rows returned by a SQL query.
+
+SELECT * FROM employees
+LIMIT 10;
+
+2.Why do we use LIMIT?
+We use LIMIT to improve performance, reduce the amount of data returned, and implement pagination.
+
+What happens if we don't use LIMIT for a table with 1,00,000 records?
+Without LIMIT, the database may return thousands of records, making the API slower, increasing memory usage, and causing the UI to load slowly.
+
+
+Which feature in React commonly uses LIMIT?
+Pagination
