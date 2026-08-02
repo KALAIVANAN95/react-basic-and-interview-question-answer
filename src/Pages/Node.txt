@@ -263,3 +263,34 @@ Without LIMIT, the database may return thousands of records, making the API slow
 
 Which feature in React commonly uses LIMIT?
 Pagination
+=----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
+
+What is OFFSET?
+OFFSET is used to skip a specified number of rows before returning records. 
+It is commonly used with LIMIT to implement pagination.
+
+LIMIT             vs           OFFSET
+How many rows                 How many rows to skip
+LIMIT 10                      OFFSET 20
+
+Why do we use OFFSET?
+We use OFFSET to skip a specified number of rows and retrieve the next set of records. 
+It is commonly used with LIMIT to implement pagination.
+SELECT * FROM employees
+LIMIT 10 OFFSET 0;
+
+What is the difference between LIMIT and OFFSET?
+Specifies how many rows to return.
+Example: LIMIT 10
+
+Specifies how many rows to skip.
+Example: OFFSET 20
+
+Write SQL for: Page 4 Page size = 10?
+OFFSET = (Page Number - 1) × Page Size
+OFFSET = (4 - 1) × 10 = 30
+
+SELECT * FROM employees
+ORDER BY employee_id
+LIMIT 10 OFFSET 30;
+
