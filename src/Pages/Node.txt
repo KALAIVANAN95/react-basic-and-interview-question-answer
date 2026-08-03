@@ -294,3 +294,22 @@ SELECT * FROM employees
 ORDER BY employee_id
 LIMIT 10 OFFSET 30;
 
+=----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
+1.What is JOIN?
+JOIN is used to combine data from two or more tables based on a related column.
+
+SELECT employees.name,
+departments.department
+FROM employees
+JOIN departments
+ON employees.department_id=departments.id
+
+2.Why do we use JOIN?
+We use JOIN to retrieve related data from multiple tables in a single query.
+
+3.Can we get the Department Name from the Employee table alone? Why?
+No. We cannot get the department name from the Employee table alone because it only stores the Department ID.
+We need to JOIN the Departments table to retrieve the department name.
+
+4.Which column is used to connect the two tables?
+id(employees.department_id and departments.id) column is used to connect the two tables using JOIN.
