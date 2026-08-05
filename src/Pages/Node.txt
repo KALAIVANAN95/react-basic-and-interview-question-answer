@@ -416,3 +416,56 @@ PostgreSQL
 Response
      ↓
 React UI
+=----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
+What is Relationship? - 1:1, 1:N, N:N
+Father - Mother - Children. This connection is called a Relationship.
+
+Tables are connected. This connection is called a Relationship.
+
+Example: We have two tables.
+Users:
+| id | name  |
+| -- | ----- |
+| 1  | Kalai |
+| 2  | Ravi  |
+----------------------------
+Assessment Attempts:
+| id | user_id | score |
+| -- | ------- | ----- |
+| 1  | 1       | 95    |
+| 2  | 1       | 88    |
+
+AssessmentAt.user_id===> user.id ==> Kalai
+Both tables are connected - This is called a Relationship
+
+There are only 3 types.
+1 : 1
+
+1 : N
+
+N : N
+=-----------------------------------------------------------------=
+Part 1 – One to One (1:1)
+One Person have to->One Passport ===One-to-One Relationship
+One profie -> Users 1 to User Profile 1=== This is 1:1
+One Resume -> Users 1 to One Resume
+=-----------------------------------------------------------------=
+Part 2 – One to Many (1:N)
+This is the most common relationship.
+One teacher teaches to 40 students.
+
+One teacher to Many Students This is 1:N
+--------------------------------------------------------------------
+Our Project
+One candidate->Can write->Many assessments.
+Example: Kalai ->IQ Test ->Reasoning Test
+=-----------------------------------------------------------------=
+Part 3 – Many to Many (N:N)
+One student->Many subjects.
+One subject-> Many students.
+This becomes => Many Students -- Many Subjects => Many-to-Many
+Ex: Many users -> Many Assessment
+Many-to-Many
+
+I understand the basic concepts of databases, including tables, rows, 
+columns, primary keys, foreign keys, and relationships.
