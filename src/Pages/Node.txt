@@ -124,6 +124,7 @@ The user is authenticated, but does not have permission.
 What is a Database?
 A database is a place where applications store, organize, and manage data permanently.
 
+
 PostgreSQL?
 PostgreSQL is an open-source Relational Database Management System (RDBMS) used to store and manage structured data in tables.
 
@@ -133,13 +134,19 @@ Rows & Columns
 Strong relationships.
 
 Table?
-The entire Employees table.
+The entire Employees table. or A table is like a notebook inside the database that stores related information.
 
 What is a Row?
 A row represents one complete record in a table. For example, one employee's details.
 
 What is a Column?
 Columns are the fields (ID, Name, Email, Role).
+
+What is a Primary Key?
+A Primary Key is a unique identifier used to identify each record in a table.
+
+What is a Foreign Key?
+A Foreign Key is a column that references the Primary Key of another table.
 
 =-----------------------------------=
 SELECT * FROM employees;
