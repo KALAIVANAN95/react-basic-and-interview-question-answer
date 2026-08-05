@@ -313,3 +313,81 @@ We need to JOIN the Departments table to retrieve the department name.
 
 4.Which column is used to connect the two tables?
 id(employees.department_id and departments.id) column is used to connect the two tables using JOIN.
+=----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
+1.What is Prisma ORM?
+Prisma ORM is an Object Relational Mapping tool that allows Node.js applications to interact with databases 
+using JavaScript instead of writing raw SQL queries.
+
+SELECT * FROM employees; --- Without Prisma
+
+await prisma.employee.findMany(); With Prisma
+------------------------------------------------
+Another Example
+Without Prisma;
+INSERT INTO employees(name,email)
+VALUES("kalai","kalai@gmail.com");
+
+With Prisma
+await prisma.employee.create({
+  data: {
+    name: "Kalai",
+    email: "kalai@gmail.com"
+  }
+});
+------------------------------------------------
+Another Example - Without Prisma
+UPDATE employee
+SET role="Admin"
+WHERE id=1;
+
+With Prisma;
+await prisma.employee.update({
+where:{
+id:1},
+data:{
+role:"Admin"
+}
+})
+------------------------------------------------
+Another Example without prisma
+DELETE FROM employees
+WHERE id=1;
+
+With Prisma
+await prisma.employee.delete({
+where:{id:1}
+})
+------------------------------------------------
+Why do companies use Prisma?
+Because it provides:
+Less code
+Easy to read
+Better developer experience
+Type safety (especially with TypeScript)
+Fewer SQL mistakes
+------------------------------------------------
+SQL vs Prisma
+| SQL                       | Prisma       |
+| ------------------------- | ------------ |
+| `SELECT * FROM employees` | `findMany()` |
+| `INSERT`                  | `create()`   |
+| `UPDATE`                  | `update()`   |
+| `DELETE`                  | `delete()`   |
+------------------------------------------------
+
+Without Prisma
+
+↓
+
+Write SQL
+
+With Prisma
+
+↓
+
+Write JavaScript
+
+↓
+
+Prisma automatically converts it to SQL.
+=----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
