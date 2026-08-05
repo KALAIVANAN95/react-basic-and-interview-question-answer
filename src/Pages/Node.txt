@@ -391,3 +391,21 @@ Write JavaScript
 
 Prisma automatically converts it to SQL.
 =----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
+React sends an API request using Axios. Express receives the request and forwards it to the controller. The controller uses Prisma to interact with PostgreSQL. Prisma converts the JavaScript code into SQL, executes the query in PostgreSQL, retrieves the data, and sends the response back through Express to React, where the UI is updated.
+React UI
+     ↓
+Axios
+     ↓
+Express Route
+     ↓
+Middleware
+     ↓
+Controller
+     ↓
+Prisma
+     ↓
+PostgreSQL
+     ↓
+Response
+     ↓
+React UI
