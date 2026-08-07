@@ -470,3 +470,34 @@ Many-to-Many
 
 I understand the basic concepts of databases, including tables, rows, 
 columns, primary keys, foreign keys, and relationships.
+=----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
+What is Prisma Client?
+Prisma client is an auto-generated JavaScript client used to perform database operations such as 
+create, read, update, and delete.
+
+Prisma Client is the object that gives us method like:
+findMany()
+findUnique()
+create()
+update()
+delete()
+
+findMany-This is the easiest. =>  Give me all the employees
+SQL    => SELECT * FROM employees;
+Prisma => await prisma.employee.findMany()
+
+findUnique() => Give me employee id 5;
+SQL    => SELECT * FROM employees WHERE id=5;
+Prisma => await prisma.employee.findUnique({where:{id:2}})
+
+create() => Add a record
+SQL    => INSERT INTO employees(name,email) VALUES("kalai","kalai@gmail.com")
+Prisma => await prisma.employee.create({data:{name:"kalai",email:"raj@gmail.com"}})
+
+update()=> Modify reocrd
+SQL    => UPDATE employees SET role="Admin" WHERE id=2;
+Prisma => await prisma.employee.update({where:{id:1}, data:{role:"admin"}})
+
+delete () => Remove Record
+SQL    => DELETE FROM employees WHERE id=2;
+Prisma => await prisma.employee.delete({where:{id:1}})
