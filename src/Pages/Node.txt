@@ -324,6 +324,7 @@ id(employees.department_id and departments.id) column is used to connect the two
 1.What is Prisma ORM?
 Prisma ORM is an Object Relational Mapping tool that allows Node.js applications to interact with databases 
 using JavaScript instead of writing raw SQL queries.
+that provides tools like Prisma Client, Prisma Migrate, Prisma Schema, and Prisma Studio for working with databases.
 
 SELECT * FROM employees; --- Without Prisma
 
