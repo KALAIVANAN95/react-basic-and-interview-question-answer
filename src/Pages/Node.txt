@@ -501,3 +501,19 @@ Prisma => await prisma.employee.update({where:{id:1}, data:{role:"admin"}})
 delete () => Remove Record
 SQL    => DELETE FROM employees WHERE id=2;
 Prisma => await prisma.employee.delete({where:{id:1}})
+
+What is findMany()?
+findMany() is used to retrieve multiple records from the database.
+
+What is findUnique()?
+findUnique() is used to retrieve a single record based on a unique field like id or email.
+
+What is create()?
+create() is used to insert a new record into the database.
+
+What is update()?
+update() is used to modify an existing record in the database.
+
+What is delete()?
+delete() is used to remove a record from the database.
+===================================================================================================================================================================================
