@@ -516,4 +516,47 @@ update() is used to modify an existing record in the database.
 
 What is delete()?
 delete() is used to remove a record from the database.
+=----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
+Prisma ORM – Lesson 3: Prisma Schema
+
+Prisma        → ORM
+Prisma Client → Database operations
+
+1. What is schema.prisma?
+Think of it like a blueprint for your database.
+schema.prisma is the blueprint that defines the structure of our database models, fields, types, and relationships.
+
+2. What is a model?
+A model represents a database table in Prisma.
+Example:
+model Employee {
+  id    Int
+  name  String
+  email String
+}
+
+3. What does @id mean?
+@id is the primary key for the employee table.
+
+4. Why @default(autoincrement())?
+Automatically generate the number. We don't need to provide the id.
+
+5. What does @unique mean?
+It does not allow duplicate values, like email.
+
+6.Different schema.prisma and Prisma Client?
+It defines the database structure, models, fields, types, and relationships.
+
+Super simple:
+Schema = Database structure
+Client = Database interaction
+
+Your Memory Line
+i)Schema → Structure
+ii)Model → Table
+iii)Field → Column
+iv)@id → Primary Key
+v)@unique → No duplicates
+vi)@default(autoincrement()) → Automatically generate ID
+vii)Prisma Client → Interact with database
 ===================================================================================================================================================================================
