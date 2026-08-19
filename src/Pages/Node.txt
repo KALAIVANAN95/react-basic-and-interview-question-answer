@@ -2,6 +2,8 @@
 Node.js is a JavaScript runtime environment that allows JavaScript to run outside the browser. 
 It is mainly used to build backend applications, APIs, and server-side logic.
 
+A webhook is a way for one application to automatically notify another application when a specific event occurs, usually through an HTTP POST request
+
 2.What can Node.js do?
 ✅ Connect with MongoDB
 ✅ Read and manage files
