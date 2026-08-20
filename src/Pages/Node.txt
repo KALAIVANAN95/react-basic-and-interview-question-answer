@@ -100,7 +100,7 @@ React UI → React → Axios → Express Route → Controller → MongoDB → Co
 Middleware is a function that executes between the request and the response. It can inspect, modify,
 validate, or stop the request before it reaches the controller.
 
-Request => Middleware=>Controller=>Response
+Request => Middleware=>Controller=>Service=>Database=>Response
 
 19.What can Middleware do?
 Middleware can:
