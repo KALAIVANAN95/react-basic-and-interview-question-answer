@@ -96,7 +96,10 @@ An API (Application Programming Interface) acts as a bridge between the client (
 React UI → React → Axios → Express Route → Controller → MongoDB → Controller → Express Response → React UI.
 
 Different between app.get and app.use?
-app.get() is used to define a route that handles HTTP GET requests. app.use() is mainly used to register middleware or mount routers.”
+app.get() is used to define a route that handles HTTP GET requests. 
+app.use() is mainly used to register middleware or mount routers.
+
+API stands for Application Programming Interface. It allows communication between a client and a server. A REST API is an API that follows REST principles and uses HTTP methods such as GET, POST, PUT, PATCH, and DELETE to work with resources.”
 
 =----------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
 18.What is Middleware?
@@ -323,6 +326,7 @@ LIMIT 10 OFFSET 30;
 =----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
 1.What is JOIN?
 JOIN is used to combine data from two or more tables based on a related column.
+The commonly used JOINs are INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN.
 
 SELECT employees.name,
 departments.department
@@ -339,6 +343,24 @@ We need to JOIN the Departments table to retrieve the department name.
 
 4.Which column is used to connect the two tables?
 id(employees.department_id and departments.id) column is used to connect the two tables using JOIN.
+
+
+1. INNER JOIN => Only matching records from both tables.
+SELECT users.name, orders.amount
+FROM users
+INNER JOIN orders
+ON users.id = orders.user_id;
+
+2. LEFT JOIN => All records from left table + matching records from right table.
+SELECT users.name, orders.amount
+FROM users
+LEFT JOIN orders
+ON users.id = orders.user_id;
+
+3. RIGHT JOIN => All records from the right table + matching records from the left.
+
+4. FULL OUTER JOIN => All records from both tables, whether they match or not.
+
 =----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
 1.What is Prisma ORM?
 Prisma ORM is an Object Relational Mapping tool that allows Node.js applications to interact with databases 
