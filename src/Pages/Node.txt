@@ -361,6 +361,11 @@ ON users.id = orders.user_id;
 
 4. FULL OUTER JOIN => All records from both tables, whether they match or not.
 
+What is the difference between DELETE, TRUNCATE, and DROP?
+DELETE is used to remove specific rows from a table based on a condition. 
+TRUNCATE removes all rows from the table but keeps the table structure. DROP removes the entire table, including its structure and data.
+
+
 =----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
 1.What is Prisma ORM?
 Prisma ORM is an Object Relational Mapping tool that allows Node.js applications to interact with databases 
