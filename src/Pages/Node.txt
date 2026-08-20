@@ -13,6 +13,15 @@ A webhook is a way for one application to automatically notify another applicati
 ✅ Upload images
 ✅ Send emails
 
+Why Node.js?
+Main points:
+JavaScript for backend
+Asynchronous
+Non-blocking I/O
+Good for API development
+Can handle many concurrent requests efficiently
+
+
 3.Is Node.js a programming language?
 4.No. It is a runtime environment.
 
