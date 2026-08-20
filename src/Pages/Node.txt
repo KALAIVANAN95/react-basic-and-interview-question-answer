@@ -366,6 +366,12 @@ DELETE is used to remove specific rows from a table based on a condition.
 TRUNCATE removes all rows from the table but keeps the table structure. DROP removes the entire table, including its structure and data.
 
 
+JWT stands for JSON Web Token. It is commonly used for authentication. After successful login, 
+the backend generates a JWT and sends it to the frontend. 
+The frontend sends the token in the Authorization header when accessing protected APIs. 
+The backend middleware verifies the token and allows or rejects the request. 
+A JWT consists of a header, payload, and signature.
+
 =----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
 1.What is Prisma ORM?
 Prisma ORM is an Object Relational Mapping tool that allows Node.js applications to interact with databases 
