@@ -372,6 +372,10 @@ The frontend sends the token in the Authorization header when accessing protecte
 The backend middleware verifies the token and allows or rejects the request. 
 A JWT consists of a header, payload, and signature.
 
+Header → algorithm/type information
+Payload → claims like user ID / role
+Signature → used to verify that the token hasn't been tampered with
+
 =----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
 1.What is Prisma ORM?
 Prisma ORM is an Object Relational Mapping tool that allows Node.js applications to interact with databases 
