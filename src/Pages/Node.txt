@@ -95,6 +95,9 @@ DELETE is used to remove a resource from the Server
 An API (Application Programming Interface) acts as a bridge between the client (React) and the server (Node.js), allowing them to communicate.
 React UI → React → Axios → Express Route → Controller → MongoDB → Controller → Express Response → React UI.
 
+Different between app.get and app.use?
+app.get() is used to define a route that handles HTTP GET requests. app.use() is mainly used to register middleware or mount routers.”
+
 =----------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
 18.What is Middleware?
 Middleware is a function that executes between the request and the response. It can inspect, modify,
