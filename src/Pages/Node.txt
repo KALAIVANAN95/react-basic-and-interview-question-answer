@@ -4,6 +4,9 @@ It is mainly used to build backend applications, APIs, and server-side logic.
 
 A webhook is a way for one application to automatically notify another application when a specific event occurs, usually through an HTTP POST request
 
+The Event Loop is a mechanism in Node.js that handles asynchronous operations. 
+It continuously checks whether the call stack is empty and, when it is, allows pending callbacks to be executed
+
 2.What can Node.js do?
 ✅ Connect with MongoDB
 ✅ Read and manage files
