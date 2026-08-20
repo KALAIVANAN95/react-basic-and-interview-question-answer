@@ -220,6 +220,10 @@ setTimeout(()=>{
  console.log("Done")
 },2000)
 
+Synchronous = wait and execute in order
+Asynchronous = don't block; continue other work
+
+
 25.Event Loop:
  JavaScript uses the event loop to handle asynchronous operations.
 or
