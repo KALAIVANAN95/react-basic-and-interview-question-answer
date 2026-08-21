@@ -101,6 +101,9 @@ app.use() is mainly used to register middleware or mount routers.
 
 API stands for Application Programming Interface. It allows communication between a client and a server. A REST API is an API that follows REST principles and uses HTTP methods such as GET, POST, PUT, PATCH, and DELETE to work with resources.”
 
+Security:
+Express.js application secure panna Helmet, CORS, rate limiting, input validation, password hashing, JWT/session security, CSRF/XSS protection, injection prevention, HTTPS, secure environment variables, proper error handling, and dependency auditing use pannuvom
+
 =----------------------------------------------------------------------------------------------------------------------------------------------------------------------------=
 18.What is Middleware?
 Middleware is a function that executes between the request and the response. It can inspect, modify,
