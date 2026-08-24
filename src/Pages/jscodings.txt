@@ -219,3 +219,103 @@ function firstNonRepeatingChar(str) {
 
 console.log(firstNonRepeatingChar("aabbcdde"));
 // c
+=====================================================================================
+
+const products = [
+    { id: 1, category: "mobile", name: "iPhone" },
+    { id: 2, category: "laptop", name: "Dell" },
+    { id: 3, category: "mobile", name: "Samsung" },
+    { id: 4, category: "laptop", name: "HP" },
+    { id: 5, category: "mobile", name: "OnePlus" }
+];
+
+
+function groupAndCount(arr) {
+    let result = arr.reduce((acc, item) => {
+        acc[item.category] = (acc[item.category] || 0) + 1
+        return acc
+    }, {})
+    console.log(result)
+    return result
+}
+groupAndCount(products)
+=====================================================================================
+
+const sales = [
+    { category: "electronics", amount: 500 },
+    { category: "clothing", amount: 300 },
+    { category: "electronics", amount: 700 },
+    { category: "food", amount: 200 },
+    { category: "clothing", amount: 600 }
+];
+
+function groupByCateHigh(arr) {
+    const results = arr.reduce((acc, item) => {
+        acc[item.category] = (acc[item.category] || 0) + item.amount
+        return acc
+    }, {})
+
+
+    let high = 0;
+    let cate = ""
+    for (let key in results) {
+        if (results[key] > high) {
+            high = results[key]
+            cate = key
+        }
+    }
+    return {
+        totals: results, high, cate
+    }
+}
+console.log(groupByCateHigh(sales))
+=====================================================================================
+
+const employees = [
+    { name: "Alice", department: "IT" },
+    { name: "Bob", department: "HR" },
+    { name: "Charlie", department: "IT" },
+    { name: "David", department: "Finance" },
+    { name: "Emma", department: "HR" }
+];
+
+function departments(arr) {
+    let result = arr.reduce((acc, item) => {
+        acc[item.department] = (acc[item.department] || [])
+        acc[item.department].push(item.name)
+        return acc
+    }, {})
+    return result
+}
+console.log(departments(employees))
+=====================================================================================
+const expenses = [
+    { category: "food", amount: 500 },
+    { category: "travel", amount: 1000 },
+    { category: "food", amount: 200 },
+    { category: "shopping", amount: 300 },
+    { category: "travel", amount: 500 }
+];
+
+function cateWithLow(arr) {
+    let result = arr.reduce((acc, item) => {
+        acc[item.category] = (acc[item.category] || 0) + item.amount
+        return acc
+    }, {})
+
+    let lowCate = ""
+    let lowAmout = Infinity
+    for (let val in result) {
+        if (result[val] < lowAmout) {
+            lowCate = val
+            lowAmout = result[val]
+        }
+
+    }
+    return { total: result, lowAmout, lowCate }
+}
+
+console.log(cateWithLow(expenses))
+
+=====================================================================================
+
