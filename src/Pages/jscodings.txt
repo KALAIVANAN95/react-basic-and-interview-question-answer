@@ -221,6 +221,44 @@ console.log(firstNonRepeatingChar("aabbcdde"));
 // c
 =====================================================================================
 
+const transaction=[ 
+    {id:1,category:"food", amount:100}, 
+    {id:2,category:"shopping", amount:200}, 
+    {id:3,category:"travel", amount:300}, 
+    {id:1,category:"food", amount:1000}, 
+] 
+ 
+function groupBySum(sum){ 
+    let result = sum.reduce((acc,item)=>{ 
+        acc[item.category]=(acc[item.category] ||0) + item.amount 
+        return acc 
+    },{}) 
+    return result 
+} 
+console.log(groupBySum(transaction)) 
+=====================================================================================
+ 
+function groupBySums(sss){ 
+    const result=sss.reduce((acc,item)=>{ 
+        acc[item.category]=(acc[item.category]||0)+item.amount 
+        return acc 
+    },{}) 
+ 
+    let max=0 
+    let cate="" 
+    for(let key in result){ 
+        if(result[key]>max){ 
+            max=result[key] 
+            cate=key 
+        } 
+    } 
+    return { 
+        result,cate,max 
+    } 
+} 
+console.log(groupBySums(transaction))/ ithu mari interview la kekura question kodu.
+=====================================================================================
+
 const products = [
     { id: 1, category: "mobile", name: "iPhone" },
     { id: 2, category: "laptop", name: "Dell" },
