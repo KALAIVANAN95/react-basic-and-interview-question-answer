@@ -45,6 +45,10 @@ SSR -> Server renders page
 
 React -> Reusable UI components
 Next.js -> React + SSR + SEO + Routing
+
+ES6 features:
+let&const, arrow function, temlate literals, destructuring, default parameters, spread& rest operator, classess, promises, modules(import/export), Map & Set
+
 ===================================================================================================================================================================
 1.What is JavaScript.?
 i)High level, interpreted language
