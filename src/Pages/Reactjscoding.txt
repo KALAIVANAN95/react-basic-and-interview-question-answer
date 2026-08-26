@@ -367,3 +367,51 @@ function App() {
 
 export default App;
 
+==========================================================================================================================================================================================
+
+  import React,{useState} from "react"
+
+  function App(){
+    const [form,setForm]=useState({
+      name:"",
+      email:"",
+    })
+    const handleChange=(e)=>{
+      const {name,value}=e.target
+      setForm({
+        ...form,
+        [name]:value
+      })
+      setErr("")
+    }
+    const [err,setErr]=useState(null)
+    const validate=()=>{
+      if(!form.name){
+        setErr("Name is empty")
+        return false
+      }
+      if(!form.email){
+        setErr("Email is empty")
+        return false
+      }
+      return true
+    }
+
+    const handleAdd=()=>{
+      if(!validate()){
+        return false
+      }
+      console.log("Value saved")
+    }
+    return(
+      <div>
+        <input name={"name"} value={form.name} onChange={handleChange} placeholder="Name"/> 
+      {err && <span>{err}</span>}
+        <input name={"email"} value={form.email} onChange={handleChange} placeholder="Email"/>
+        {err && <span>{err}</span>}
+        <button onClick={handleAdd}>Add</button>
+      </div>
+    )
+  }
+
+  export default App
