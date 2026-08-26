@@ -415,3 +415,21 @@ export default App;
   }
 
   export default App
+
+==========================================================================================================================================================================================
+function Child({name}){
+  return(
+    <div>{name}</div>
+  )
+}
+
+
+function App(){
+  return(
+    <div>
+      <Child name="Rajj"/>
+    </div>
+  )
+}
+
+export default App
