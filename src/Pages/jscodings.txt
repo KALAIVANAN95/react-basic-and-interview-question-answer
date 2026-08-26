@@ -224,6 +224,54 @@ function firstNonRepeatingChar(str) {
 console.log(firstNonRepeatingChar("aabbcdde"));
 // c
 =====================================================================================
+2. Word Count
+function wordCount(str) {
+  const words = str.split(" ");
+  const count = {};
+
+  for (let i = 0; i < words.length; i++) {
+    if (count[words[i]]) {
+      count[words[i]] = count[words[i]] + 1;
+    } else {
+      count[words[i]] = 1;
+    }
+  }
+
+  return count;
+}
+
+console.log(wordCount("hello world hello"));
+=====================================================================================
+3. Common Values Between Two Arrays
+const arr1 = [1, 2, 3, 4];
+const arr2 = [3, 4, 5, 6];
+
+function commonValues(arr1, arr2) {
+  const result = arr1.filter((value) => {
+    return arr2.includes(value);
+  });
+
+  return result;
+}
+console.log(
+  commonValues(
+    [1, 2, 3, 4],
+    [3, 4, 5, 6]
+  )
+);
+output:
+[3, 4]
+=====================================================================================
+4. Flatten Nested Array
+const data = [1, [2, 3], [4, 5]];
+function flattenArray(arr) {
+  return arr.flat();
+}
+
+console.log(
+  flattenArray([1, [2, 3], [4, 5]])
+);
+=====================================================================================
 
 const transaction=[ 
     {id:1,category:"food", amount:100}, 
@@ -360,4 +408,126 @@ function cateWithLow(arr) {
 console.log(cateWithLow(expenses))
 
 =====================================================================================
+10. Array of Objects — Filter
+const employees = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 20 },
+  { name: "David", age: 35 }
+];
 
+function filterEmployees(arr) {
+  const result = arr.filter((item) => {
+    return item.age > 25;
+  });
+
+  return result;
+}
+
+console.log(filterEmployees(employees));
+
+O/P=filter → condition check → matching objects மட்டும்
+[
+  { name: "Bob", age: 30 },
+  { name: "David", age: 35 }
+]
+
+=====================================================================================
+11. Array of Objects — Map => Question: Employees-ன் names மட்டும் எடுத்துக்கோ.
+const employees = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 20 },
+  { name: "David", age: 35 }
+];
+
+function getNames(arr) {
+  const result = arr.map((item) => {
+    return item.name;
+  });
+
+  return result;
+}
+
+console.log(getNames(employees));
+Output: map → ஒவ்வொரு object-ல இருந்தும் value எடு
+["Alice", "Bob", "Charlie", "David"]
+
+=====================================================================================
+12. Array of Objects — Find
+Question: id = 2 உள்ள employee-ஐ find பண்ணு.
+const employees = [
+  { id: 1, name: "Alice", age: 25 },
+  { id: 2, name: "Bob", age: 30 },
+  { id: 3, name: "Charlie", age: 20 },
+  { id: 4, name: "David", age: 35 }
+];
+
+function findEmployee(arr) {
+  const result = arr.find((item) => {
+    return item.id === 2;
+  });
+
+  return result;
+}
+
+console.log(findEmployee(employees));
+Output: =>find → first matching object மட்டும் return பண்ணும்
+{ id: 2, name: "Bob", age: 30 }
+=====================================================================================
+13. Array of Objects — Sort
+Question: Salary அதிகமாக இருப்பவர் first வரும்படி sort பண்ணு.
+
+const employees = [
+  { name: "Alice", salary: 50000 },
+  { name: "Bob", salary: 70000 },
+  { name: "Charlie", salary: 40000 },
+  { name: "David", salary: 90000 }
+];
+
+function sortEmployees(arr) {
+  const result = arr.sort((a, b) => {
+    return b.salary - a.salary;
+  });
+
+  return result;
+}
+
+console.log(sortEmployees(employees));
+
+Output:
+[
+  { name: "David", salary: 90000 },
+  { name: "Bob", salary: 70000 },
+  { name: "Alice", salary: 50000 },
+  { name: "Charlie", salary: 40000 }
+]
+Important:
+b.salary - a.salary
+👉 Descending — high → low
+
+a.salary - b.salary
+👉 Ascending — low → high
+=====================================================================================
+14. Array of Objects — Reduce Total
+Question: Employees-ன் total salary find பண்ணு.
+
+const employees = [
+  { name: "Alice", salary: 50000 },
+  { name: "Bob", salary: 60000 },
+  { name: "Charlie", salary: 40000 }
+];
+
+function totalSalary(arr) {
+  const result = arr.reduce((sum, item) => {
+    return sum + item.salary;
+  }, 0);
+
+  return result;
+}
+
+console.log(totalSalary(employees));
+=====================================================================================
+=====================================================================================
+=====================================================================================
+=====================================================================================
