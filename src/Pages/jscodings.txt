@@ -9,6 +9,10 @@ function removeDuplicate(arr){
     return result
 }
 console.log(removeDuplicate([1,1,2,2,3,3]))
+
+const data = [1, 2, 2, 3, 4, 4, 5];
+const result = [...new Set(data)];
+console.log(result);
 ==========================================================================================================================================
 2.
 function removeDuplicate(str){
