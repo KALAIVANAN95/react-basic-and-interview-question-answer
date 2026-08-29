@@ -369,52 +369,60 @@ export default App;
 
 ==========================================================================================================================================================================================
 
-  import React,{useState} from "react"
+  import React, { useState } from "react"
 
-  function App(){
-    const [form,setForm]=useState({
-      name:"",
-      email:"",
+function App() {
+  const [form, setForm] = useState({
+    name: "",
+    email: ""
+  })
+  const [err, serErr] = useState({
+    name: "",
+    email: ""
+  })
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setForm({
+      ...form,
+      [name]: value
     })
-    const handleChange=(e)=>{
-      const {name,value}=e.target
-      setForm({
-        ...form,
-        [name]:value
-      })
-      setErr("")
-    }
-    const [err,setErr]=useState(null)
-    const validate=()=>{
-      if(!form.name){
-        setErr("Name is empty")
-        return false
-      }
-      if(!form.email){
-        setErr("Email is empty")
-        return false
-      }
-      return true
-    }
-
-    const handleAdd=()=>{
-      if(!validate()){
-        return false
-      }
-      console.log("Value saved")
-    }
-    return(
-      <div>
-        <input name={"name"} value={form.name} onChange={handleChange} placeholder="Name"/> 
-      {err && <span>{err}</span>}
-        <input name={"email"} value={form.email} onChange={handleChange} placeholder="Email"/>
-        {err && <span>{err}</span>}
-        <button onClick={handleAdd}>Add</button>
-      </div>
-    )
   }
+  const validate = () => {
+    const newError = {
+      name: "",
+      email: ""
+    }
+    if (!form.name) {
+      newError.name = "Name"
+    }
+    if (!form.email) {
+      newError.email = "email"
+    }
+    serErr(newError)
+    return !newError.name && !newError.email;
+  }
+  const handleAdd = () => {
+    if (!validate()) {
+      return
+    }
+    console.log("added")
+  }
+  return (
+    <div>
 
-  export default App
+      <input name="name" value={form.name} onChange={handleChange} />
+      {err.name && <span>{err.name}</span>}
+
+      <input name="email" value={form.email} onChange={handleChange} />
+      {err.email && <span>{err.email}</span>}
+
+
+      <button onClick={handleAdd}>Add</button>
+    </div>
+  )
+}
+
+export default App
 
 ==========================================================================================================================================================================================
 function Child({name}){
