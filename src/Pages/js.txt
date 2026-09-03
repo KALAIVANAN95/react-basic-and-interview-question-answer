@@ -251,13 +251,13 @@ Debouncing delays function execution until the user stops triggering the event
 29. Throttle
 Throttling means a function can run only once in a specific time period, even if it is triggered many times.
 
-30. Local Storage
+30. Local Storage 5–10 MB
     localStorage stores data permanently in the browser.
 
-31. Session Storage
+31. Session Storage 5–10 MB
     sessionStorage stores data only for the browser session.
 
-32. Cookies
+32. Cookies 4 KB
     Cookies store small pieces of browser data mainly for authentication and sessions.
 
 25. call/apply/bind
