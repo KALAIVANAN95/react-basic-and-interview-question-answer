@@ -268,6 +268,18 @@ Throttling means a function can run only once in a specific time period, even if
 
 27. Shallow vs Deep Copy
     Shallow copy shares references, whereas deep copy creates independent copies.
+
+const original = {
+  name: "John",
+  address: {
+    city: "Chennai"
+  }
+};
+const copy = structuredClone(original); // Deep copy
+copy.address.city = "Bangalore";
+console.log(original.address.city); // Chennai
+console.log(copy.address.city);     // Bangalore
+
 28.Why use objects?
 Objects are used to store related data in key-value pairs.
 29.Array of Objects?
