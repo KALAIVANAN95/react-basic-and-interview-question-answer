@@ -311,6 +311,13 @@ LCP for loading speed,
 INP for responsiveness(Interaction response), and
 CLS for visual stability.
 
+| Metric  | Meaning              |
+| ------- | -------------------- |
+| **LCP** | Loading speed        |
+| **INP** | Interaction response |
+| **CLS** | Visual stability     |
+
+
 
 
 
