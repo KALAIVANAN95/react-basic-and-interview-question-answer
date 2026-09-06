@@ -305,6 +305,15 @@ console.log(theRest); // Output: [76, 64, 52]
 
 34.Event Delegation is attaching a single event listener to a parent element to handle events from multiple child elements using event bubbling.
 
+
+Core Web Vitals measure website user experience: 
+LCP for loading speed, 
+INP for responsiveness(Interaction response), and
+CLS for visual stability.
+
+
+
+
 const arr=[1,2,5]
 const res=arr.reverse()
 
