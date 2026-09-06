@@ -215,7 +215,9 @@ Paint Screen
 useEffect
 
 useContext: 
-useContext is used to access global/shared state in React components without prop drilling.
+useContext is used to access global/shared state in React components without prop drilling. or
+useContext is a React Hook used to access data from Context without passing props through intermediate components. It helps avoid prop drilling
+
 Where did you use Context API?
 For user information, theme settings, language settings, and authentication data shared across multiple components.
 
