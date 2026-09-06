@@ -376,6 +376,12 @@ This improves maintainability and reduces duplicate code.
 
 Code splitting breaks the application code into smaller bundles or chunks.
 
+Bundle Optimization :Common techniques:
+Minification → unnecessary spaces/comments remove
+Tree shaking → unused code remove
+Code splitting → code-ஐ smaller chunks-ஆ split
+Lazy loading → தேவையான நேரத்தில் chunk load
+
 51. Fragments
     Fragments group multiple elements without adding extra DOM nodes.
 52. Portals
