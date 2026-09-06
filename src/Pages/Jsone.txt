@@ -811,9 +811,7 @@ Example:
 
 ```javascript
 const values = [1, 2, 3, 4, 5];
-
 const [a, b, ...rest] = values;
-
 console.log(a);    // 1
 console.log(b);    // 2
 console.log(rest); // [3,4,5]
