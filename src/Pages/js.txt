@@ -319,6 +319,7 @@ CLS for visual stability.
 
 
 
+Child → Parent = Event Bubbling
 
 
 const arr=[1,2,5]
