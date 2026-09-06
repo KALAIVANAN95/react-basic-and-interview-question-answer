@@ -373,6 +373,9 @@ This improves maintainability and reduces duplicate code.
     In functional components, lifecycle behavior is handled using useEffect.
 50. Lazy Loading
     Lazy loading improves performance by loading components dynamically.
+
+Code splitting breaks the application code into smaller bundles or chunks.
+
 51. Fragments
     Fragments group multiple elements without adding extra DOM nodes.
 52. Portals
