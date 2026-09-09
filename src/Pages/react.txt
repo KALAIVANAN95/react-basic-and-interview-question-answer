@@ -448,7 +448,56 @@ Redux provides centralized state management and helps avoid prop drilling in lar
 How did you manage filters?
 Filters were managed using controlled components, local/Redux state, and dynamic API payloads based on user selections
 
+==========================================================================================================================================================================================
+Next.js Interview — Q&A
 
+1. What is SSR?
+SSR means Server-Side Rendering, where HTML is generated on the server and sent to the browser.
+
+2. What is CSR?
+CSR means Client-Side Rendering, where JavaScript renders the content in the browser.
+
+3. What is SSG?
+SSG means Static Site Generation. HTML is generated at build time and served as static content.
+
+4. When would you use SSR?
+I would use SSR when SEO and initial page loading performance are important.
+
+5. What is "use client"?
+"use client" makes a component a Client Component. We use it when we need features like useState, useEffect, event handlers, or browser APIs.
+
+6. Server Component vs Client Component?
+Server Components run on the server by default. Client Components run on the client and can use state, effects, and browser APIs.
+
+7. What is Middleware?
+Middleware runs before a request is completed. It can be used for authentication, authorization, redirects, and request handling.
+
+8. What is a Route Handler?
+A Route Handler is used to create backend API endpoints in Next.js. It can handle GET, POST, PUT, and DELETE requests.
+
+9. Why Next.js instead of normal React?
+Next.js provides features like SSR, SSG, routing, SEO optimization, code splitting, and better performance out of the box.
+
+10. What is code splitting?
+Code splitting divides a large JavaScript bundle into smaller chunks and loads only the required code.
+
+11. What is lazy loading?
+Lazy loading loads a component or resource only when it is needed, which improves initial page performance.
+
+12. What are React.lazy() and Suspense?
+React.lazy() loads a component dynamically. Suspense shows a fallback UI while the component is loading.
+
+🔥 Most important to remember tomorrow
+SSR → Server
+CSR → Browser
+SSG → Build time
+use client → Client features
+Middleware → Request handling
+Route Handler → API
+Lazy loading → Load when needed
+
+These are enough for the Next.js basics po
+==========================================================================================================================================================================================
 
 Why are you looking for a change?
 I am looking for new challenges, career growth, and an opportunity to contribute my technical skills in a larger environment.
