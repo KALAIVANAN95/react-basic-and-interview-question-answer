@@ -49,6 +49,13 @@ Next.js -> React + SSR + SEO + Routing
 ES6 features:
 let&const, arrow function, temlate literals, destructuring, default parameters, spread& rest operator, classess, promises, modules(import/export), Map & Set
 
+Promise.all() runs multiple Promises together and fails immediately if any one Promise rejects. Promise.all → one fails → overall fails ❌
+
+Promise.allSettled() waits for all Promises to complete and gives the result of both fulfilled and rejected Promises => allSettled → wait for everything → success + failure results ✅
+
+Promise.race() runs multiple Promises and returns the result of the first Promise that settles, whether it is fulfilled or rejected
+
+
 ===================================================================================================================================================================
 1.What is JavaScript.?
 i)High level, interpreted language
