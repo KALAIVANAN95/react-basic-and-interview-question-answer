@@ -198,6 +198,33 @@ function findMissingNumber(arr) {
 
 console.log(findMissingNumber([1, 2, 4, 5]));
 =====================================================================================
+function secondLargest(arr) {
+  let firstNo = arr[0];
+  let secondNo = arr[1];
+
+  // first two numbers correct order-la set pannuvom
+  if (firstNo < secondNo) {
+    [firstNo, secondNo] = [secondNo, firstNo];
+  }
+
+  for (let i = 2; i < arr.length; i++) {
+
+    if (arr[i] > firstNo) {
+      secondNo = firstNo;
+      firstNo = arr[i];
+    }
+    else if (arr[i] > secondNo && arr[i] !== firstNo) {
+      secondNo = arr[i];
+    }
+  }
+
+  return secondNo;
+}
+
+const listOf = [-10, -20, -30, -40, -50, -90, -60, -80];
+
+console.log(secondLargest(listOf));
+=====================================================================================
 
 function firstNonRepeatingChar(str) {
   let count = {};
