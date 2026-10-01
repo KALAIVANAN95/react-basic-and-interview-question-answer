@@ -343,7 +343,7 @@ splice(start, count)
            COUNT → how many to remove
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 push   → END-la ADD
-pop    → END-la REMOVE
+pop    → END-la REMOVE => Important => pop() remove pannum + removed value-a return pannum.
 
 shift  → START-la REMOVE
 unshift → START-la ADD
