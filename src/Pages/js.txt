@@ -351,6 +351,10 @@ unshift → START-la ADD
 find()   → FIRST matching item → one value
 filter() → ALL matching items   → new array
 
+These are simple:
+some() → at least ONE item condition satisfy pannutha?
+every() → ALL items condition satisfy pannutha?
+
 | Method      | What it does          |
 | ----------- | --------------------- |
 | `push()`    | END-la **ADD** ➕      |
