@@ -348,6 +348,13 @@ pop    → END-la REMOVE => Important => pop() remove pannum + removed value-a r
 shift  → START-la REMOVE
 unshift → START-la ADD
 
+| Method      | What it does          |
+| ----------- | --------------------- |
+| `push()`    | END-la **ADD** ➕      |
+| `pop()`     | END-la **REMOVE** ➖   |
+| `shift()`   | START-la **REMOVE** ➖ |
+| `unshift()` | START-la **ADD** ➕    |
+
 ==============================================================================================================================================================================================================================================================================
 const arr=[1,2,5]
 const res=arr.reverse()
