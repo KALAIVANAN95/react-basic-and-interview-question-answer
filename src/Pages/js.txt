@@ -362,6 +362,24 @@ every() → ALL items condition satisfy pannutha?
 | `shift()`   | START-la **REMOVE** ➖ |
 | `unshift()` | START-la **ADD** ➕    |
 
+slice       → copy/extract, original unchanged
+splice      → add/remove/replace, original changes
+push        → add at end
+pop         → remove from end
+unshift     → add at start
+shift       → remove from start
+
+map         → transform every item
+forEach     → perform action for every item
+filter      → all matching items
+find        → first matching item
+findIndex   → first matching index
+some        → at least one?
+every       → all?
+includes    → exact value exists?
+reduce      → many values → one result
+sort        → arrange/order
+
 ==============================================================================================================================================================================================================================================================================
 const arr=[1,2,5]
 const res=arr.reverse()
