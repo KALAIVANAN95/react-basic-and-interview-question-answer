@@ -379,6 +379,24 @@ every       → all?
 includes    → exact value exists?
 reduce      → many values → one result
 sort        → arrange/order
+| Method        | Correct understanding                                                                                                   |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `slice()`     | Start index → end index **excluded**. Original array **doesn't change**.                                                |
+| `splice()`    | Start index + **how many items (`deleteCount`)**. Original array **changes**.                                           |
+| `push()`      | Adds element to the **end**.                                                                                            |
+| `pop()`       | Removes element from the **end** and returns it.                                                                        |
+| `shift()`     | Removes element from the **start** and returns it.                                                                      |
+| `unshift()`   | Adds element to the **start**.                                                                                          |
+| `map()`       | Iterates every element and returns a **new transformed array**.                                                         |
+| `forEach()`   | Iterates every element; normally **doesn't return a new array** → returns `undefined`.                                  |
+| `filter()`    | Returns **all elements** that satisfy the condition.                                                                    |
+| `find()`      | Returns the **first matching element**. If no match → `undefined`.                                                      |
+| `findIndex()` | Returns the **index of the first matching element**. If no match → `-1`.                                                |
+| `some()`      | If **at least one** element satisfies the condition → `true`, otherwise `false`.                                        |
+| `every()`     | If **all** elements satisfy the condition → `true`, otherwise `false`.                                                  |
+| `includes()`  | Checks whether an **exact value exists** → `true/false`.                                                                |
+| `reduce()`    | Reduces multiple array elements into **one final value**.                                                               |
+| `sort()`      | Arranges elements in an order. For numbers, use `a-b` ascending or `b-a` descending. **It mutates the original array.** |
 
 ==============================================================================================================================================================================================================================================================================
 const arr=[1,2,5]
