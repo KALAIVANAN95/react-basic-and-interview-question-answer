@@ -79,7 +79,8 @@ ii)let = block - scoped
 iii)const = block - scoped - cont modify etc
 
 5.What is closure in JS.?
- A closure allows inner functions to access outer function variables even after execution.
+ A closure allows inner functions to access outer function variables even after execution. 
+Closure = inner function + remembered outer variables.
 or
 JavaScript closure gives you access to an outer function's scope from 
 an inner function
