@@ -137,6 +137,20 @@ It will be in one the 3 possible states
 i)Fullfilled
 ii)Rejected
 iii)Pending.
+                 PROMISE
+                    |
+          ---------------------
+          |                   |
+      resolve()           reject()
+          |                   |
+      fulfilled           rejected
+          |                   |
+       .then()             .catch()
+          |                   |
+          ------ chaining -----
+                    |
+                 finally()
+                  Always
 
 10.Ways to define function.?
 i)function declaration
