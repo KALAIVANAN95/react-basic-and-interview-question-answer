@@ -284,6 +284,13 @@ Call Stack = JavaScript currently execute pannura place.
                   EVENT LOOP
 
 SYNC → MICRO → TASK/MACRO
+┌──────────────┐
+│ SYNC         │ → normal console/function code
+├──────────────┤
+│ MICRO        │ → Promise / await continuation
+├──────────────┤
+│ MACRO/TASK   │ → setTimeout / setInterval
+└──────────────┘
 
 
 
