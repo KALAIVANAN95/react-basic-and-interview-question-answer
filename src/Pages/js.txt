@@ -413,7 +413,79 @@ sort        → arrange/order
 | `reduce()`    | Reduces multiple array elements into **one final value**.                                                               |
 | `sort()`      | Arranges elements in an order. For numbers, use `a-b` ascending or `b-a` descending. **It mutates the original array.** |
 
-==============================================================================================================================================================================================================================================================================
+=============================================================================================================================
+====================================================================================================================
+Promise.all() is used when we have multiple Promises, such as multiple API calls. If all Promises succeed, it returns all the successful results. If any one Promise rejects, Promise.all() rejects.
+
+Memory:
+If any Promise rejects, Promise.all() rejects immediately with that error.
+
+const result = await Promise.all([getUser(),getProjects(),getCustomers()])
+=--------------------------------------------------------------------------------------------------------------------------=
+Settled:
+Once a Promise is fulfilled or rejected, it becomes settled
+
+Promise.all():
+All success venum. One reject aana overall reject.
+=--------------------------------------------------------------------------------------------------------------------------=
+Promise.allSettled():
+Success/failure edhu vandhaalum, ellaa Promises-oda final result-a wait panni return pannum.
+const p1=Promise.resolve("User")
+const p2=Promise.reject("Project failed")
+const p3=Promise.resolve("Customer")
+
+const result = await Promise.allSettled([p1,p2,p3]);
+console.log(result)
+=--------------------------------------------------------------------------------------------------------------------------=
+Promise.race() na enna?
+Promise.race() na multiple Promises-la yedhu first settle aagutho, adhu result-a use pannum.
+Remember: settled = fulfilled OR rejected.
+Promise.race()
+First settled wins
+Success OR failure.
+
+const p1=new Promise((resolve)=>{
+setTimeout(()=>{
+resolve("A"), 3000
+})
+})
+
+const p2=new Promise((resolve)=>{
+setTimeout(()=>{
+resolve("B"), 1000
+})
+})
+
+const result=await Promise.race([p1,p2])
+console.log(result)
+
+=--------------------------------------------------------------------------------------------------------------------------=
+Promise.any() na enna?
+Promise.any() na:
+Multiple Promises-la first SUCCESS (fulfilled) aagura Promise-oda result-a return pannum.
+
+First successful Promise wins
+Rejection-a skip pannum.
+
+Promise.all()
+→ ALL must succeed
+→ ANY reject = reject
+
+Promise.allSettled()
+→ Wait for ALL
+→ Success + failure results
+
+Promise.race()
+→ FIRST settled wins
+→ Success OR failure
+
+Promise.any()
+→ FIRST successful wins
+→ Reject only when ALL reject
+==================================================================================================================
+
+
+=================================================================================================================================================
 const arr=[1,2,5]
 const res=arr.reverse()
 
