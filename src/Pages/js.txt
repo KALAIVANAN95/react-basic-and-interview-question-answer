@@ -275,6 +275,8 @@ Event is a mechanism in JavaScript that handles asynchronous operations by conti
                       ↓
                   EVENT LOOP
 
+SYNC → MICRO → TASK/MACRO
+
 
 
 26. Scope
