@@ -8,7 +8,7 @@ ii)It delivers static files like images, CSS, and JavaScript from the nearest se
 
 Difference between HTTP and HTTPS?
 i)HTTP transfers data in plain text. => HTTP  -> Not Secure
-ii)HTTPS transfers data in encrypted format using SSL/TLS, making it more secure. => HTTPS -> Secure 
+ii)HTTPS transfers data in encrypted format using SSL/TLS, making it more secure. => HTTPS -> Secure e
 
 Common Status Codes?
 200 - Success
@@ -256,6 +256,14 @@ or
 The event loop is a mechanism in Node.js/JavaScript that continuously checks the call stack and callback queue. When the call stack is empty, it moves pending callbacks to the call stack for execution.
 or 
 Event is a mechanism in JavaScript that handles asynchronous operations by continuously checking the call stack and callback queue, and moving tasks to the stack when it becomes empty.
+
+Call Stack
+Web api
+Task queue
+Event loop
+
+Call Stack = JavaScript currently execute pannura place.
+
                   JavaScript Code
                         ↓
                    CALL STACK
