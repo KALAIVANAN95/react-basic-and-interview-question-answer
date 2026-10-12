@@ -182,6 +182,10 @@ or map() is used to iterate arrays and return a new transformed array.
 call() – invokes the function immediately, arguments passed one by one
 apply() – invokes the function immediately, arguments passed as an array
 bind() – does not invoke immediately, returns a new function with this fixed, and you can pass arguments
+Method	Enna pannum?
+call()	Immediately execute; arguments separate-ah
+apply()	Immediately execute; arguments array-la
+bind()	New function return pannum; later execute pannalam
 
 
 15. "async and await make promises easier to write"
