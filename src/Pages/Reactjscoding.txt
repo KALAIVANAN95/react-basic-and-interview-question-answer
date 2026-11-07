@@ -441,3 +441,81 @@ function App(){
 }
 
 export default App
+
+==========================================================================================================================================================================================
+import React, { useState, useEffect } from "react"
+
+const API_URL = `https://jsonplaceholder.typicode.com/users`
+
+function useFetch(URL) {
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState("")
+  const [data, setData] = useState([])
+
+  const getCallFun = async () => {
+    try {
+      setIsLoading(true)
+      setError("")
+      const response = await fetch(URL)
+      if (response.ok) {
+        const result = await response.json()
+        setData(result)
+      }
+    } catch (err) {
+      setError(err.message)
+    } finally {
+      setIsLoading(false)
+    }
+
+  }
+  return { isLoading, error, data, getCallFun }
+}
+
+function App() {
+  const { data, error, getCallFun, isLoading } = useFetch(API_URL)
+  const [search, setSearch] = useState("")
+  const [page, setPage] = useState(1)
+  const itemPerPage = 2
+  const filtered = data.filter((val) =>
+    val.name.toLowerCase().includes(search.toLowerCase())
+  );
+  const totalCount = Math.ceil(data.length / itemPerPage)
+  const startIndex = (page - 1) * itemPerPage
+  const endIndex = startIndex + itemPerPage
+  const currentData = filtered.slice(startIndex, endIndex)
+  useEffect(() => {
+    getCallFun()
+  }, [])
+
+  if (isLoading) {
+    return <h3>Loading...</h3>
+  }
+  if (error) {
+    return <h3>{error}</h3>;
+  }
+ 
+  return (
+    <div>
+      <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder={"Search your name...."} />
+      {
+        currentData.map((value) => {
+          return (
+            <div key={value.id}>
+              <p>{value.name}</p>
+            </div>
+          )
+        })
+      }
+      <button disabled={page === 1} onClick={() => setPage(page - 1)}>Prev</button>
+      {
+        Array.from({ length: totalCount }, (_, index) => {
+          return <button onClick={() => setPage(index + 1)} key={index}>{index + 1}</button>
+        })
+      }
+      <button disabled={page === totalCount} onClick={() => setPage(page + 1)}>Next</button>
+    </div>
+  )
+}
+
+
+export default App
